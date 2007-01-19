@@ -1,4 +1,4 @@
-# Copyright 1999-2006 Gentoo Foundation
+# Copyright 1999-2007 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-libs/ecore/ecore-0.9.9.030.ebuild,v 1.2 2006/10/29 03:27:50 vapier Exp $
 
@@ -14,7 +14,6 @@ RDEPEND=">=x11-libs/evas-0.9.9
 	curl? ( net-misc/curl )
 	dbus? ( sys-apps/dbus )
 	opengl? ( virtual/opengl )"
-
 DEPEND="${RDEPEND}
 	X? ( x11-proto/xproto x11-proto/xextproto )"
 

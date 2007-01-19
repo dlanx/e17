@@ -1,4 +1,4 @@
-# Copyright 1999-2006 Gentoo Foundation
+# Copyright 1999-2007 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-libs/ecore/ecore-9999.ebuild,v 1.14 2006/10/29 03:27:50 vapier Exp $
 
@@ -9,18 +9,29 @@ DESCRIPTION="core event abstraction layer and X abstraction layer (nice convenie
 IUSE="X directfb fbcon opengl ssl curl threads dbus"
 
 RDEPEND=">=x11-libs/evas-0.9.9
-	X? ( x11-libs/libXcursor )
+	X? (
+		x11-libs/libXcursor
+		x11-libs/libXp
+		x11-libs/libXinerama
+		x11-libs/libXrandr
+		x11-libs/libXScrnSaver
+		x11-libs/libXrender
+		x11-libs/libXfixes
+		x11-libs/libXdamage
+	)
+	directfb? ( >=dev-libs/DirectFB-0.9.16 )
 	ssl? ( dev-libs/openssl )
 	curl? ( net-misc/curl )
 	dbus? ( sys-apps/dbus )
 	opengl? ( virtual/opengl )"
-# Some extra deps that aren't necessary but will be used if they exist:
-#		x11-libs/libXrandr
-#		x11-libs/libXinerama
-#		x11-libs/libXp
-
 DEPEND="${RDEPEND}
-	X? ( x11-proto/xproto x11-proto/xextproto )"
+	X? (
+		x11-proto/xproto
+		x11-proto/xextproto
+		x11-proto/printproto
+		x11-proto/xineramaproto
+		x11-proto/scrnsaverproto
+	)"
 
 src_compile() {
 	export MY_ECONF="
