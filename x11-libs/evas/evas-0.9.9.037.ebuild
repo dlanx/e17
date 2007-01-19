@@ -8,7 +8,7 @@ DESCRIPTION="hardware-accelerated canvas API"
 
 IUSE="cairo mmx sse X opengl directfb fbcon gif png jpeg tiff xpm svg altivec"
 
-RDEPEND="X? ( || ( x11-libs/libXrender virtual/x11 ) )
+RDEPEND="X? ( x11-libs/libXrender )
 	>=dev-libs/eet-0.9.10.037
 	>=dev-db/edb-1.0.5.007
 	dev-util/pkgconfig
@@ -23,9 +23,7 @@ RDEPEND="X? ( || ( x11-libs/libXrender virtual/x11 ) )
 	svg? ( gnome-base/librsvg x11-libs/cairo x11-libs/libsvg-cairo )"
 #	X? ( xcb-util )
 DEPEND="${RDEPEND}
-	X? ( || ( (	x11-proto/xextproto
-			x11-proto/xproto )
-			virtual/x11 ) )"
+	X? ( x11-proto/xextproto x11-proto/xproto )"
 
 src_compile() {
 	# other *very* fun options:

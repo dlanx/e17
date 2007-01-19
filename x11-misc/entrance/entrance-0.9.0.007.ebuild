@@ -12,7 +12,7 @@ SRC_URI="${SRC_URI}
 
 IUSE="pam"
 
-RDEPEND="|| ( x11-libs/libXau virtual/x11 )
+RDEPEND="x11-libs/libXau
 	pam? ( virtual/pam )
 	>=dev-db/edb-1.0.5
 	>=x11-libs/evas-0.9.9

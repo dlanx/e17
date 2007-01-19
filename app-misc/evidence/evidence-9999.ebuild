@@ -16,7 +16,7 @@ RDEPEND=">=dev-util/pkgconfig-0.5
 	=x11-libs/gtk+-2*
 	vorbis? ( media-libs/libvorbis media-libs/libogg )
 	perl? ( dev-libs/libpcre )
-	X? ( || ( ( x11-libs/libX11 x11-libs/libXt ) virtual/x11 ) )
+	X? ( x11-libs/libX11 x11-libs/libXt )
 	truetype? ( =media-libs/freetype-2* )
 	kde? ( kde-base/kdelibs )
 	xine? ( >=media-libs/xine-lib-1_rc1 )
@@ -32,7 +32,7 @@ RDEPEND=">=dev-util/pkgconfig-0.5
 		>=media-libs/libart_lgpl-2.0
 		>=gnome-base/libgnomecanvas-2.0 )"
 DEPEND="${RDEPEND}
-	X? ( || ( x11-proto/xproto virtual/x11 ) )"
+	X? ( x11-proto/xproto )"
 
 src_compile() {
 	# if we turn this on evas gets turned off (bad !)

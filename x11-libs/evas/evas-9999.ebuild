@@ -8,7 +8,7 @@ DESCRIPTION="hardware-accelerated canvas API"
 
 IUSE="altivec cairo directfb gif fbcon jpeg mmx opengl png sse svg tiff X xpm"
 
-RDEPEND="X? ( || ( x11-libs/libXrender virtual/x11 ) )
+RDEPEND="X? ( x11-libs/libXrender )
 	opengl? ( virtual/opengl )
 	>=media-libs/imlib2-1.2.0
 	>=dev-libs/eet-0.9.9
@@ -23,9 +23,7 @@ RDEPEND="X? ( || ( x11-libs/libXrender virtual/x11 ) )
 	dev-util/pkgconfig"
 #	X? ( xcb-util )
 DEPEND="${RDEPEND}
-	X? ( || ( (	x11-proto/xextproto
-			x11-proto/xproto )
-			virtual/x11 ) )"
+	X? ( x11-proto/xextproto x11-proto/xproto )"
 
 src_compile() {
 #		$(use_enable X software-xcb)
