@@ -6,3 +6,7 @@ ECVS_MODULE="e_modules/${PN#e_modules-}"
 inherit enlightenment
 
 DESCRIPTION="e17 ${PN#e_modules-} module"
+
+DEPEND="media-libs/edje
+	x11-wm/e
+	|| ( media-gfx/imagemagick media-gfx/scrot )"
