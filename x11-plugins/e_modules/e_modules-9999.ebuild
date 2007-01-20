@@ -6,20 +6,20 @@ inherit enlightenment
 
 DESCRIPTION="e_modules meta package - merge this to pull in all e_modules"
 
+IUSE="broken-modules"
+
 DEPEND="x11-plugins/e_modules-alarm
 	x11-plugins/e_modules-bling
-	x11-plugins/e_modules-calendar
+	broken-modules? ( x11-plugins/e_modules-calendar )
 	x11-plugins/e_modules-cpu
 	x11-plugins/e_modules-deskshow
 	x11-plugins/e_modules-emu
-	x11-plugins/e_modules-engage
-	x11-plugins/e_modules-evolume
+	broken-modules? ( x11-plugins/e_modules-engage )
 	x11-plugins/e_modules-flame
 	x11-plugins/e_modules-language
 	x11-plugins/e_modules-mail
 	x11-plugins/e_modules-mem
 	x11-plugins/e_modules-mixer
-	x11-plugins/e_modules-monitor
 	x11-plugins/e_modules-moon
 	x11-plugins/e_modules-net
 	x11-plugins/e_modules-photo
