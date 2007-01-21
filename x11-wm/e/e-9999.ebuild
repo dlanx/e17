@@ -7,12 +7,17 @@ inherit enlightenment
 
 DESCRIPTION="the e17 window manager"
 
-DEPEND="sys-devel/libtool
-	x11-libs/ecore
+IUSE="pam"
+
+RDEPEND="x11-libs/ecore
 	media-libs/edje
 	dev-libs/eet
 	dev-libs/embryo
-	x11-libs/evas"
+	x11-libs/evas
+	pam? ( sys-libs/pam )"
+DEPEND="${RDEPEND}
+	x11-proto/xproto
+	sys-devel/libtool"
 
 pkg_setup() {
 	if ! built_with_use x11-libs/evas png ; then

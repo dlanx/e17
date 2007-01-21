@@ -52,6 +52,7 @@ src_compile() {
 		$(use_enable dbus ecore-dbus)
 		--enable-ecore-config
 		--enable-ecore-file
+		--enable-ecore-desktop
 		$(use_enable curl)
 		$(use_enable threads pthreads)
 	"

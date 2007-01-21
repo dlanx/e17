@@ -1,4 +1,4 @@
-# Copyright 1999-2006 Gentoo Foundation
+# Copyright 1999-2007 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-libs/evas/evas-0.9.9.030.ebuild,v 1.1 2006/07/16 05:03:06 vapier Exp $
 
@@ -6,21 +6,22 @@ inherit enlightenment
 
 DESCRIPTION="hardware-accelerated canvas API"
 
-IUSE="cairo mmx sse X opengl directfb fbcon gif png jpeg tiff xpm svg altivec"
+IUSE="altivec cairo directfb gif fbcon jpeg mmx opengl png sse svg tiff X xpm"
 
 RDEPEND="X? ( x11-libs/libXrender )
+	opengl? ( virtual/opengl )
 	>=dev-libs/eet-0.9.10.037
 	>=dev-db/edb-1.0.5.007
 	dev-util/pkgconfig
 	media-libs/fontconfig
-	cairo? ( >=x11-libs/cairo-0.2.0 )
+	cairo? ( >=x11-libs/cairo-1.2 )
 	directfb? ( >=dev-libs/DirectFB-0.9.16 )
 	gif? ( media-libs/giflib )
-	png? ( media-libs/libpng )
 	jpeg? ( media-libs/jpeg )
+	png? ( media-libs/libpng )
 	tiff? ( media-libs/tiff )
 	xpm? ( x11-libs/libXpm )
-	svg? ( gnome-base/librsvg x11-libs/cairo x11-libs/libsvg-cairo )"
+	svg? ( >=gnome-base/librsvg-2.14.0 x11-libs/cairo x11-libs/libsvg-cairo )"
 #	X? ( xcb-util )
 DEPEND="${RDEPEND}
 	X? ( x11-proto/xextproto x11-proto/xproto )"
@@ -33,7 +34,7 @@ src_compile() {
 	#  --enable-scale-smooth           enable sampling scaler code
 	#  --enable-pthreads               enable threaded renderer
 	export MY_ECONF="
-		$(use_enable cairo cairo-x11)
+		$(use_enable cairo cairo-x11) \
 		$(use_enable mmx cpu-mmx) \
 		$(use_enable sse cpu-mmx) \
 		$(use_enable sse cpu-sse) \
@@ -41,6 +42,7 @@ src_compile() {
 		$(use_enable opengl gl-x11) \
 		$(use_enable directfb) \
 		$(use_enable fbcon fb) \
+		$(use_enable X xrender-x11) \
 		$(use_enable gif image-loader-gif) \
 		$(use_enable png image-loader-png) \
 		$(use_enable jpeg image-loader-jpeg) \
@@ -48,17 +50,19 @@ src_compile() {
 		$(use_enable xpm image-loader-xpm) \
 		$(use_enable svg image-loader-svg) \
 		$(use_enable altivec cpu-altivec) \
+		--enable-buffer \
 		--enable-image-loader-eet \
 		--enable-image-loader-edb \
-		--enable-fmemopen \
+		--enable-font-loader-eet \
 		--enable-cpu-c \
-		--enable-scale-smooth \
 		--enable-scale-sample \
+		--enable-scale-smooth \
 		--enable-convert-8-rgb-332 \
 		--enable-convert-8-rgb-666 \
 		--enable-convert-8-rgb-232 \
 		--enable-convert-8-rgb-222 \
 		--enable-convert-8-rgb-221 \
+		--enable-convert-8-rgb-121 \
 		--enable-convert-8-rgb-111 \
 		--enable-convert-16-rgb-565 \
 		--enable-convert-16-rgb-555 \

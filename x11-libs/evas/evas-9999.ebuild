@@ -1,8 +1,8 @@
-# Copyright 1999-2006 Gentoo Foundation
+# Copyright 1999-2007 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-libs/evas/evas-9999.ebuild,v 1.17 2006/09/11 03:45:25 vapier Exp $
 
-inherit enlightenment flag-o-matic
+inherit enlightenment
 
 DESCRIPTION="hardware-accelerated canvas API"
 
@@ -10,43 +10,50 @@ IUSE="altivec cairo directfb gif fbcon jpeg mmx opengl png sse svg tiff X xpm"
 
 RDEPEND="X? ( x11-libs/libXrender )
 	opengl? ( virtual/opengl )
-	>=media-libs/imlib2-1.2.0
-	>=dev-libs/eet-0.9.9
-	>=dev-db/edb-1.0.5
+	>=dev-libs/eet-0.9.10.037
+	>=dev-db/edb-1.0.5.007
+	dev-util/pkgconfig
+	media-libs/fontconfig
 	cairo? ( >=x11-libs/cairo-1.2 )
 	directfb? ( >=dev-libs/DirectFB-0.9.16 )
 	gif? ( media-libs/giflib )
 	jpeg? ( media-libs/jpeg )
 	png? ( media-libs/libpng )
-	svg? ( gnome-base/librsvg )
 	tiff? ( media-libs/tiff )
-	dev-util/pkgconfig"
+	xpm? ( x11-libs/libXpm )
+	svg? ( >=gnome-base/librsvg-2.14.0 x11-libs/cairo x11-libs/libsvg-cairo )"
 #	X? ( xcb-util )
 DEPEND="${RDEPEND}
 	X? ( x11-proto/xextproto x11-proto/xproto )"
 
 src_compile() {
-#		$(use_enable X software-xcb)
+	# other *very* fun options:
+	#  --enable-cpu-mmx                enable mmx code
+	#  --enable-cpu-sse                enable sse code
+	#  --enable-scale-sample           enable sampling scaler code
+	#  --enable-scale-smooth           enable sampling scaler code
+	#  --enable-pthreads               enable threaded renderer
 	export MY_ECONF="
+		$(use_enable cairo cairo-x11) \
+		$(use_enable mmx cpu-mmx) \
+		$(use_enable sse cpu-mmx) \
+		$(use_enable sse cpu-sse) \
 		$(use_enable X software-x11) \
+		$(use_enable opengl gl-x11) \
 		$(use_enable directfb) \
 		$(use_enable fbcon fb) \
-		--enable-buffer \
-		$(use_enable opengl gl-x11) \
 		$(use_enable X xrender-x11) \
 		$(use_enable gif image-loader-gif) \
 		$(use_enable png image-loader-png) \
 		$(use_enable jpeg image-loader-jpeg) \
-		--enable-image-loader-eet \
-		--enable-font-loader-eet \
-		--enable-image-loader-edb \
 		$(use_enable tiff image-loader-tiff) \
 		$(use_enable xpm image-loader-xpm) \
 		$(use_enable svg image-loader-svg) \
-		$(use_enable mmx cpu-mmx) \
-		$(use_enable sse cpu-sse) \
 		$(use_enable altivec cpu-altivec) \
-		$(use_enable cairo cairo-x11) \
+		--enable-buffer \
+		--enable-image-loader-eet \
+		--enable-image-loader-edb \
+		--enable-font-loader-eet \
 		--enable-cpu-c \
 		--enable-scale-sample \
 		--enable-scale-smooth \
@@ -72,6 +79,7 @@ src_compile() {
 		--enable-convert-32-rgb-rot-0 \
 		--enable-convert-32-rgb-rot-270 \
 		--enable-convert-32-rgb-rot-90 \
+		--disable-pthreads
 	"
 	enlightenment_src_compile
 }
