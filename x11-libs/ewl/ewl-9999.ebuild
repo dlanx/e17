@@ -1,4 +1,4 @@
-# Copyright 1999-2006 Gentoo Foundation
+# Copyright 1999-2007 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-libs/ewl/ewl-9999.ebuild,v 1.12 2006/10/29 03:22:49 vapier Exp $
 
@@ -9,11 +9,12 @@ DESCRIPTION="simple-to-use general purpose widget library"
 IUSE="X fbcon opengl"
 
 RDEPEND=">=media-libs/edje-0.5.0
-	>=dev-db/edb-1.0.5
 	>=x11-libs/evas-0.9.9
-	>=x11-libs/ecore-0.9.9"
+	>=x11-libs/ecore-0.9.9
+	>=media-libs/epsilon-0.3.0
+	>=media-libs/emotion-0.0.1"
 DEPEND="${RDEPEND}
-	doc? ( virtual/tetex )"
+	doc? ( virtual/tetex app-doc/doxygen )"
 
 pkg_setup() {
 	if ! built_with_use x11-libs/evas png ; then
