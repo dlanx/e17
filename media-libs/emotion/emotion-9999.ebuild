@@ -1,4 +1,4 @@
-# Copyright 1999-2006 Gentoo Foundation
+# Copyright 1999-2007 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-libs/emotion/emotion-9999.ebuild,v 1.6 2006/02/14 00:32:25 vapier Exp $
 
@@ -8,14 +8,18 @@ DESCRIPTION="video libraries for e17"
 
 IUSE="gstreamer xine"
 
-DEPEND=">=dev-libs/eet-0.9.9
+DEPEND=">=dev-libs/eet-0.9.10
 	>=x11-libs/evas-0.9.9
 	>=media-libs/edje-0.5.0
 	>=x11-libs/ecore-0.9.9
 	>=dev-libs/embryo-0.9.1
 	xine? ( >=media-libs/xine-lib-1.1.1 )
 	!gstreamer? ( !xine? ( >=media-libs/xine-lib-1.1.1 ) )
-	gstreamer? ( =media-libs/gstreamer-0.10* )"
+	gstreamer? ( 
+		=media-libs/gstreamer-0.10*
+		=media-libs/gst-plugins-good-0.10*
+		=media-plugins/gst-plugins-ffmpeg-0.10*
+	)"
 
 src_compile() {
 	if ! use xine && ! use gstreamer ; then
@@ -26,5 +30,11 @@ src_compile() {
 			$(use_enable gstreamer) \
 		"
 	fi
+
+	if use gstreamer ; then
+		addpredict "/root/.gconfd"
+		addpredict "/root/.gconf"
+	fi
+
 	enlightenment_src_compile
 }
