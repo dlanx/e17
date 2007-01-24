@@ -7,12 +7,12 @@ inherit enlightenment
 DESCRIPTION="nice thumbnail generator"
 
 DEPEND=">=media-libs/imlib2-1.2.0
-	>=media-libs/epeg-0.9.0
 	>=media-libs/libpng-1.2.0
-	dev-lang/perl
+	>=media-libs/edje-0.5.0
 	>=x11-libs/evas-0.9.9
 	>=x11-libs/ecore-0.9.9
-	>=media-libs/edje-0.5.0"
+	>=media-libs/epeg-0.9.0
+	dev-lang/perl"
 	
 src_unpack() {
 	enlightenment_src_unpack

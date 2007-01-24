@@ -6,9 +6,22 @@ inherit enlightenment
 
 DESCRIPTION="nice thumbnail generator"
 
-DEPEND="media-libs/edje
-	x11-libs/ecore
-	x11-libs/evas
-	>=media-libs/imlib2-1.2.0
+IUSE="xine"
+
+DEPEND=">=media-libs/imlib2-1.2.0
+	>=media-libs/libpng-1.2.0
+	>=media-libs/edje-0.5.0
+	>=x11-libs/evas-0.9.9
+	>=x11-libs/ecore-0.9.9
 	>=media-libs/epeg-0.9.0
-	media-libs/libpng"
+	dev-lang/perl
+	xine? ( >=media-libs/xine-lib-1.1.1 )"
+
+src_compile() {
+
+	export MY_ECONF="
+		$(use_enable xine thumbnailer-xine) \
+	"
+
+	enlightenment_src_compile
+}
