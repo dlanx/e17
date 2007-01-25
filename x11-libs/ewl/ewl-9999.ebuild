@@ -14,7 +14,7 @@ RDEPEND=">=media-libs/edje-0.5.0
 	>=media-libs/epsilon-0.3.0
 	>=media-libs/emotion-0.0.1"
 DEPEND="${RDEPEND}
-	doc? ( virtual/tetex app-doc/doxygen )"
+	doc? ( virtual/tetex )"
 
 pkg_setup() {
 	if ! built_with_use x11-libs/evas png ; then
