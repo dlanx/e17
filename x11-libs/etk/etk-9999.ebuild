@@ -46,5 +46,7 @@ src_install() {
 
 	enlightenment_src_install
 
-	dohtml doc/html/*
+	if use doc ; then
+		dohtml doc/html/*
+	fi
 }
