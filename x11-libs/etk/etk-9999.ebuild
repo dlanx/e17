@@ -18,19 +18,15 @@ pkg_setup() {
 		die "Re-emerge evas with USE=png"
 	fi
 
-	if use X ; then
-		if ! built_with_use x11-libs/ecore X ; then
-			eerror "Re-emerge ecore with USE=X"
-			die "Re-emerge ecore with USE=X"
+	local flag
+	for flag in fbcon X ; do
+		if use ${flag} ; then
+			if ! built_with_use x11-libs/ecore ${flag} ; then
+				eerror "Re-emerge ecore with USE=${flag}"
+				die "Re-emerge ecore with USE=${flag}"
+			fi
 		fi
-	fi
-
-	if use fbcon ; then
-		if ! built_with_use x11-libs/ecore fbcon ; then
-			eerror "Re-emerge ecore with USE=fbcon"
-			die "Re-emerge ecore with USE=fbcon"
-		fi
-	fi
+	done
 
 	enlightenment_pkg_setup
 }
