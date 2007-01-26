@@ -18,7 +18,6 @@ DEPEND=">=media-libs/imlib2-1.2.0
 	xine? ( >=media-libs/xine-lib-1.1.1 )"
 
 src_compile() {
-
 	export MY_ECONF="
 		$(use_enable xine thumbnailer-xine) \
 	"
