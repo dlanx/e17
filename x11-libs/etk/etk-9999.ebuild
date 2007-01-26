@@ -41,12 +41,3 @@ src_compile() {
 	"
 	enlightenment_src_compile
 }
-
-src_install() {
-
-	enlightenment_src_install
-
-	if use doc ; then
-		dohtml doc/html/*
-	fi
-}
