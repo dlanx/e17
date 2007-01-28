@@ -14,6 +14,7 @@ RDEPEND="x11-libs/ecore
 	dev-libs/eet
 	dev-libs/embryo
 	x11-libs/evas
+	sys-apps/pmount
 	pam? ( sys-libs/pam )"
 DEPEND="${RDEPEND}
 	x11-proto/xproto
