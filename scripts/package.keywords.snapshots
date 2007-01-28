@@ -20,10 +20,11 @@ dev-libs/eet ~*
 dev-libs/embryo ~*
 dev-libs/engrave ~*
 dev-libs/exml ~*
-dev-util/enhance ~*
 dev-util/e_utils ~*
+dev-util/edje_editor ~*
+dev-util/edje_viewer ~*
+dev-util/enhance ~*
 mail-client/embrace ~*
-media-gfx/eclips ~*
 media-gfx/elicit ~*
 media-gfx/entice ~*
 media-gfx/ephoto ~*
@@ -64,13 +65,11 @@ x11-plugins/e_modules-cpu ~*
 x11-plugins/e_modules-deskshow ~*
 x11-plugins/e_modules-emu ~*
 x11-plugins/e_modules-engage ~*
-x11-plugins/e_modules-evolume ~*
 x11-plugins/e_modules-flame ~*
 x11-plugins/e_modules-language ~*
 x11-plugins/e_modules-mail ~*
 x11-plugins/e_modules-mem ~*
 x11-plugins/e_modules-mixer ~*
-x11-plugins/e_modules-monitor ~*
 x11-plugins/e_modules-moon ~*
 x11-plugins/e_modules-net ~*
 x11-plugins/e_modules-photo ~*
