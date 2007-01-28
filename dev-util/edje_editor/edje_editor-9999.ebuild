@@ -7,8 +7,8 @@ inherit enlightenment
 
 DESCRIPTION="edje editor based on etk"
 
-DEPEND="x11-libs/ecore
-	x11-libs/etk
-	media-libs/edje
-	dev-libs/engrave
-	x11-libs/evas"
+DEPEND=">=x11-libs/ecore-0.9.9.037
+	>=x11-libs/etk-0.1.0.002
+	>=media-libs/edje-0.5.0
+	>=dev-libs/engrave-0.1.0
+	>=x11-libs/evas-0.9.9"
