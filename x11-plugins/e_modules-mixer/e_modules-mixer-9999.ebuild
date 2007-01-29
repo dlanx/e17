@@ -5,4 +5,17 @@
 ECVS_MODULE="e_modules/${PN#e_modules-}"
 inherit enlightenment
 
+IUSE="alsa oss"
+
 DESCRIPTION="e17 ${PN#e_modules-} module"
+
+DEPEND=">=x11-wm/e-0.16.999
+	alsa? ( media-libs/alsa-lib )"
+
+src_compile() {
+	export MY_ECONF="
+		$(use_enable alsa alsa) \
+		$(use_enable oss oss) \
+		"
+		enlightenment_src_compile
+}

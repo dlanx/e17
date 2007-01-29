@@ -6,3 +6,6 @@ ECVS_MODULE="e_modules/${PN#e_modules-}"
 inherit enlightenment
 
 DESCRIPTION="e17 ${PN#e_modules-} module"
+
+DEPEND=">=x11-wm/e-0.16.999
+	>=media-libs/edje-0.5.0"
