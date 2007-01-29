@@ -8,7 +8,7 @@ inherit enlightenment
 DESCRIPTION="e17 ${PN#e_modules-} module"
 
 DEPEND=">=x11-wm/e-0.16.999
-    >=media-libs/edje-0.5.0
+	>=media-libs/edje-0.5.0
 	x11-libs/ecore
 	x11-libs/evas
 	x11-libs/esmart
