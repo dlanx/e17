@@ -6,9 +6,6 @@ inherit enlightenment eutils
 
 DESCRIPTION="next generation of Elogin, a login/display manager for X"
 HOMEPAGE="http://xcomputerman.com/pages/entrance.html"
-SRC_URI="${SRC_URI}
-	mirror://gentoo/extraicons-1.tar.bz2
-	http://wh0rd.de/gentoo/distfiles/extraicons-1.tar.bz2"
 
 IUSE="pam"
 
@@ -34,8 +31,6 @@ src_install() {
 	enlightenment_src_install
 	use pam || rm -r "${D}"/etc/pam.d
 	rm -rf "${D}"/etc/init.d
-	insinto /usr/share/entrance/images/sessions
-	doins "${WORKDIR}"/extraicons/*
 	exeinto /usr/share/entrance
 	doexe data/config/build_config.sh
 }
