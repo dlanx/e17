@@ -15,6 +15,7 @@ app-laptop/epbb -*
 app-misc/entropy -*
 app-misc/evidence -*
 app-misc/examine -*
+app-text/epdf -*
 dev-db/edb -*
 dev-libs/eet -*
 dev-libs/embryo -*
@@ -37,6 +38,7 @@ media-libs/epeg -*
 media-libs/epsilon -*
 media-libs/imlib2 -*
 media-libs/imlib2_loaders -*
+media-sound/emphasis -*
 media-sound/extrackt -*
 media-video/eclair -*
 media-video/elation -*
