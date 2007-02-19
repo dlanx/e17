@@ -1,4 +1,4 @@
-# Copyright 1999-2005 Gentoo Foundation
+# Copyright 1999-2007 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-gfx/entice/entice-0.9.3.004.ebuild,v 1.1 2005/08/20 05:18:21 vapier Exp $
 
