@@ -7,7 +7,7 @@
 #	/etc/portage/package.keywords/enlightenment
 #
 # To regen in overlay:
-# find -mindepth 2 -maxdepth 2 -type d '!' -wholename '*.svn*' -printf '%P -*\n' | sort
+# find -mindepth 2 -maxdepth 2 -type d '!' -wholename '*.svn*' -printf '%P -* **\n' | sort
 
 app-admin/empower -*
 app-editors/enscribe -*

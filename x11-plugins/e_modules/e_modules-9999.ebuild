@@ -16,6 +16,7 @@ DEPEND="x11-plugins/e_modules-alarm
 	x11-plugins/e_modules-emu
 	broken-modules? ( x11-plugins/e_modules-engage )
 	x11-plugins/e_modules-flame
+	x11-plugins/e_modules-forecasts
 	x11-plugins/e_modules-language
 	x11-plugins/e_modules-mail
 	x11-plugins/e_modules-mem
