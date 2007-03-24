@@ -12,6 +12,7 @@ IUSE="pam"
 RDEPEND="x11-libs/ecore
 	media-libs/edje
 	dev-libs/eet
+	dev-libs/efreet
 	dev-libs/embryo
 	x11-libs/evas
 	sys-apps/pmount
