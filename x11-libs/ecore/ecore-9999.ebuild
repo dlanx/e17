@@ -6,7 +6,7 @@ inherit enlightenment
 
 DESCRIPTION="core event abstraction layer and X abstraction layer (nice convenience library)"
 
-IUSE="X directfb fbcon opengl ssl curl threads dbus"
+IUSE="X directfb fbcon opengl ssl curl dbus"
 
 RDEPEND=">=x11-libs/evas-0.9.9
 	X? (
@@ -54,7 +54,6 @@ src_compile() {
 		--enable-ecore-file
 		--enable-ecore-desktop
 		$(use_enable curl)
-		$(use_enable threads pthreads)
 	"
 	enlightenment_src_compile
 }
