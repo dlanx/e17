@@ -10,7 +10,6 @@ IUSE="broken-modules"
 
 DEPEND="x11-plugins/e_modules-alarm
 	x11-plugins/e_modules-bling
-	broken-modules? ( x11-plugins/e_modules-calendar )
 	x11-plugins/e_modules-cpu
 	x11-plugins/e_modules-deskshow
 	x11-plugins/e_modules-emu
