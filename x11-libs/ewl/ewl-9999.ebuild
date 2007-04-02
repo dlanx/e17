@@ -12,7 +12,8 @@ RDEPEND=">=media-libs/edje-0.5.0
 	>=x11-libs/evas-0.9.9
 	>=x11-libs/ecore-0.9.9
 	>=media-libs/epsilon-0.3.0
-	>=media-libs/emotion-0.0.1"
+	>=media-libs/emotion-0.0.1
+	>=dev-libs/efreet-0.0.3"
 DEPEND="${RDEPEND}
 	doc? ( virtual/tetex )"
 
