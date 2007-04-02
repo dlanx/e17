@@ -9,6 +9,6 @@ for f in scripts/package.keywords.* ; do
 	echo "Regenerating ${f}"
 	echo "  -> ${cmd}"
 	egrep '^(#|$)' ${f} > ${f}.tmp
-	eval ${cmd} >> ${f}.tmp
+	eval "${cmd}" >> ${f}.tmp
 	mv ${f}.tmp ${f}
 done

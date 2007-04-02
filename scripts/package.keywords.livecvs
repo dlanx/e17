@@ -9,86 +9,85 @@
 # To regen in overlay:
 # find -mindepth 2 -maxdepth 2 -type d '!' -wholename '*.svn*' -printf '%P * ~* -* **\n' | sort
 
-app-admin/empower app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-app-editors/enscribe app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-app-laptop/epbb app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-app-misc/entropy app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-app-misc/evidence app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-app-misc/examine app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-app-text/epdf app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-dev-db/edb app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-dev-libs/eet app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-dev-libs/efreet app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-dev-libs/embryo app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-dev-libs/engrave app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-dev-libs/exml app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-dev-util/edje_editor app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-dev-util/edje_viewer app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-dev-util/enhance app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-dev-util/e_utils app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-mail-client/embrace app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-gfx/elicit app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-gfx/entice app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-gfx/ephoto app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-gfx/exhibit app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-gfx/imlib2_tools app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-gfx/retina app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-libs/edje app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-libs/emotion app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-libs/epeg app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-libs/epsilon app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-libs/imlib2 app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-libs/imlib2_loaders app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-sound/emphasis app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-sound/extrackt app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-video/eclair app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-video/elation app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-video/envision app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-media-video/rage app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-net-im/express app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-sci-calculators/equate app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-sys-fs/evfs app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-apps/elapse app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-libs/ecore app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-libs/esmart app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-libs/etk app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-libs/evas app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-libs/ewl app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-misc/engage app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-misc/enity app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-misc/enotes app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-misc/entrance app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-misc/entrance_edit_gui app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-misc/eosd app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-misc/estickies app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-misc/iconbar app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-alarm app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-bling app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-calendar app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-cpu app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-deskshow app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-emu app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-engage app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-flame app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-forecasts app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-language app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-mail app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-mem app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-mixer app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-moon app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-net app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-photo app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-rain app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-screenshot app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-slideshow app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-snow app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-taskbar app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-tclock app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-uptime app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-weather app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-winselector app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-plugins/e_modules-wlan app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-terms/enterminus app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-themes/gtk2-E17-bling app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
-x11-wm/e app-admin app-editors app-laptop app-misc app-text dev-db dev-libs dev-util mail-client media-gfx media-libs media-sound media-video net-im profiles sci-calculators scripts sys-fs x11-apps x11-libs x11-misc x11-plugins x11-terms x11-themes x11-wm ~* -* **
+app-admin/empower * ~* -* **
+app-editors/enscribe * ~* -* **
+app-laptop/epbb * ~* -* **
+app-misc/entropy * ~* -* **
+app-misc/evidence * ~* -* **
+app-misc/examine * ~* -* **
+app-text/epdf * ~* -* **
+dev-db/edb * ~* -* **
+dev-libs/eet * ~* -* **
+dev-libs/efreet * ~* -* **
+dev-libs/embryo * ~* -* **
+dev-libs/engrave * ~* -* **
+dev-libs/exml * ~* -* **
+dev-util/e_utils * ~* -* **
+dev-util/edje_editor * ~* -* **
+dev-util/edje_viewer * ~* -* **
+dev-util/enhance * ~* -* **
+mail-client/embrace * ~* -* **
+media-gfx/elicit * ~* -* **
+media-gfx/entice * ~* -* **
+media-gfx/ephoto * ~* -* **
+media-gfx/exhibit * ~* -* **
+media-gfx/imlib2_tools * ~* -* **
+media-gfx/retina * ~* -* **
+media-libs/edje * ~* -* **
+media-libs/emotion * ~* -* **
+media-libs/epeg * ~* -* **
+media-libs/epsilon * ~* -* **
+media-libs/imlib2 * ~* -* **
+media-libs/imlib2_loaders * ~* -* **
+media-sound/emphasis * ~* -* **
+media-sound/extrackt * ~* -* **
+media-video/eclair * ~* -* **
+media-video/elation * ~* -* **
+media-video/envision * ~* -* **
+media-video/rage * ~* -* **
+net-im/express * ~* -* **
+sci-calculators/equate * ~* -* **
+sys-fs/evfs * ~* -* **
+x11-apps/elapse * ~* -* **
+x11-libs/ecore * ~* -* **
+x11-libs/esmart * ~* -* **
+x11-libs/etk * ~* -* **
+x11-libs/evas * ~* -* **
+x11-libs/ewl * ~* -* **
+x11-misc/engage * ~* -* **
+x11-misc/enity * ~* -* **
+x11-misc/enotes * ~* -* **
+x11-misc/entrance * ~* -* **
+x11-misc/entrance_edit_gui * ~* -* **
+x11-misc/eosd * ~* -* **
+x11-misc/estickies * ~* -* **
+x11-misc/iconbar * ~* -* **
+x11-plugins/e_modules * ~* -* **
+x11-plugins/e_modules-alarm * ~* -* **
+x11-plugins/e_modules-bling * ~* -* **
+x11-plugins/e_modules-cpu * ~* -* **
+x11-plugins/e_modules-deskshow * ~* -* **
+x11-plugins/e_modules-emu * ~* -* **
+x11-plugins/e_modules-engage * ~* -* **
+x11-plugins/e_modules-flame * ~* -* **
+x11-plugins/e_modules-forecasts * ~* -* **
+x11-plugins/e_modules-language * ~* -* **
+x11-plugins/e_modules-mail * ~* -* **
+x11-plugins/e_modules-mem * ~* -* **
+x11-plugins/e_modules-mixer * ~* -* **
+x11-plugins/e_modules-moon * ~* -* **
+x11-plugins/e_modules-net * ~* -* **
+x11-plugins/e_modules-photo * ~* -* **
+x11-plugins/e_modules-rain * ~* -* **
+x11-plugins/e_modules-screenshot * ~* -* **
+x11-plugins/e_modules-slideshow * ~* -* **
+x11-plugins/e_modules-snow * ~* -* **
+x11-plugins/e_modules-taskbar * ~* -* **
+x11-plugins/e_modules-tclock * ~* -* **
+x11-plugins/e_modules-uptime * ~* -* **
+x11-plugins/e_modules-weather * ~* -* **
+x11-plugins/e_modules-winselector * ~* -* **
+x11-plugins/e_modules-wlan * ~* -* **
+x11-terms/enterminus * ~* -* **
+x11-themes/gtk2-E17-bling * ~* -* **
+x11-wm/e * ~* -* **

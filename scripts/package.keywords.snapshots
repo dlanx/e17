@@ -22,10 +22,10 @@ dev-libs/efreet ~*
 dev-libs/embryo ~*
 dev-libs/engrave ~*
 dev-libs/exml ~*
+dev-util/e_utils ~*
 dev-util/edje_editor ~*
 dev-util/edje_viewer ~*
 dev-util/enhance ~*
-dev-util/e_utils ~*
 mail-client/embrace ~*
 media-gfx/elicit ~*
 media-gfx/entice ~*
@@ -65,7 +65,6 @@ x11-misc/iconbar ~*
 x11-plugins/e_modules ~*
 x11-plugins/e_modules-alarm ~*
 x11-plugins/e_modules-bling ~*
-x11-plugins/e_modules-calendar ~*
 x11-plugins/e_modules-cpu ~*
 x11-plugins/e_modules-deskshow ~*
 x11-plugins/e_modules-emu ~*
