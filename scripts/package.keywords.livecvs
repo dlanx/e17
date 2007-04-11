@@ -61,6 +61,7 @@ x11-misc/entrance * ~* -* **
 x11-misc/entrance_edit_gui * ~* -* **
 x11-misc/eosd * ~* -* **
 x11-misc/estickies * ~* -* **
+x11-misc/expedite * ~* -* **
 x11-misc/iconbar * ~* -* **
 x11-plugins/e_modules * ~* -* **
 x11-plugins/e_modules-alarm * ~* -* **
