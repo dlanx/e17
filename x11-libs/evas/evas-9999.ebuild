@@ -6,7 +6,8 @@ inherit enlightenment
 
 DESCRIPTION="hardware-accelerated canvas API"
 
-IUSE="altivec cairo directfb gif fbcon jpeg mmx opengl png sse svg tiff X xpm"
+IUSE="altivec cairo directfb gif fbcon jpeg mmx opengl png sse svg tiff X xpm
+xcb"
 
 RDEPEND="X? ( x11-libs/libXrender )
 	opengl? ( virtual/opengl )
@@ -21,10 +22,16 @@ RDEPEND="X? ( x11-libs/libXrender )
 	png? ( media-libs/libpng )
 	tiff? ( media-libs/tiff )
 	xpm? ( x11-libs/libXpm )
-	svg? ( >=gnome-base/librsvg-2.14.0 x11-libs/cairo x11-libs/libsvg-cairo )"
-#	X? ( xcb-util )
+	svg? ( >=gnome-base/librsvg-2.14.0 x11-libs/cairo x11-libs/libsvg-cairo )
+	xcb? ( 
+		>=x11-libs/xcb-util-0.2
+		>=x11-libs/libxcb-1.0
+	)"
 DEPEND="${RDEPEND}
-	X? ( x11-proto/xextproto x11-proto/xproto )"
+	X? ( 
+		x11-proto/xextproto
+		x11-proto/xproto
+	)"
 
 src_compile() {
 	# other *very* fun options:
@@ -43,6 +50,8 @@ src_compile() {
 		$(use_enable directfb) \
 		$(use_enable fbcon fb) \
 		$(use_enable X xrender-x11) \
+		$(use_enable xcb software-xcb) \
+		$(use_enable xcb xrender-xcb) \
 		$(use_enable gif image-loader-gif) \
 		$(use_enable png image-loader-png) \
 		$(use_enable jpeg image-loader-jpeg) \
