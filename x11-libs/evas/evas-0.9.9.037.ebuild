@@ -11,7 +11,7 @@ IUSE="altivec cairo directfb gif fbcon jpeg mmx opengl png sse svg tiff X xpm"
 RDEPEND="X? ( x11-libs/libXrender )
 	opengl? ( virtual/opengl )
 	>=dev-libs/eet-0.9.10.037
-	>=dev-db/edb-1.0.5.007
+	edb? ( >=dev-db/edb-1.0.5.007 )
 	dev-util/pkgconfig
 	media-libs/fontconfig
 	cairo? ( >=x11-libs/cairo-1.2 )
@@ -52,7 +52,7 @@ src_compile() {
 		$(use_enable altivec cpu-altivec) \
 		--enable-buffer \
 		--enable-image-loader-eet \
-		--enable-image-loader-edb \
+		$(use_enable edb image-loader-edb) \
 		--enable-font-loader-eet \
 		--enable-cpu-c \
 		--enable-scale-sample \
