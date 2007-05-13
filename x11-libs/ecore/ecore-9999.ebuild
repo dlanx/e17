@@ -25,7 +25,7 @@ RDEPEND=">=x11-libs/evas-0.9.9
 	dbus? ( sys-apps/dbus )
 	opengl? ( virtual/opengl )
 	xcb? (
-		>=x11-libs/xcb-util-0.2
+		>x11-libs/xcb-util-0.2
 		>=x11-libs/libxcb-1.0
 	)"
 DEPEND="${RDEPEND}
