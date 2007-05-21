@@ -22,6 +22,7 @@ DEPEND="x11-plugins/e_modules-alarm
 	x11-plugins/e_modules-mixer
 	x11-plugins/e_modules-moon
 	x11-plugins/e_modules-net
+	x11-plugins/e_modules-news
 	x11-plugins/e_modules-photo
 	x11-plugins/e_modules-rain
 	x11-plugins/e_modules-screenshot
