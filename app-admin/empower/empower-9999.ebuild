@@ -13,4 +13,4 @@ DEPEND="dev-libs/eet
 	x11-libs/ecore
 	x11-libs/evas
 	media-libs/edje
-	|| ( x11-libs/etk x11-libs/ewl )"
+	x11-libs/ewl"
