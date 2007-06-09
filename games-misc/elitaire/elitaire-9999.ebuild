@@ -22,8 +22,8 @@ pkg_setup() {
 
 src_compile() {
 	export MY_ECONF="
-		--with-scores-group ${GAMES_GROUP}
-		--with-scores-user ${GAMES_USER}
+		--with-scores-group=${GAMES_GROUP}
+		--with-scores-user=${GAMES_USER}
 		--localstatedir=${GAMES_STATEDIR}
 	"
 	enlightenment_src_compile
