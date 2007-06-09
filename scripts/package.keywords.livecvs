@@ -26,6 +26,7 @@ dev-util/e_utils * ~* -* **
 dev-util/edje_editor * ~* -* **
 dev-util/edje_viewer * ~* -* **
 dev-util/enhance * ~* -* **
+games-misc/elitaire * ~* -* **
 mail-client/embrace * ~* -* **
 media-gfx/elicit * ~* -* **
 media-gfx/entice * ~* -* **
