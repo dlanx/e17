@@ -50,6 +50,7 @@ net-im/express ~*
 sci-calculators/equate ~*
 sys-fs/evfs ~*
 x11-apps/elapse ~*
+x11-libs/e_dbus ~*
 x11-libs/ecore ~*
 x11-libs/esmart ~*
 x11-libs/etk ~*
