@@ -7,7 +7,7 @@ inherit enlightenment
 
 DESCRIPTION="the e17 window manager"
 
-IUSE="pam"
+IUSE="pam dbus"
 
 RDEPEND="x11-libs/ecore
 	media-libs/edje
@@ -16,7 +16,8 @@ RDEPEND="x11-libs/ecore
 	dev-libs/embryo
 	x11-libs/evas
 	sys-apps/pmount
-	pam? ( sys-libs/pam )"
+	pam? ( sys-libs/pam )
+	dbus? ( x11-libs/e_dbus )"
 DEPEND="${RDEPEND}
 	x11-proto/xproto
 	sys-devel/libtool"
@@ -25,6 +26,12 @@ pkg_setup() {
 	if ! built_with_use x11-libs/evas png ; then
 		eerror "Re-emerge evas with USE=png"
 		die "Re-emerge evas with USE=png"
+	fi
+	if use dbus ; then
+		if ! built_with_use x11-libs/ecore dbus ; then
+			eerror "Re-emerge ecore with USE=dbus"
+			die "Re-emerge ecore with USE=dbus"
+		fi
 	fi
 	enlightenment_pkg_setup
 }
