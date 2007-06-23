@@ -6,7 +6,7 @@ inherit enlightenment
 
 DESCRIPTION="core event abstraction layer and X abstraction layer (nice convenience library)"
 
-IUSE="X directfb fbcon opengl ssl curl dbus xcb"
+IUSE="X directfb fbcon opengl ssl curl dbus"
 
 RDEPEND=">=x11-libs/evas-0.9.9
 	X? (
@@ -23,11 +23,7 @@ RDEPEND=">=x11-libs/evas-0.9.9
 	ssl? ( dev-libs/openssl )
 	curl? ( net-misc/curl )
 	dbus? ( sys-apps/dbus )
-	opengl? ( virtual/opengl )
-	xcb? (
-		>x11-libs/xcb-util-0.2
-		>=x11-libs/libxcb-1.0
-	)"
+	opengl? ( virtual/opengl )"
 DEPEND="${RDEPEND}
 	X? (
 		x11-proto/xproto
@@ -40,24 +36,24 @@ DEPEND="${RDEPEND}
 src_compile() {
 	export MY_ECONF="
 		--enable-ecore-txt
-		$(use_enable X ecore-x)
 		--enable-ecore-job
-		$(use_enable fbcon ecore-fb)
-		$(use_enable directfb ecore-dfb)
 		--enable-ecore-evas
-		$(use_enable opengl ecore-evas-gl)
-		$(use_enable X evas-xrender)
-		$(use_enable xcb ecore-x-xcb)
-		$(use_enable directfb ecore-evas-dfb)
-		$(use_enable fbcon ecore-evas-fb)
 		--enable-ecore-evas-buffer
 		--enable-ecore-con
-		$(use_enable ssl openssl)
 		--enable-ecore-ipc
-		$(use_enable dbus ecore-dbus)
 		--enable-ecore-config
 		--enable-ecore-file
 		--enable-ecore-desktop
+		--disable-ecore-x-xcb
+		$(use_enable X ecore-x)
+		$(use_enable fbcon ecore-fb)
+		$(use_enable directfb ecore-dfb)
+		$(use_enable opengl ecore-evas-gl)
+		$(use_enable X evas-xrender)
+		$(use_enable directfb ecore-evas-dfb)
+		$(use_enable fbcon ecore-evas-fb)
+		$(use_enable ssl openssl)
+		$(use_enable dbus ecore-dbus)
 		$(use_enable curl)
 	"
 	enlightenment_src_compile
