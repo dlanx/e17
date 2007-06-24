@@ -44,13 +44,15 @@ src_compile() {
 		--enable-ecore-config
 		--enable-ecore-file
 		--enable-ecore-desktop
+		--enable-inotify
 		--disable-ecore-x-xcb
 		$(use_enable X ecore-x)
+		$(use_enable X ecore-evas-x11-16)
+		$(use_enable X evas-xrender)
 		$(use_enable fbcon ecore-fb)
 		$(use_enable directfb ecore-dfb)
-		$(use_enable opengl ecore-evas-gl)
-		$(use_enable X evas-xrender)
 		$(use_enable directfb ecore-evas-dfb)
+		$(use_enable opengl ecore-evas-gl)
 		$(use_enable fbcon ecore-evas-fb)
 		$(use_enable ssl openssl)
 		$(use_enable dbus ecore-dbus)
