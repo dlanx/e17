@@ -38,7 +38,10 @@ pkg_setup() {
 
 src_compile() {
 	export MY_ECONF="
+		--enable-buffer
 		$(use_enable X software-x11)
+		$(use_enable X software-16-x11)
+		$(use_enable X xrender-x11)
 		$(use_enable opengl opengl-x11)
 		$(use_enable fbcon)
 	"
