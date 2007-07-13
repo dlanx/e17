@@ -10,5 +10,7 @@ DESCRIPTION="PDF viewer with widgets for EWL, ETK, and Evas"
 DEPEND=">=app-text/poppler-0.5.3
 	>=x11-libs/evas-0.9.9
 	>=x11-libs/ecore-0.9.9
-	>=x11-libs/ewl-0.0.4
-	>=x11-libs/etk-0.1.0"
+	>=x11-libs/ewl-0.5
+	>=x11-libs/etk-0.1
+	>=media-libs/imlib2-1.4
+	>=x11-libs/epsilon-0.3.0.010"
