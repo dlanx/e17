@@ -27,11 +27,5 @@ pkg_setup() {
 		eerror "Re-emerge evas with USE=png"
 		die "Re-emerge evas with USE=png"
 	fi
-	if use dbus ; then
-		if ! built_with_use x11-libs/ecore dbus ; then
-			eerror "Re-emerge ecore with USE=dbus"
-			die "Re-emerge ecore with USE=dbus"
-		fi
-	fi
 	enlightenment_pkg_setup
 }

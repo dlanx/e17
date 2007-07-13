@@ -6,7 +6,7 @@ inherit enlightenment
 
 DESCRIPTION="core event abstraction layer and X abstraction layer (nice convenience library)"
 
-IUSE="X directfb fbcon opengl ssl curl dbus"
+IUSE="X directfb fbcon opengl ssl curl"
 
 RDEPEND=">=x11-libs/evas-0.9.9
 	X? (
@@ -22,7 +22,6 @@ RDEPEND=">=x11-libs/evas-0.9.9
 	directfb? ( >=dev-libs/DirectFB-0.9.16 )
 	ssl? ( dev-libs/openssl )
 	curl? ( net-misc/curl )
-	dbus? ( sys-apps/dbus )
 	opengl? ( virtual/opengl )"
 DEPEND="${RDEPEND}
 	X? (
@@ -55,7 +54,6 @@ src_compile() {
 		$(use_enable opengl ecore-evas-gl)
 		$(use_enable fbcon ecore-evas-fb)
 		$(use_enable ssl openssl)
-		$(use_enable dbus ecore-dbus)
 		$(use_enable curl)
 	"
 	enlightenment_src_compile
