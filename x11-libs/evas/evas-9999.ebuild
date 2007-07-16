@@ -6,7 +6,8 @@ inherit enlightenment
 
 DESCRIPTION="hardware-accelerated canvas API"
 
-IUSE="altivec cairo directfb edb gif fbcon jpeg mmx opengl png sse svg tiff X xpm"
+IUSE="altivec cairo directfb edb gif fbcon jpeg mmx opengl png sse svg tiff X
+xpm sdl"
 
 RDEPEND="X? ( x11-libs/libXrender )
 	opengl? ( virtual/opengl )
@@ -21,7 +22,8 @@ RDEPEND="X? ( x11-libs/libXrender )
 	png? ( media-libs/libpng )
 	tiff? ( media-libs/tiff )
 	xpm? ( x11-libs/libXpm )
-	svg? ( >=gnome-base/librsvg-2.14.0 x11-libs/cairo x11-libs/libsvg-cairo )"
+	svg? ( >=gnome-base/librsvg-2.14.0 x11-libs/cairo x11-libs/libsvg-cairo )
+	sdl? ( media-libs/libsdl )"
 DEPEND="${RDEPEND}
 	X? (
 		x11-proto/xextproto
@@ -43,6 +45,7 @@ src_compile() {
 		$(use_enable X software-x11) \
 		$(use_enable X software-16-x11) \
 		$(use_enable X xrender-x11) \
+		$(use_enable sdl sdl) \
 		$(use_enable opengl gl-x11) \
 		$(use_enable directfb) \
 		$(use_enable fbcon fb) \
