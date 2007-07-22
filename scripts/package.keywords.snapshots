@@ -49,6 +49,7 @@ media-video/envision ~*
 media-video/rage ~*
 net-im/express ~*
 sci-calculators/equate ~*
+sci-misc/engycad ~*
 sys-fs/evfs ~*
 x11-apps/elapse ~*
 x11-libs/e_dbus ~*
