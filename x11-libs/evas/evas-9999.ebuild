@@ -7,7 +7,7 @@ inherit enlightenment
 DESCRIPTION="hardware-accelerated canvas API"
 
 IUSE="altivec cairo directfb edb gif fbcon jpeg mmx opengl png sse svg tiff X
-xpm sdl"
+xpm sdl threads"
 
 RDEPEND="X? ( x11-libs/libXrender )
 	opengl? ( virtual/opengl )
@@ -87,7 +87,7 @@ src_compile() {
 		--enable-convert-32-rgb-rot-0 \
 		--enable-convert-32-rgb-rot-270 \
 		--enable-convert-32-rgb-rot-90 \
-		--disable-pthreads
+		$(use_enable threads pthreads) \
 	"
 	enlightenment_src_compile
 }
