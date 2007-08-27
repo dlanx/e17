@@ -19,6 +19,7 @@ RDEPEND=">=x11-libs/evas-0.9.9
 		x11-libs/libXfixes
 		x11-libs/libXdamage
 	)
+	>=dev-libs/eet-0.9.10
 	directfb? ( >=dev-libs/DirectFB-0.9.16 )
 	sdl? ( media-libs/libsdl )
 	ssl? ( dev-libs/openssl )
