@@ -7,7 +7,25 @@ inherit enlightenment
 DESCRIPTION="graphical layout and animation library"
 HOMEPAGE="http://www.enlightenment.org/pages/edje.html"
 
+IUSE="vim"
+
 DEPEND=">=x11-libs/evas-0.9.9
 	>=x11-libs/ecore-0.9.9
 	>=dev-libs/eet-0.9.10
-	>=dev-libs/embryo-0.9.1"
+	>=dev-libs/embryo-0.9.1
+	app-editors/vim-core"
+
+src_compile() {
+	export MY_ECONF="
+		$(use_with vim vim /usr/share/vim)
+	"
+	enlightenment_src_compile
+}
+
+src_install() {
+	if use vim; then
+		insinto /usr/share/vim/vimfiles/syntax/
+		doins data/edc.vim edc.vim
+	fi
+	enlightenment_src_install
+}
