@@ -73,7 +73,6 @@ x11-plugins/e_modules-bling ~*
 x11-plugins/e_modules-cpu ~*
 x11-plugins/e_modules-deskshow ~*
 x11-plugins/e_modules-emu ~*
-x11-plugins/e_modules-engage ~*
 x11-plugins/e_modules-flame ~*
 x11-plugins/e_modules-forecasts ~*
 x11-plugins/e_modules-language ~*
