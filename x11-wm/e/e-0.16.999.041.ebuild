@@ -23,6 +23,8 @@ DEPEND="${RDEPEND}
 	x11-proto/xproto
 	sys-devel/libtool"
 
+S=${WORKDIR}/${MY_P}
+
 pkg_setup() {
 	if ! built_with_use x11-libs/evas png ; then
 		eerror "Re-emerge evas with USE=png"
