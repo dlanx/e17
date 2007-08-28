@@ -15,7 +15,6 @@ RDEPEND="x11-libs/ecore
 	dev-libs/efreet
 	dev-libs/embryo
 	x11-libs/evas
-	sys-apps/pmount
 	pam? ( sys-libs/pam )
 	dbus? ( x11-libs/e_dbus )"
 DEPEND="${RDEPEND}
