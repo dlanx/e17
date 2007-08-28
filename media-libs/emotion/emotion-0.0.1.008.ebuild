@@ -4,6 +4,8 @@
 
 inherit enlightenment
 
+SRC_URI="http://download.enlightenment.org/snapshots/2007-08-26/${P}.tar.gz"
+
 DESCRIPTION="video libraries for e17"
 
 IUSE="gstreamer xine"

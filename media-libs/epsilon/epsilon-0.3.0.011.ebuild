@@ -6,6 +6,8 @@ inherit enlightenment
 
 DESCRIPTION="nice thumbnail generator"
 
+SRC_URI="http://download.enlightenment.org/snapshots/2007-08-26/${P}.tar.gz"
+
 IUSE="xine"
 
 DEPEND=">=media-libs/imlib2-1.4.0.003
