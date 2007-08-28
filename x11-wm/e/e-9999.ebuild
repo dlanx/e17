@@ -9,12 +9,12 @@ DESCRIPTION="the e17 window manager"
 
 IUSE="pam dbus"
 
-RDEPEND="x11-libs/ecore
-	media-libs/edje
-	dev-libs/eet
-	dev-libs/efreet
-	dev-libs/embryo
-	x11-libs/evas
+RDEPEND=">=x11-libs/ecore-0.9.9.041
+	>=media-libs/edje-0.5.0.041
+	>=dev-libs/eet-0.9.10.041
+	>=dev-libs/efreet-0.0.3.006
+	>=dev-libs/embryo-0.9.1.041
+	>=x11-libs/evas-0.9.9.041
 	pam? ( sys-libs/pam )
 	dbus? ( x11-libs/e_dbus )"
 DEPEND="${RDEPEND}

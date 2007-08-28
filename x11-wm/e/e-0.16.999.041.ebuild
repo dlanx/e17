@@ -5,21 +5,23 @@
 inherit enlightenment
 
 MY_P="enlightenment-${PV}"
+SRC_URI="http://download.enlightenment.org/snapshots/2007-08-26/${MY_P}.tar.gz"
+
 DESCRIPTION="the e17 window manager"
-SRC_URI="http://enlightenment.freedesktop.org/files/${MY_P}.tar.gz"
 
-IUSE="pam"
+IUSE="pam dbus"
 
-RDEPEND="x11-libs/ecore
-	media-libs/edje
-	dev-libs/eet
-	dev-libs/embryo
-	x11-libs/evas
-	pam? ( sys-libs/pam )"
+RDEPEND=">=x11-libs/ecore-0.9.9.041
+	>=media-libs/edje-0.5.0.041
+	>=dev-libs/eet-0.9.10.041
+	>=dev-libs/efreet-0.0.3.006
+	>=dev-libs/embryo-0.9.1.041
+	>=x11-libs/evas-0.9.9.041
+	pam? ( sys-libs/pam )
+	dbus? ( x11-libs/e_dbus )"
 DEPEND="${RDEPEND}
-	x11-proto/xproto"
-
-S=${WORKDIR}/${MY_P}
+	x11-proto/xproto
+	sys-devel/libtool"
 
 pkg_setup() {
 	if ! built_with_use x11-libs/evas png ; then
