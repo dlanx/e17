@@ -7,14 +7,16 @@ inherit enlightenment
 DESCRIPTION="image loader plugins for Imlib 2"
 HOMEPAGE="http://www.enlightenment.org/pages/imlib2.html"
 
+IUSE="edb"
+
 RDEPEND=">=media-libs/imlib2-1.2.0
-	>=dev-db/edb-1.0.5
-	>=dev-libs/eet-0.9.9"
+	>=dev-libs/eet-0.9.9
+	edb? ( >=dev-db/edb-1.0.5.008 )"
 
 src_compile() {
 	export MY_ECONF="
-		--enable-eet
-		--enable-edb
+		--enable-eet \
+		$(use_enable edb) \
 	"
 	enlightenment_src_compile
 }

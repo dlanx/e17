@@ -1,8 +1,10 @@
 # Copyright 1999-2007 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-db/edb/edb-1.0.5.007.ebuild,v 1.1 2006/07/16 04:56:16 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-db/edb/edb-9999.ebuild,v 1.5 2005/06/30 22:26:48 vapier Exp $
 
 inherit enlightenment flag-o-matic
+
+SRC_URI="http://download.enlightenment.org/snapshots/2007-08-26/${P}.tar.gz"
 
 DESCRIPTION="Enlightenment Data Base"
 HOMEPAGE="http://www.enlightenment.org/Libraries/Edb/"
