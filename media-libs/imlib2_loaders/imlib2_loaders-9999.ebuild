@@ -9,9 +9,9 @@ HOMEPAGE="http://www.enlightenment.org/pages/imlib2.html"
 
 IUSE="edb"
 
-RDEPEND=">=media-libs/imlib2-1.2.0
-	>=dev-libs/eet-0.9.9
-	edb? ( >=dev-db/edb-1.0.5.008 )"
+RDEPEND=">=media-libs/imlib2-9999
+	>=dev-libs/eet-9999
+	edb? ( >=dev-db/edb-9999 )"
 
 # The enable-eet switch is apparently broken upstream when using disable-edb.
 # Looks like some sort of error in the configure.in scripts. Probably a

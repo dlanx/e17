@@ -8,12 +8,12 @@ DESCRIPTION="simple-to-use general purpose widget library"
 
 IUSE="X fbcon opengl"
 
-RDEPEND=">=media-libs/edje-0.5.0.041
-	>=x11-libs/evas-0.9.9.041
-	>=x11-libs/ecore-0.9.9.041
-	>=media-libs/epsilon-0.3.0.011
-	>=media-libs/emotion-0.0.1.008
-	>=dev-libs/efreet-0.0.3.006"
+RDEPEND=">=media-libs/edje-9999
+	>=x11-libs/evas-9999
+	>=x11-libs/ecore-9999
+	>=media-libs/epsilon-9999
+	>=media-libs/emotion-9999
+	>=dev-libs/efreet-9999"
 DEPEND="${RDEPEND}
 	doc? ( virtual/tetex )"
 

@@ -8,7 +8,7 @@ DESCRIPTION="core event abstraction layer and X abstraction layer (nice convenie
 
 IUSE="curl directfb fbcon opengl sdl ssl X"
 
-RDEPEND=">=x11-libs/evas-0.9.9.041
+RDEPEND=">=x11-libs/evas-9999
 	X? (
 		x11-libs/libXcursor
 		x11-libs/libXp
@@ -19,7 +19,7 @@ RDEPEND=">=x11-libs/evas-0.9.9.041
 		x11-libs/libXfixes
 		x11-libs/libXdamage
 	)
-	>=dev-libs/eet-0.9.10.041
+	>=dev-libs/eet-9999
 	directfb? ( >=dev-libs/DirectFB-0.9.16 )
 	sdl? ( media-libs/libsdl )
 	ssl? ( dev-libs/openssl )

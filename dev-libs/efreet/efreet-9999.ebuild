@@ -6,4 +6,4 @@ inherit enlightenment
 
 DESCRIPTION="library for handling of freedesktop.org specs (desktop/icon/theme/etc...)"
 
-DEPEND="x11-libs/ecore"
+DEPEND=">=x11-libs/ecore-9999"

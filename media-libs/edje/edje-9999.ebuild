@@ -9,10 +9,10 @@ HOMEPAGE="http://www.enlightenment.org/pages/edje.html"
 
 IUSE="vim"
 
-DEPEND=">=x11-libs/evas-0.9.9.041
-	>=x11-libs/ecore-0.9.9.041
-	>=dev-libs/eet-0.9.10.041
-	>=dev-libs/embryo-0.9.1.041
+DEPEND=">=x11-libs/evas-9999
+	>=x11-libs/ecore-9999
+	>=dev-libs/eet-9999
+	>=dev-libs/embryo-9999
 	app-editors/vim-core"
 
 src_compile() {

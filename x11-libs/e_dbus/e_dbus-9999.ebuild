@@ -12,6 +12,6 @@ ECVS_MODULE="e17/proto/e_dbus"
 # Removed EWL GUI due to lack of updated code in CVS
 #	X? ( x11-libs/ewl dev-libs/efreet )
 DEPEND="
-	>=x11-libs/ecore-0.9.9.041
+	>=x11-libs/ecore-9999
 	sys-apps/dbus
 	sys-apps/hal"

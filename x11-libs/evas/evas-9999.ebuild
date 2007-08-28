@@ -11,8 +11,8 @@ xpm sdl threads"
 
 RDEPEND="X? ( x11-libs/libXrender )
 	opengl? ( virtual/opengl )
-	>=dev-libs/eet-0.9.10.041
-	edb? ( >=dev-db/edb-1.0.5.008 )
+	>=dev-libs/eet-9999
+	edb? ( >=dev-db/edb-9999 )
 	dev-util/pkgconfig
 	media-libs/fontconfig
 	cairo? ( >=x11-libs/cairo-1.2 )

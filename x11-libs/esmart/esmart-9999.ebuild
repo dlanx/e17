@@ -7,8 +7,8 @@ inherit enlightenment
 DESCRIPTION="A collection of evas smart objects"
 
 DEPEND="sys-devel/libtool
-	>=x11-libs/evas-0.9.9.041
-	>=x11-libs/ecore-0.9.9.041
-	>=media-libs/edje-0.5.0.041
-	>=media-libs/epsilon-0.3.0.011
-	>=media-libs/imlib2-1.4.0.003"
+	>=x11-libs/evas-9999
+	>=x11-libs/ecore-9999
+	>=media-libs/edje-9999
+	>=media-libs/epsilon-9999
+	>=media-libs/imlib2-9999"
