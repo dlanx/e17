@@ -1,17 +1,20 @@
 # Copyright 1999-2007 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/evas/evas-0.9.9.030.ebuild,v 1.1 2006/07/16 05:03:06 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/evas/evas-9999.ebuild,v 1.17 2006/09/11 03:45:25 vapier Exp $
 
 inherit enlightenment
 
+SRC_URI="http://download.enlightenment.org/snapshots/2007-08-26/${P}.tar.gz"
+
 DESCRIPTION="hardware-accelerated canvas API"
 
-IUSE="altivec cairo directfb edb gif fbcon jpeg mmx opengl png sse svg tiff X xpm"
+IUSE="altivec cairo directfb edb gif fbcon jpeg mmx opengl png sse svg tiff X
+xpm sdl threads"
 
 RDEPEND="X? ( x11-libs/libXrender )
 	opengl? ( virtual/opengl )
-	>=dev-libs/eet-0.9.10.037
-	edb? ( >=dev-db/edb-1.0.5.007 )
+	>=dev-libs/eet-0.9.10.041
+	edb? ( >=dev-db/edb-1.0.5.008 )
 	dev-util/pkgconfig
 	media-libs/fontconfig
 	cairo? ( >=x11-libs/cairo-1.2 )
@@ -21,10 +24,13 @@ RDEPEND="X? ( x11-libs/libXrender )
 	png? ( media-libs/libpng )
 	tiff? ( media-libs/tiff )
 	xpm? ( x11-libs/libXpm )
-	svg? ( >=gnome-base/librsvg-2.14.0 x11-libs/cairo x11-libs/libsvg-cairo )"
-#	X? ( xcb-util )
+	svg? ( >=gnome-base/librsvg-2.14.0 x11-libs/cairo x11-libs/libsvg-cairo )
+	sdl? ( media-libs/libsdl )"
 DEPEND="${RDEPEND}
-	X? ( x11-proto/xextproto x11-proto/xproto )"
+	X? (
+		x11-proto/xextproto
+		x11-proto/xproto
+	)"
 
 src_compile() {
 	# other *very* fun options:
@@ -39,10 +45,14 @@ src_compile() {
 		$(use_enable sse cpu-mmx) \
 		$(use_enable sse cpu-sse) \
 		$(use_enable X software-x11) \
+		$(use_enable X software-16-x11) \
+		$(use_enable X xrender-x11) \
+		$(use_enable sdl sdl) \
 		$(use_enable opengl gl-x11) \
 		$(use_enable directfb) \
 		$(use_enable fbcon fb) \
-		$(use_enable X xrender-x11) \
+		--disable-software-xcb \
+		--disable-xrender-xcb \
 		$(use_enable gif image-loader-gif) \
 		$(use_enable png image-loader-png) \
 		$(use_enable jpeg image-loader-jpeg) \
@@ -79,7 +89,7 @@ src_compile() {
 		--enable-convert-32-rgb-rot-0 \
 		--enable-convert-32-rgb-rot-270 \
 		--enable-convert-32-rgb-rot-90 \
-		--disable-pthreads
+		$(use_enable threads pthreads) \
 	"
 	enlightenment_src_compile
 }

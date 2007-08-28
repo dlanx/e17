@@ -11,8 +11,8 @@ HOMEPAGE="http://www.enlightenment.org/pages/imlib2.html"
 
 IUSE="edb"
 
-RDEPEND=">=media-libs/imlib2-1.2.0
-	>=dev-libs/eet-0.9.9
+RDEPEND=">=media-libs/imlib2-1.4.0.003
+	>=dev-libs/eet-0.9.10.041
 	edb? ( >=dev-db/edb-1.0.5.008 )"
 
 # The enable-eet switch is apparently broken upstream when using disable-edb.
