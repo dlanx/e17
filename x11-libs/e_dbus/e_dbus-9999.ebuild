@@ -9,7 +9,9 @@ IUSE="X"
 DESCRIPTION="enlightenment interface to dbus"
 ECVS_MODULE="e17/proto/e_dbus"
 
+# Removed EWL GUI due to lack of updated code in CVS
+#	X? ( x11-libs/ewl dev-libs/efreet )
 DEPEND="
-	X? ( x11-libs/ewl dev-libs/efreet )
+	x11-libs/ecore
 	sys-apps/dbus
 	sys-apps/hal"
