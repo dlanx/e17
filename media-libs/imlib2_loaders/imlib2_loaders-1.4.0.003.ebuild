@@ -4,6 +4,8 @@
 
 inherit enlightenment
 
+SRC_URI="http://download.enlightenment.org/snapshots/2007-08-26/${P}.tar.gz"
+
 DESCRIPTION="image loader plugins for Imlib 2"
 HOMEPAGE="http://www.enlightenment.org/pages/imlib2.html"
 
