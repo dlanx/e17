@@ -11,11 +11,11 @@ IUSE="pam"
 
 RDEPEND="x11-libs/libXau
 	pam? ( virtual/pam )
-	>=dev-db/edb-1.0.5
-	>=x11-libs/evas-0.9.9
-	>=x11-libs/ecore-0.9.9
-	>=media-libs/edje-0.5.0
-	>=x11-libs/esmart-0.9.0"
+	>=x11-libs/evas-9999
+	>=x11-libs/ecore-9999
+	>=media-libs/edje-9999
+	>=x11-libs/esmart-9999
+	>=dev-libs/efreet-9999"
 DEPEND="${RDEPEND}
 	x11-libs/libXt"
 
