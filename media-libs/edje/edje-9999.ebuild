@@ -13,7 +13,7 @@ DEPEND=">=x11-libs/evas-9999
 	>=x11-libs/ecore-9999
 	>=dev-libs/eet-9999
 	>=dev-libs/embryo-9999
-	app-editors/vim-core"
+	vim? ( app-editors/vim-core )"
 
 src_compile() {
 	export MY_ECONF="
@@ -23,7 +23,7 @@ src_compile() {
 }
 
 src_install() {
-	if use vim; then
+	if use vim ; then
 		insinto /usr/share/vim/vimfiles/syntax/
 		doins data/edc.vim edc.vim
 	fi
