@@ -6,8 +6,7 @@ inherit enlightenment
 
 DESCRIPTION="hardware-accelerated canvas API"
 
-IUSE="altivec cairo directfb edb gif fbcon jpeg mmx opengl png sse svg tiff X
-xpm sdl threads"
+IUSE="altivec cairo directfb edb gif fbcon jpeg mmx opengl png sdl sse svg threads tiff X xpm"
 
 RDEPEND="X? ( x11-libs/libXrender )
 	opengl? ( virtual/opengl )
