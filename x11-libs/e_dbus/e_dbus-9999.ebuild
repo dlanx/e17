@@ -2,7 +2,6 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-ECVS_MODULE="e17/libs/e_dbus"
 inherit enlightenment
 
 DESCRIPTION="enlightenment interface to dbus"
