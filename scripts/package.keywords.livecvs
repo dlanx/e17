@@ -23,10 +23,10 @@ dev-libs/embryo * ~* **
 dev-libs/engrave * ~* **
 dev-libs/evolve * ~* **
 dev-libs/exml * ~* **
+dev-util/e_utils * ~* **
 dev-util/edje_editor * ~* **
 dev-util/edje_viewer * ~* **
 dev-util/enhance * ~* **
-dev-util/e_utils * ~* **
 games-misc/elitaire * ~* **
 mail-client/embrace * ~* **
 media-gfx/elicit * ~* **
@@ -52,8 +52,8 @@ sci-calculators/equate * ~* **
 sci-misc/engycad * ~* **
 sys-fs/evfs * ~* **
 x11-apps/elapse * ~* **
-x11-libs/ecore * ~* **
 x11-libs/e_dbus * ~* **
+x11-libs/ecore * ~* **
 x11-libs/esmart * ~* **
 x11-libs/etk * ~* **
 x11-libs/evas * ~* **

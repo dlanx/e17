@@ -1,5 +1,8 @@
 #!/bin/bash -e
 
+# force consistent sorting order
+export LC_ALL=C
+
 dir=${0%/*}
 cd ${dir}/..
 
