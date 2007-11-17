@@ -6,7 +6,7 @@ inherit enlightenment
 
 DESCRIPTION="Comprehensive test suite for Evas"
 
-IUSE="X opengl"
+IUSE="X opengl sdl"
 
 RDEPEND=">=x11-libs/evas-9999
 		"
@@ -14,7 +14,7 @@ DEPEND="${RDEPEND}"
 
 pkg_setup() {
 	local flag
-	for flag in opengl X ; do
+	for flag in X opengl sdl ; do
 		if use ${flag} ; then
 			if ! built_with_use x11-libs/evas ${flag} ; then
 				eerror "Re-emerge evas with USE=${flag}"
