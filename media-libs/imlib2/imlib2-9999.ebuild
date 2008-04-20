@@ -1,4 +1,4 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-libs/imlib2/imlib2-9999.ebuild,v 1.16 2006/11/06 15:11:36 vapier Exp $
 
@@ -6,7 +6,7 @@ inherit enlightenment toolchain-funcs
 
 MY_P=${P/_/-}
 DESCRIPTION="Version 2 of an advanced replacement library for libraries like libXpm"
-HOMEPAGE="http://www.enlightenment.org/Libraries/Imlib2/"
+HOMEPAGE="http://www.enlightenment.org/"
 
 IUSE="X bzip2 gif jpeg mmx mp3 png tiff zlib"
 
@@ -22,12 +22,14 @@ DEPEND="=media-libs/freetype-2*
 
 src_compile() {
 	# imlib2 has diff configure options for x86/amd64 mmx
-	local mymmx=""
+	local myconf=""
 	if [[ $(tc-arch) == "amd64" ]] ; then
-		mymmx="$(use_enable mmx amd64) --disable-mmx"
+		myconf="$(use_enable mmx amd64) --disable-mmx"
 	else
-		mymmx="--disable-amd64 $(use_enable mmx)"
+		myconf="--disable-amd64 $(use_enable mmx)"
 	fi
+
+	[[ $(gcc-major-version) -ge 4 ]] && myconf="${myconf} --enable-visibility-hiding"
 
 	export MY_ECONF="
 		$(use_with X x) \
@@ -38,7 +40,7 @@ src_compile() {
 		$(use_with zlib) \
 		$(use_with bzip2) \
 		$(use_with mp3 id3) \
-		${mymmx} \
+		${myconf} \
 	"
 	enlightenment_src_compile
 }
