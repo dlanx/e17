@@ -1,16 +1,15 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-libs/ecore/ecore-9999.ebuild,v 1.14 2006/10/29 03:27:50 vapier Exp $
 
+E_SNAP_DATE="2008-09-25"
 inherit enlightenment
-
-SRC_URI="http://download.enlightenment.org/snapshots/2007-08-26/${P}.tar.gz"
 
 DESCRIPTION="core event abstraction layer and X abstraction layer (nice convenience library)"
 
 IUSE="curl directfb fbcon opengl sdl ssl X"
 
-RDEPEND=">=x11-libs/evas-0.9.9.041
+RDEPEND=">=x11-libs/evas-0.9.9.050
 	X? (
 		x11-libs/libXcursor
 		x11-libs/libXp
@@ -21,7 +20,7 @@ RDEPEND=">=x11-libs/evas-0.9.9.041
 		x11-libs/libXfixes
 		x11-libs/libXdamage
 	)
-	>=dev-libs/eet-0.9.10.041
+	>=dev-libs/eet-1.1.0
 	directfb? ( >=dev-libs/DirectFB-0.9.16 )
 	sdl? ( media-libs/libsdl )
 	ssl? ( dev-libs/openssl )
