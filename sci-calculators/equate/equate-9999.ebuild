@@ -1,8 +1,8 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/sci-calculators/equate/equate-9999.ebuild,v 1.4 2005/11/03 01:31:04 vapier Exp $
 
-ECVS_MODULE="misc/equate"
+ESVN_SUB_PROJECT="MISC"
 inherit enlightenment
 
 DESCRIPTION="simple themeable calculator built off of ewl"
