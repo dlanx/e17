@@ -12,7 +12,7 @@ IUSE="pam dbus"
 RDEPEND=">=x11-libs/ecore-0.9.9.050
 	>=media-libs/edje-0.9.9.050
 	>=dev-libs/eet-1.1.0
-	>=dev-libs/efreet-0.5.050
+	>=dev-libs/efreet-0.5.0.050
 	>=dev-libs/embryo-0.9.9.050
 	>=x11-libs/evas-0.9.9.050
 	pam? ( sys-libs/pam )
