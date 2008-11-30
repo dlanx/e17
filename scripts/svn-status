@@ -18,8 +18,10 @@ has() { [[ " ${*:2} " == *" $1 "* ]] ; }
 for t in OLD BROKEN E-MODULES-EXTRA PROTO "" ; do
 	for d in $(get_svn_dirs $t) ; do
 		dd=$d
-		if [[ -z ${t} ]] ; then
-			[[ ! -e ${svn}/${d}/configure.ac ]] && continue
+		if [[ ! -e ${svn}/${t}/${d}/configure.ac ]] &&
+		   [[ ! -e ${svn}/${t}/${d}/configure.in ]]
+		then
+			continue
 		fi
 		[[ ${d}${t} == E-MODULES-EXTRA ]] && continue
 		[[ ${t} == E-MODULES-EXTRA ]] && dd=e_modules-$d
