@@ -15,7 +15,7 @@ line() {
 }
 has() { [[ " ${*:2} " == *" $1 "* ]] ; }
 
-for t in OLD BROKEN E-MODULES-EXTRA PROTO "" ; do
+for t in OLD BROKEN E-MODULES-EXTRA MISC PROTO "" ; do
 	for d in $(get_svn_dirs $t) ; do
 		dd=$d
 		if [[ ! -e ${svn}/${t}/${d}/configure.ac ]] &&
