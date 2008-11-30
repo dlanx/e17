@@ -1,8 +1,7 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header$
 
-ECVS_MODULE="e17/apps/elitaire"
 inherit enlightenment games
 
 DESCRIPTION="EFL based solitaire game"
