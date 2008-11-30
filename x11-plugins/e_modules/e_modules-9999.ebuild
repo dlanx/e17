@@ -11,17 +11,17 @@ DEPEND="x11-plugins/e_modules-alarm
 	x11-plugins/e_modules-calendar
 	x11-plugins/e_modules-cpu
 	x11-plugins/e_modules-deskshow
-	x11-plugins/e_modules-echo
+	x11-plugins/e_modules-diskio
 	x11-plugins/e_modules-efm_nav
 	x11-plugins/e_modules-efm_path
 	x11-plugins/e_modules-emu
 	x11-plugins/e_modules-execwatch
 	x11-plugins/e_modules-flame
 	x11-plugins/e_modules-forecasts
+	x11-plugins/e_modules-iiirk
 	x11-plugins/e_modules-language
 	x11-plugins/e_modules-mail
 	x11-plugins/e_modules-mem
-	x11-plugins/e_modules-mixer
 	x11-plugins/e_modules-moon
 	x11-plugins/e_modules-mpdule
 	x11-plugins/e_modules-net
@@ -35,6 +35,7 @@ DEPEND="x11-plugins/e_modules-alarm
 	x11-plugins/e_modules-snow
 	x11-plugins/e_modules-taskbar
 	x11-plugins/e_modules-tclock
+	x11-plugins/e_modules-tiling
 	x11-plugins/e_modules-uptime
 	x11-plugins/e_modules-weather
 	x11-plugins/e_modules-winselector
