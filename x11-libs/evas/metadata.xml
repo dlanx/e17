@@ -5,6 +5,9 @@
 <maintainer>
  <email>vapier@gentoo.org</email>
 </maintainer>
+<use>
+ <flag name='edb'>Support dev-db/edb</flag>
+</use>
 <longdescription>
 Evas is a hardware-accelerated canvas API for X-Windows that can draw 
 anti-aliased text, smooth super and sub-sampled images, alpha-blend, as well as 

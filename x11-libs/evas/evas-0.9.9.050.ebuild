@@ -1,20 +1,18 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-libs/evas/evas-9999.ebuild,v 1.17 2006/09/11 03:45:25 vapier Exp $
 
+E_SNAP_DATE="2008-09-25"
 inherit enlightenment
-
-SRC_URI="http://download.enlightenment.org/snapshots/2007-08-26/${P}.tar.gz"
 
 DESCRIPTION="hardware-accelerated canvas API"
 
-IUSE="altivec cairo directfb edb gif fbcon jpeg mmx opengl png sse svg tiff X
-xpm sdl threads"
+IUSE="altivec cairo directfb edb gif fbcon jpeg mmx opengl png sdl sse svg threads tiff X xpm"
 
 RDEPEND="X? ( x11-libs/libXrender )
 	opengl? ( virtual/opengl )
-	>=dev-libs/eet-0.9.10.041
-	edb? ( >=dev-db/edb-1.0.5.008 )
+	>=dev-libs/eet-1.1.0
+	edb? ( >=dev-db/edb-1.0.5.042 )
 	dev-util/pkgconfig
 	media-libs/fontconfig
 	cairo? ( >=x11-libs/cairo-1.2 )
