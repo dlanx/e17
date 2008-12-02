@@ -9,4 +9,4 @@ inherit enlightenment
 DESCRIPTION="e17 ${PN#e_modules-} module"
 
 DEPEND=">=media-libs/edje-0.5.0
-	>=x11-wm/e-0.16.999"
+	>=x11-wm/enlightenment-9999"

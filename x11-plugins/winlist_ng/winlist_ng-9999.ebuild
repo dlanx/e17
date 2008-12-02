@@ -8,6 +8,6 @@ inherit enlightenment subversion
 DESCRIPTION="${PN} plugin for e17"
 HOMEPAGE="http://code.google.com/p/itask-module"
 
-DEPEND=">=x11-wm/e-0.16.999.039
+DEPEND=">=x11-wm/enlightenment-9999
 	media-libs/edje
 	dev-libs/efreet"
