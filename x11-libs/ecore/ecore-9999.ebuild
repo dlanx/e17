@@ -1,4 +1,4 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-libs/ecore/ecore-9999.ebuild,v 1.14 2006/10/29 03:27:50 vapier Exp $
 
@@ -20,6 +20,7 @@ RDEPEND=">=x11-libs/evas-9999
 		x11-libs/libXdamage
 	)
 	>=dev-libs/eet-9999
+	>=dev-libs/eina-9999
 	directfb? ( >=dev-libs/DirectFB-0.9.16 )
 	sdl? ( media-libs/libsdl )
 	ssl? ( dev-libs/openssl )
