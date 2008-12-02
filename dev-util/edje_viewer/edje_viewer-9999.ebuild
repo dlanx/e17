@@ -10,4 +10,4 @@ DEPEND="x11-libs/ecore
 	x11-libs/evas
 	media-libs/edje
 	x11-libs/etk
-	x11-wm/e"
+	x11-wm/enlightenment"
