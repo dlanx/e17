@@ -1,4 +1,4 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-libs/evas/evas-9999.ebuild,v 1.17 2006/09/11 03:45:25 vapier Exp $
 
@@ -10,6 +10,7 @@ IUSE="altivec cairo directfb edb gif fbcon jpeg mmx opengl png sdl sse svg threa
 
 RDEPEND="X? ( x11-libs/libXrender )
 	opengl? ( virtual/opengl )
+	>=dev-libs/eina-9999
 	>=dev-libs/eet-9999
 	edb? ( >=dev-db/edb-9999 )
 	dev-util/pkgconfig
