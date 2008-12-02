@@ -9,6 +9,6 @@ inherit enlightenment
 DESCRIPTION="e17 ${PN#e_modules-} module"
 
 DEPEND="media-libs/edje
-	x11-wm/e
+	x11-wm/enlightenment
 	x11-misc/emprint
 	|| ( media-gfx/imagemagick media-gfx/scrot )"
