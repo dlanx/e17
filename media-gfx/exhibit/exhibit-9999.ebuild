@@ -12,6 +12,6 @@ DEPEND=">=x11-libs/evas-0.9.9
 	x11-libs/etk
 	dev-libs/eet
 	media-libs/epsilon
-	x11-wm/e
+	x11-wm/enlightenment
 	dev-libs/engrave
 	dev-libs/efreet"
