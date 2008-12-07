@@ -7,7 +7,7 @@ inherit enlightenment
 
 DESCRIPTION="the e17 window manager"
 
-IUSE="pam dbus"
+IUSE="pam"
 
 RDEPEND=">=x11-libs/ecore-9999
 	>=media-libs/edje-9999
@@ -16,8 +16,8 @@ RDEPEND=">=x11-libs/ecore-9999
 	>=dev-libs/embryo-9999
 	>=dev-libs/eina-9999
 	>=x11-libs/evas-9999
-	pam? ( sys-libs/pam )
-	dbus? ( >=x11-libs/e_dbus-9999 )"
+	>=x11-libs/e_dbus-9999
+	pam? ( sys-libs/pam )"
 DEPEND="${RDEPEND}
 	x11-proto/xproto
 	sys-devel/libtool"
