@@ -45,7 +45,7 @@ src_compile() {
 		--enable-ecore-ipc
 		--enable-ecore-config
 		--enable-ecore-file
-		--enable-ecore-desktop
+		--disable-ecore-desktop
 		--enable-inotify
 		--disable-ecore-x-xcb
 		$(use_enable X ecore-x)
