@@ -7,6 +7,7 @@ inherit enlightenment
 
 DESCRIPTION="the e17 window manager"
 
+SLOT="0.17"
 IUSE="pam dbus"
 
 RDEPEND=">=x11-libs/ecore-0.9.9.050
