@@ -1,4 +1,4 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-plugins/e_modules/e_modules-9999.ebuild,v 1.6 2006/09/14 15:21:04 vapier Exp $
 
@@ -6,7 +6,7 @@ ESVN_SUB_PROJECT="E-MODULES-EXTRA"
 ESVN_URI_APPEND="${PN#e_modules-}"
 inherit enlightenment
 
-DESCRIPTION="e17 ${PN#e_modules-} module"
+DESCRIPTION="Moon Clock module for e17"
 
 DEPEND=">=dev-libs/eet-0.9.10
 	>=x11-libs/evas-0.9.9
