@@ -3,5 +3,8 @@
 # $Header: $
 
   18 Apr 2009; evadim <evadim@evadim.ru> e_modules-iiirk-9999.ebuild:
+  Code style: add ESVN_SUB_PROJECT
+
+  18 Apr 2009; evadim <evadim@evadim.ru> e_modules-iiirk-9999.ebuild:
   fix DESCRIPTION
 
