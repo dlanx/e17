@@ -3,7 +3,7 @@
 <pkgmetadata>
 <herd>no-herd</herd>
 <maintainer>
- <email>vapier@gentoo.org</email>
+ <email>enlightenment@gentoo.org</email>
 </maintainer>
 <longdescription>
 eOSD is the "enlightened on-screen display" library. It's based on Ecore, Ecore X 
