@@ -93,6 +93,7 @@ x11-plugins/e_modules-uptime ~*
 x11-plugins/e_modules-weather ~*
 x11-plugins/e_modules-winselector ~*
 x11-plugins/e_modules-wlan ~*
+x11-plugins/edgar ~*
 x11-plugins/itask-ng ~*
 x11-plugins/winlist_ng ~*
 x11-terms/enterminus ~*
