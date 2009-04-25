@@ -96,6 +96,7 @@ x11-plugins/e_modules-wlan ~*
 x11-plugins/edgar ~*
 x11-plugins/extramenu ~*
 x11-plugins/itask-ng ~*
+x11-plugins/trash ~*
 x11-plugins/winlist_ng ~*
 x11-terms/enterminus ~*
 x11-themes/gtk2-E17-bling ~*
