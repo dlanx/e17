@@ -12,6 +12,7 @@
 app-admin/empower ~*
 app-laptop/epbb ~*
 app-misc/evidence ~*
+app-misc/exchange ~*
 app-text/epdf ~*
 dev-db/edb ~*
 dev-libs/eet ~*

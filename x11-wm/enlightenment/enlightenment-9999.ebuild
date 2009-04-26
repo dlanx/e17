@@ -1,14 +1,15 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-wm/e/e-9999.ebuild,v 1.7 2006/10/22 05:44:35 vapier Exp $
+# $Header: $
 
+EAPI=1
 ESVN_URI_APPEND="e"
 inherit enlightenment
 
 DESCRIPTION="the e17 window manager"
 
 SLOT="0.17"
-IUSE="pam"
+IUSE="pam +exchange"
 
 RDEPEND=">=x11-libs/ecore-9999
 	>=media-libs/edje-9999
@@ -18,7 +19,9 @@ RDEPEND=">=x11-libs/ecore-9999
 	>=dev-libs/eina-9999
 	>=x11-libs/evas-9999
 	>=x11-libs/e_dbus-9999
-	pam? ( sys-libs/pam )"
+	pam? ( sys-libs/pam )
+	exchange? ( >=app-misc/exchange-9999 )"
+
 DEPEND="${RDEPEND}
 	x11-proto/xproto
 	sys-devel/libtool"
