@@ -6,7 +6,7 @@ inherit enlightenment
 
 DESCRIPTION="core event abstraction layer and X abstraction layer (nice convenience library)"
 
-IUSE="curl directfb fbcon inotify opengl sdl ssl X"
+IUSE="curl directfb fbcon gnutls inotify opengl sdl ssl X"
 
 RDEPEND=">=x11-libs/evas-9999
 	X? (
@@ -49,8 +49,11 @@ src_compile() {
 		$(use_enable inotify)
 		$(use_enable X ecore-x)
 		$(use_enable opengl ecore-evas-opengl-x11)
+		$(use_enable directfb ecore-directfb)
 		$(use_enable directfb ecore-evas-directfb)
+		$(use_enable fbcon ecore-fb)
 		$(use_enable fbcon ecore-evas-fb)
+		$(use_enable sdl ecore-sdl)
 		$(use_enable sdl ecore-evas-software-sdl)
 		$(use_enable ssl openssl)
 		$(use_enable curl)

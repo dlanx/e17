@@ -44,7 +44,7 @@ src_compile() {
 		$(use_enable X software-x11) \
 		$(use_enable X software-16-x11) \
 		$(use_enable X xrender-x11) \
-		$(use_enable sdl sdl) \
+		$(use_enable sdl software-sdl) \
 		$(use_enable opengl gl-x11) \
 		$(use_enable directfb) \
 		$(use_enable fbcon fb) \
