@@ -4,14 +4,11 @@
 
 ESVN_SUB_PROJECT="E-MODULES-EXTRA"
 ESVN_URI_APPEND="${PN#e_modules-}"
-
 inherit enlightenment
 
 DESCRIPTION="System Tray"
 
-IUSE=""
-
 DEPEND="x11-libs/ecore
-		x11-libs/evas
-		x11-wm/enlightenment
-		media-libs/edje"
+	x11-libs/evas
+	x11-wm/enlightenment
+	media-libs/edje"
