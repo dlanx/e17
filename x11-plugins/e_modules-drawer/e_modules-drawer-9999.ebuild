@@ -6,9 +6,7 @@ ESVN_SUB_PROJECT="E-MODULES-EXTRA"
 ESVN_URI_APPEND="${PN#e_modules-}"
 inherit enlightenment
 
-DESCRIPTION="A drawer module, which is/will be able to present different types of information"
-
-IUSE=""
+DESCRIPTION="A drawer module to present different types of information"
 
 DEPEND=">=x11-wm/enlightenment-0.16.999
 	>=media-libs/edje-0.5.0"
