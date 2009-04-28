@@ -10,14 +10,6 @@ DESCRIPTION="E17 module to add extra menus to the main menu"
 HOMEPAGE="http://code.google.com/p/e17mods/wiki/ExtraMenu"
 
 LICENSE="GPL-2"
-SLOT="0"
-KEYWORDS=""
-IUSE=""
 
-DEPEND="
-	x11-wm/enlightenment
-	media-libs/edje
-"
-
-RDEPEND="${DEPEND}"
-
+DEPEND="x11-wm/enlightenment
+	media-libs/edje"
