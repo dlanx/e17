@@ -11,12 +11,5 @@ HOMEPAGE="http://code.google.com/p/e17mods/wiki/Trash"
 
 LICENSE="GPL-2"
 
-IUSE=""
-
-DEPEND="
-	x11-wm/enlightenment
-	media-libs/edje
-	"
-
-RDEPEND="${DEPEND}"
-
+DEPEND="x11-wm/enlightenment
+	media-libs/edje"
