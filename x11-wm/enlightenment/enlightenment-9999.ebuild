@@ -34,7 +34,7 @@ pkg_setup() {
 
 src_compile() {
 	export MY_ECONF="
-		$(use_enable exchange disable-conf-theme)
+		$(use_enable exchange conf-theme)
 	"
 	enlightenment_src_compile
 }
