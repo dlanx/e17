@@ -10,14 +10,6 @@ DESCRIPTION="E17 Edgar Gadgets Loader"
 HOMEPAGE="http://code.google.com/p/e17mods/wiki/Edgar"
 
 LICENSE="GPL-2"
-SLOT="0"
-KEYWORDS=""
-IUSE=""
 
-DEPEND="
-	x11-wm/enlightenment
-	media-libs/edje
-"
-
-RDEPEND="${DEPEND}"
-
+DEPEND="x11-wm/enlightenment
+	media-libs/edje"
