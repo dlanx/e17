@@ -20,7 +20,11 @@ RDEPEND=">=x11-libs/ecore-9999
 	>=x11-libs/e_dbus-9999
 	pam? ( sys-libs/pam )
 	exchange? ( >=app-misc/exchange-9999 )"
+
+# Masked modules due to theirs merge into 'e' tree, forcing against them, to
+# prevent any collisions
 DEPEND="${RDEPEND}
+	!x11-plugins/e_modules-systray
 	x11-proto/xproto
 	sys-devel/libtool"
 
