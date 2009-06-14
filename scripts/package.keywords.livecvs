@@ -44,6 +44,7 @@ sci-calculators/equate * ~* **
 x11-apps/elapse * ~* **
 x11-libs/e_dbus * ~* **
 x11-libs/ecore * ~* **
+x11-libs/elementary * ~* **
 x11-libs/esmart * ~* **
 x11-libs/etk * ~* **
 x11-libs/evas * ~* **
