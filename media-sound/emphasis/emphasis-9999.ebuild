@@ -2,6 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-sound/exhibit/emphasis-9999.ebuild,v 1.1 2005/12/31 08:52:10 vapier Exp $
 
+ESVN_SUB_PROJECT="OLD"
 inherit enlightenment
 
 DESCRIPTION="mpd front-end for e17 that uses etk"
