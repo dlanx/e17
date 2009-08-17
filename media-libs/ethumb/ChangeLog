@@ -1,0 +1,10 @@
+# ChangeLog for media-libs/ethumb
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*ethumb-9999 (17 Aug 2009)
+
+  17 Aug 2009; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  +ethumb-9999.ebuild:
+  New ebuild for ethumb, ebuild by Thomas (thomasg) Gstaedtner
+
