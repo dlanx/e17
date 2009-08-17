@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  17 Aug 2009; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  e_modules-drawer-9999.ebuild, metadata.xml:
+  Add required ethumb dependency and optional esmart-pixmap support
+
   18 Apr 2009; evadim <evadim@evadim.ru> +metadata.xml,
   +e_modules-drawer-9999.ebuild:
   initial commit
