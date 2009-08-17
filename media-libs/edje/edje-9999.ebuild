@@ -1,4 +1,4 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-libs/edje/edje-9999.ebuild,v 1.6 2006/07/16 05:29:42 vapier Exp $
 
@@ -9,11 +9,12 @@ HOMEPAGE="http://www.enlightenment.org/pages/edje.html"
 
 IUSE="vim-syntax"
 
-DEPEND=">=x11-libs/evas-9999
-	>=x11-libs/ecore-9999
+DEPEND="dev-lang/lua
 	>=dev-libs/eet-9999
 	>=dev-libs/eina-9999
-	>=dev-libs/embryo-9999"
+	>=dev-libs/embryo-9999
+	>=x11-libs/evas-9999
+	>=x11-libs/ecore-9999"
 
 src_compile() {
 	export MY_ECONF="
