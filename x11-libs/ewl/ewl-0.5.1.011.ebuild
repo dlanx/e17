@@ -1,4 +1,4 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-libs/ewl/ewl-9999.ebuild,v 1.12 2006/10/29 03:22:49 vapier Exp $
 
@@ -17,7 +17,7 @@ RDEPEND=">=media-libs/edje-0.5.0.041
 	>=media-libs/emotion-0.0.1.008
 	>=dev-libs/efreet-0.0.3.006"
 DEPEND="${RDEPEND}
-	doc? ( virtual/tetex )"
+	doc? ( virtual/latex-base )"
 
 pkg_setup() {
 	if ! built_with_use x11-libs/evas png ; then
