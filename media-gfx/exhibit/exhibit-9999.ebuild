@@ -1,4 +1,4 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-gfx/exhibit/exhibit-9999.ebuild,v 1.1 2005/12/31 08:52:10 vapier Exp $
 
@@ -14,5 +14,4 @@ DEPEND=">=x11-libs/evas-0.9.9
 	dev-libs/eet
 	media-libs/epsilon
 	x11-wm/enlightenment
-	dev-libs/engrave
 	dev-libs/efreet"
