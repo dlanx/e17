@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-misc/engage/engage-9999.ebuild,v 1.5 2005/04/10 21:02:56 vapier Exp $
 
-ESVN_SUB_PROJECT="MISC"
+ESVN_SUB_PROJECT="OLD/MISC"
 inherit enlightenment
 
 DESCRIPTION="nice bar thingy"

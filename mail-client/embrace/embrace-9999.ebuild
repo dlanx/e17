@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/mail-client/embrace/embrace-9999.ebuild,v 1.4 2006/08/25 07:15:33 vapier Exp $
 
-ESVN_SUB_PROJECT="OLD"
+ESVN_SUB_PROJECT="OLD/MISC"
 inherit enlightenment
 
 DESCRIPTION="mail-checker which is based on the EFL"
