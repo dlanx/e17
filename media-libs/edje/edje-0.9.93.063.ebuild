@@ -12,6 +12,7 @@ IUSE="vim-syntax"
 
 DEPEND="dev-lang/lua
 	>=dev-libs/eet-1.2.3
+	>=dev-libs/eina-0.9.9.063
 	>=dev-libs/embryo-0.9.9.063
 	>=x11-libs/ecore-0.9.9.063
 	>=x11-libs/evas-0.9.9.063"
