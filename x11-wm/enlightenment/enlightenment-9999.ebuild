@@ -8,18 +8,18 @@ inherit enlightenment
 DESCRIPTION="the e17 window manager"
 
 SLOT="0.17"
-IUSE="pam exchange"
+IUSE="exchange pam"
 
-RDEPEND=">=x11-libs/ecore-9999
-	>=media-libs/edje-9999
+RDEPEND="exchange? ( >=app-misc/exchange-9999 )
 	>=dev-libs/eet-9999
 	>=dev-libs/efreet-9999
-	>=dev-libs/embryo-9999
 	>=dev-libs/eina-9999
-	>=x11-libs/evas-9999
-	>=x11-libs/e_dbus-9999
+	>=dev-libs/embryo-9999
+	>=media-libs/edje-9999
 	pam? ( sys-libs/pam )
-	exchange? ( >=app-misc/exchange-9999 )"
+	>=x11-libs/ecore-9999
+	>=x11-libs/evas-9999
+	>=x11-libs/e_dbus-9999"
 
 # Masked modules due to theirs merge into 'e' tree, forcing against them, to
 # prevent any collisions
