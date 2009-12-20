@@ -7,13 +7,15 @@ inherit enlightenment
 
 DESCRIPTION="core event abstraction layer and X abstraction layer (nice convenience library)"
 
-IUSE="curl directfb fbcon inotify opengl sdl ssl X xcb"
+IUSE="curl directfb fbcon gnutls inotify opengl sdl ssl X xcb"
 
 RDEPEND="
 	directfb? ( >=dev-libs/DirectFB-0.9.16 )
 	>=dev-libs/eet-1.2.3
+	>=dev-libs/eina-0.9.9.063
 	ssl? ( dev-libs/openssl )
 	sdl? ( media-libs/libsdl )
+	gnutls? ( net-libs/gnutls )
 	curl? ( net-misc/curl )
 	opengl? ( virtual/opengl )
 	>=x11-libs/evas-0.9.9.063
@@ -53,6 +55,9 @@ src_compile() {
 		$(use_enable X ecore-x)
 		$(use_enable X ecore-evas-software-16-x11)
 		$(use_enable X ecore-evas-xrender-x11)
+		$(use_enable opengl ecore-evas-opengl-x11)
+		$(use_enable directfb ecore-directfb)
+		$(use_enable directfb ecore-evas-directfb)
 		$(use_enable fbcon ecore-fb)
 		$(use_enable fbcon ecore-evas-fb)
 		$(use_enable directfb ecore-evas-directfb)
@@ -62,6 +67,7 @@ src_compile() {
 		$(use_enable sdl ecore-sdl)
 		$(use_enable ssl openssl)
 		$(use_enable curl)
+		$(use_enable gnutls)
 	"
 	enlightenment_src_compile
 }
