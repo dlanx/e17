@@ -2,15 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
+E_SNAP_DATE="2009-12-02"
 inherit enlightenment
 
 DESCRIPTION="enlightenment interface to dbus"
 
-#IUSE="X"
-
-# Removed EWL GUI due to lack of updated code in CVS
-#	X? ( x11-libs/ewl dev-libs/efreet )
-DEPEND=">=x11-libs/ecore-9999
-	>=dev-libs/eina-9999
+DEPEND=">=dev-libs/eina-0.9.9.063
+	>=x11-libs/ecore-0.9.9.063
 	sys-apps/dbus
 	sys-apps/hal"
