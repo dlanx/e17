@@ -19,9 +19,9 @@ RDEPEND="edb? ( >=dev-db/edb-1.0.5.042 )
 	png? ( media-libs/libpng )
 	sdl? ( media-libs/libsdl )
 	tiff? ( media-libs/tiff )
-	xpm? ( x11-libs/libXpm )
-	svg? ( >=gnome-base/librsvg-2.14.0 x11-libs/cairo x11-libs/libsvg-cairo )
 	opengl? ( virtual/opengl )
+	svg? ( >=gnome-base/librsvg-2.14.0 x11-libs/cairo x11-libs/libsvg-cairo )
+	xpm? ( x11-libs/libXpm )
 	X? ( x11-libs/libXrender )"
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig

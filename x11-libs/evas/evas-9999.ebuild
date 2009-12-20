@@ -6,22 +6,22 @@ inherit enlightenment
 
 DESCRIPTION="hardware-accelerated canvas API"
 
-IUSE="altivec directfb edb gif fbcon jpeg mmx opengl png sdl sse svg threads tiff X xpm"
+IUSE="altivec directfb edb gif fbcon jpeg mmx opengl png sdl sse svg threads tiff X xcb xpm"
 
-RDEPEND="X? ( x11-libs/libXrender )
-	opengl? ( virtual/opengl )
-	>=dev-libs/eina-9999
-	>=dev-libs/eet-9999
-	edb? ( >=dev-db/edb-9999 )
-	media-libs/fontconfig
+RDEPEND="edb? ( >=dev-db/edb-9999 )
 	directfb? ( >=dev-libs/DirectFB-0.9.16 )
+	>=dev-libs/eet-9999
+	>=dev-libs/eina-9999
+	media-libs/fontconfig
 	gif? ( media-libs/giflib )
 	jpeg? ( media-libs/jpeg )
 	png? ( media-libs/libpng )
+	sdl? ( media-libs/libsdl )
 	tiff? ( media-libs/tiff )
-	xpm? ( x11-libs/libXpm )
+	opengl? ( virtual/opengl )
 	svg? ( >=gnome-base/librsvg-2.14.0 x11-libs/cairo x11-libs/libsvg-cairo )
-	sdl? ( media-libs/libsdl )"
+	xpm? ( x11-libs/libXpm )
+	X? ( x11-libs/libXrender )"
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig
 	X? (
@@ -37,19 +37,19 @@ src_compile() {
 	#  --enable-scale-smooth           enable sampling scaler code
 	#  --enable-pthreads               enable threaded renderer
 	export MY_ECONF="
-		--disable-cairo-x11 \
 		$(use_enable mmx cpu-mmx) \
 		$(use_enable sse cpu-mmx) \
 		$(use_enable sse cpu-sse) \
-		$(use_enable X software-xlib) \
+		$(use_enable X simple-x11) \
 		$(use_enable X software-16-x11) \
 		$(use_enable X xrender-x11) \
 		$(use_enable sdl software-sdl) \
+		$(use_enable sdl sdl-primitive) \
 		$(use_enable opengl gl-x11) \
 		$(use_enable directfb) \
 		$(use_enable fbcon fb) \
-		--disable-software-xcb \
-		--disable-xrender-xcb \
+		$(use_enable xcb software-xcb) \
+		$(use_enable xcb xrender-xcb) \
 		$(use_enable gif image-loader-gif) \
 		$(use_enable png image-loader-png) \
 		$(use_enable jpeg image-loader-jpeg) \
