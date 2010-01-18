@@ -1,4 +1,4 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-libs/evas/evas-9999.ebuild,v 1.17 2006/09/11 03:45:25 vapier Exp $
 
@@ -6,14 +6,15 @@ E_SNAP_DATE="2009-12-02"
 inherit enlightenment
 
 DESCRIPTION="hardware-accelerated canvas API"
+HOMEPAGE="http://trac.enlightenment.org/e/wiki/Evas"
 
-IUSE="altivec directfb edb gif fbcon jpeg mmx opengl png sdl sse svg threads tiff X xcb xpm"
+IUSE="altivec bidi directfb edb gif fbcon fontconfig jpeg mmx opengl png sdl sse svg threads tiff X xcb xpm"
 
 RDEPEND="edb? ( >=dev-db/edb-1.0.5.042 )
 	directfb? ( >=dev-libs/DirectFB-0.9.16 )
 	>=dev-libs/eet-1.2.3
 	>=dev-libs/eina-0.9.9.063
-	media-libs/fontconfig
+	fontconfig? ( media-libs/fontconfig )
 	gif? ( media-libs/giflib )
 	jpeg? ( media-libs/jpeg )
 	png? ( media-libs/libpng )
@@ -24,6 +25,7 @@ RDEPEND="edb? ( >=dev-db/edb-1.0.5.042 )
 	xpm? ( x11-libs/libXpm )
 	X? ( x11-libs/libXrender )"
 DEPEND="${RDEPEND}
+	bidi? ( dev-libs/fribidi )
 	dev-util/pkgconfig
 	X? (
 		x11-proto/xextproto
@@ -37,7 +39,9 @@ src_compile() {
 	#  --enable-scale-sample           enable sampling scaler code
 	#  --enable-scale-smooth           enable sampling scaler code
 	#  --enable-pthreads               enable threaded renderer
-	export MY_ECONF="
+	export MY_ECONF="${MY_ECONF} \
+		$(use_enable fontconfig) \
+		$(use_enable bidi fribidi) \
 		$(use_enable mmx cpu-mmx) \
 		$(use_enable sse cpu-mmx) \
 		$(use_enable sse cpu-sse) \
