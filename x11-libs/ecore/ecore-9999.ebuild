@@ -41,7 +41,6 @@ DEPEND="${RDEPEND}
 src_compile() {
 	export MY_ECONF="
 		--enable-ecore-txt
-		--enable-ecore-job
 		--enable-ecore-evas-software-buffer
 		--enable-ecore-evas
 		--enable-ecore-con
