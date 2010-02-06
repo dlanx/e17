@@ -1,6 +1,11 @@
 # ChangeLog for x11-wm/enlightenment
-# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+  06 Feb 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  enlightenment-9999.ebuild:
+  Exchange automagic has been fixed, dont disable theme support with
+  exchange USE flag
 
   20 Dec 2009; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
   +enlightenment-0.16.999.063.ebuild, enlightenment-9999.ebuild:

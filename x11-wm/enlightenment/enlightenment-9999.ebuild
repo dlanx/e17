@@ -1,4 +1,4 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -38,7 +38,7 @@ pkg_setup() {
 
 src_compile() {
 	export MY_ECONF="
-		$(use_enable exchange conf-theme)
+		$(use_enable exchange)
 	"
 	enlightenment_src_compile
 }
