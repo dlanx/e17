@@ -9,8 +9,7 @@ inherit enlightenment
 DESCRIPTION="Gadget to control active keyboard, keyboard layout, and layout variant"
 
 RDEPEND=">=x11-wm/enlightenment-9999
-	>=media-libs/edje-0.5.0
-	dev-libs/exml"
+	>=media-libs/edje-0.5.0"
 DEPEND="${RDEPEND}
 	x11-libs/libX11
 	x11-libs/libxkbfile"
