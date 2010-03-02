@@ -7,10 +7,9 @@ inherit enlightenment
 DESCRIPTION="hardware-accelerated canvas API"
 HOMEPAGE="http://trac.enlightenment.org/e/wiki/Evas"
 
-IUSE="altivec bidi directfb edb gif fbcon fontconfig jpeg mmx opengl png sdl sse svg threads tiff X xcb xpm"
+IUSE="altivec bidi directfb gif fbcon fontconfig jpeg mmx opengl png sdl sse svg threads tiff X xcb xpm"
 
-RDEPEND="edb? ( >=dev-db/edb-9999 )
-	directfb? ( >=dev-libs/DirectFB-0.9.16 )
+RDEPEND="directfb? ( >=dev-libs/DirectFB-0.9.16 )
 	>=dev-libs/eet-9999
 	>=dev-libs/eina-9999
 	fontconfig? ( media-libs/fontconfig )
@@ -63,7 +62,6 @@ src_compile() {
 		$(use_enable altivec cpu-altivec) \
 		--enable-buffer \
 		--enable-image-loader-eet \
-		$(use_enable edb image-loader-edb) \
 		--enable-font-loader-eet \
 		--enable-cpu-c \
 		--enable-scale-sample \
