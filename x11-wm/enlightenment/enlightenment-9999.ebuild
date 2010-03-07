@@ -2,6 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
+EAPI=2
+
 ESVN_URI_APPEND="e"
 inherit enlightenment
 
@@ -18,7 +20,7 @@ RDEPEND="exchange? ( >=app-misc/exchange-9999 )
 	>=media-libs/edje-9999
 	pam? ( sys-libs/pam )
 	>=x11-libs/ecore-9999
-	>=x11-libs/evas-9999
+	>=x11-libs/evas-9999[fontconfig,png]
 	>=x11-libs/e_dbus-9999"
 
 # Masked modules due to theirs merge into 'e' tree, forcing against them, to
@@ -28,17 +30,9 @@ DEPEND="${RDEPEND}
 	x11-proto/xproto
 	sys-devel/libtool"
 
-pkg_setup() {
-	if ! built_with_use x11-libs/evas png ; then
-		eerror "Re-emerge evas with USE=png"
-		die "Re-emerge evas with USE=png"
-	fi
-	enlightenment_pkg_setup
-}
-
-src_compile() {
+src_configure() {
 	export MY_ECONF="
 		$(use_enable exchange)
 	"
-	enlightenment_src_compile
+	enlightenment_src_configure
 }
