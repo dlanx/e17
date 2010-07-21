@@ -1,6 +1,10 @@
 # ChangeLog for x11-libs/ecore
-# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+  21 Jul 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  ecore-9999.ebuild:
+  Disable dropped econf option --enable-ecore-txt
 
   20 Dec 2009; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
   +ecore-0.9.9.063.ebuild:
