@@ -14,7 +14,6 @@ DEPEND="x11-plugins/e_modules-alarm
 	x11-plugins/e_modules-drawer
 	x11-plugins/e_modules-efm_nav
 	x11-plugins/e_modules-efm_path
-	x11-plugins/e_modules-emu
 	x11-plugins/e_modules-eweather
 	x11-plugins/e_modules-execwatch
 	x11-plugins/e_modules-flame
