@@ -4,7 +4,7 @@
 
 EAPI=2
 
-E_SNAP_DATE="2009-12-02"
+E_SNAP_DATE="2010-06-27"
 inherit enlightenment
 
 DESCRIPTION="the e17 window manager"
