@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-libs/evas/evas-9999.ebuild,v 1.17 2006/09/11 03:45:25 vapier Exp $
 
-E_SNAP_DATE="2009-12-02"
+E_SNAP_DATE="2010-06-27"
 inherit enlightenment
 
 DESCRIPTION="hardware-accelerated canvas API"
