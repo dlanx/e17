@@ -1,8 +1,8 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/x11-libs/ecore/ecore-9999.ebuild,v 1.14 2006/10/29 03:27:50 vapier Exp $
 
-E_SNAP_DATE="2009-12-02"
+E_SNAP_DATE="2010-06-27"
 inherit enlightenment
 
 DESCRIPTION="core event abstraction layer and X abstraction layer (nice convenience library)"
@@ -41,8 +41,6 @@ DEPEND="${RDEPEND}
 
 src_compile() {
 	export MY_ECONF="
-		--enable-ecore-txt
-		--enable-ecore-job
 		--enable-ecore-evas-software-buffer
 		--enable-ecore-evas
 		--enable-ecore-con
