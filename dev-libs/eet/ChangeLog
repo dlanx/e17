@@ -1,6 +1,12 @@
 # ChangeLog for dev-libs/eet
-# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+*eet-1.3.2 (26 Jul 2010)
+
+  26 Jul 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  -eet-1.2.3.ebuild, +eet-1.3.2.ebuild:
+  Version bump
 
 *eet-1.2.3 (19 Dec 2009)
 
