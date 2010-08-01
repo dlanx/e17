@@ -2,6 +2,10 @@
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  01 Aug 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org> eet-1.3.2.ebuild,
+  eet-9999.ebuild:
+  Update eet release and live ebuild USE flags to support more options
+
 *eet-1.3.2 (26 Jul 2010)
 
   26 Jul 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
