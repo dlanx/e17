@@ -9,14 +9,14 @@ inherit enlightenment
 DESCRIPTION="E file chunk reading/writing library"
 HOMEPAGE="http://trac.enlightenment.org/e/wiki/Eet"
 
-DEPEND=">=dev-libs/eina-9999
+RDEPEND=">=dev-libs/eina-9999
 	media-libs/jpeg
 	sys-libs/zlib
 	gnutls? ( net-libs/gnutls )
-	!gnutls? ( ssl? ( dev-libs/openssl ) )
-	test? ( dev-libs/check )"
-RDEPEND="${DEPEND}
-	test? ( dev-util/lcov )"
+	!gnutls? ( ssl? ( dev-libs/openssl ) )"
+DEPEND="${RDEPEND}
+	test? ( dev-libs/check
+		dev-util/lcov )"
 
 IUSE="debug examples gnutls ssl +threads"
 

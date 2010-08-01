@@ -12,14 +12,14 @@ SRC_URI="http://download.enlightenment.org/releases/${P}.tar.bz2"
 
 KEYWORDS="~amd64 ~x86"
 
-DEPEND="dev-libs/eina
+RDEPEND="dev-libs/eina
 	media-libs/jpeg
 	sys-libs/zlib
 	gnutls? ( net-libs/gnutls )
-	!gnutls? ( ssl? ( dev-libs/openssl ) )
-	test? ( dev-libs/check )"
-RDEPEND="${DEPEND}
-	test? ( dev-util/lcov )"
+	!gnutls? ( ssl? ( dev-libs/openssl ) )"
+DEPEND="${RDEPEND}
+	test? ( dev-libs/check
+		dev-util/lcov )"
 
 IUSE="debug examples gnutls ssl +threads"
 
