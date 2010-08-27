@@ -1,0 +1,10 @@
+# ChangeLog for sys-libs/ememoa
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*ememoa-9999 (27 Aug 2010)
+
+  27 Aug 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  +ememoa-9999.ebuild:
+  Initial commit of ememoa live ebuild
+
