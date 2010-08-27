@@ -18,7 +18,7 @@ DEPEND="${RDEPEND}
 	test? ( dev-libs/check
 		dev-util/lcov )"
 
-IUSE="debug examples gnutls ssl"
+IUSE="debug examples gnutls ssl +threads"
 
 src_configure() {
 	local SSL_FLAGS=""
@@ -53,6 +53,7 @@ src_configure() {
 		$(use_enable doc)
 		$(use_enable test tests)
 		$(use_enable test coverage)
+		$(use_enable threads posix-threads)
 		${SSL_FLAGS}
 		${MY_ECONF}"
 
