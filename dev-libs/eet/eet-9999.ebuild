@@ -18,7 +18,7 @@ DEPEND="${RDEPEND}
 	test? ( dev-libs/check
 		dev-util/lcov )"
 
-IUSE="debug examples gnutls ssl +threads"
+IUSE="debug examples gnutls ssl static-libs +threads"
 
 src_configure() {
 	local SSL_FLAGS=""
