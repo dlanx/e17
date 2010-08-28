@@ -6,3 +6,5 @@ inherit enlightenment
 
 DESCRIPTION="library to simplify the use of devices"
 HOMEPAGE="http://trac.enlightenment.org/e/wiki/Eeze"
+
+IUSE="static-libs"
