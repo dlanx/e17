@@ -1,4 +1,4 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-libs/edje/edje-9999.ebuild,v 1.6 2006/07/16 05:29:42 vapier Exp $
 
@@ -7,7 +7,7 @@ inherit enlightenment
 DESCRIPTION="graphical layout and animation library"
 HOMEPAGE="http://www.enlightenment.org/pages/edje.html"
 
-IUSE="vim-syntax"
+IUSE="static-libs vim-syntax"
 
 DEPEND="dev-lang/lua
 	>=dev-libs/eet-9999
@@ -15,6 +15,7 @@ DEPEND="dev-lang/lua
 	>=dev-libs/embryo-9999
 	>=x11-libs/evas-9999
 	>=x11-libs/ecore-9999"
+RDEPEND=${DEPEND}
 
 src_compile() {
 	export MY_ECONF="
