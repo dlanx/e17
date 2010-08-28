@@ -1,16 +1,41 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
+EAPI="2"
+
 inherit enlightenment
 
-DESCRIPTION="enlightenment interface to dbus"
+DESCRIPTION="Enlightenment's (Ecore) integration to DBus"
 
-#IUSE="X"
+IUSE="bluetooth connman hal libnotify ofono static-libs ukit"
 
-# Removed EWL GUI due to lack of updated code in CVS
-#	X? ( x11-libs/ewl dev-libs/efreet )
-DEPEND=">=x11-libs/ecore-9999
+RDEPEND="
 	>=dev-libs/eina-9999
+	>=x11-libs/ecore-9999
 	sys-apps/dbus
-	sys-apps/hal"
+	libnotify? ( >=x11-libs/evas-9999 )
+	hal? ( sys-apps/hal )
+	ukit? ( sys-power/upower sys-fs/udisks )
+"
+DEPEND="${RDEPEND}"
+
+src_configure() {
+	MY_ECONF="
+	$(use_enable bluetooth ebluez)
+	$(use_enable connman econnman)
+	$(use_enable doc)
+	$(use_enable hal ehal)
+	$(use_enable libnotify enotify)
+	$(use_enable ofono eofono)
+	$(use_enable static-libs static)
+	$(use_enable ukit eukit)
+	"
+	enlightenment_src_configure
+}
+
+src_install() {
+	enlightenment_src_install
+
+	use static-libs || rm $(find "${D}" -name '*.la')
+}
