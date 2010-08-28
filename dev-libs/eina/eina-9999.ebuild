@@ -58,7 +58,6 @@ src_configure() {
 	$(use_enable mmx cpu-mmx)
 	$(use_enable sse cpu-sse)
 	$(use_enable sse2 cpu-sse2)
-	$(use_enable static-libs static)
 	$(use_enable threads posix-threads)
 	$(use_enable !test amalgamation)
 	$(use_enable test e17)
@@ -71,10 +70,4 @@ src_configure() {
 	"
 
 	enlightenment_src_configure
-}
-
-src_install() {
-	enlightenment_src_install
-
-	use static-libs || rm -f $(find "${D}" -name '*.la')
 }
