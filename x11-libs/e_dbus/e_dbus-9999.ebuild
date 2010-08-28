@@ -28,14 +28,7 @@ src_configure() {
 	$(use_enable hal ehal)
 	$(use_enable libnotify enotify)
 	$(use_enable ofono eofono)
-	$(use_enable static-libs static)
 	$(use_enable ukit eukit)
 	"
 	enlightenment_src_configure
-}
-
-src_install() {
-	enlightenment_src_install
-
-	use static-libs || rm $(find "${D}" -name '*.la')
 }
