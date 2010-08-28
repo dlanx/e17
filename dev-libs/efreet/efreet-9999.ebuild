@@ -10,3 +10,5 @@ RDEPEND="
 	>=dev-libs/eina-9999
 	x11-misc/xdg-utils"
 DEPEND="${RDEPEND}"
+
+IUSE="static-libs"
