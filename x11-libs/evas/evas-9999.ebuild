@@ -91,7 +91,6 @@ src_configure() {
 		$(use_enable sdl software-sdl)
 		$(use_enable sse cpu-sse)
 		$(use_enable svg image-loader-svg static)
-		$(use_enable static-libs static)
 		$(use_enable tiff image-loader-tiff static)
 		$(use_enable threads pthreads)
 		$(use_enable threads async-events)
@@ -133,10 +132,4 @@ src_configure() {
 		--enable-convert-32-rgb-rot-90"
 
 	enlightenment_src_configure
-}
-
-src_install() {
-	enlightenment_src_install
-
-	use static-libs || rm -f $(find "${D}" -name '*.la')
 }
