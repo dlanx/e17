@@ -72,3 +72,9 @@ src_configure() {
 
 	enlightenment_src_configure
 }
+
+src_install() {
+	enlightenment_src_install
+
+	use static-libs || rm -f $(find "${D}" -name '*.la')
+}
