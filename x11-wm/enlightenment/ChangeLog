@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  30 Aug 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  enlightenment-9999.ebuild, +files/gentoo-sysactions.conf:
+  Update live ebuild, based on the suggested version of vapier on
+  enlightenment alias
+
   06 Feb 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
   enlightenment-9999.ebuild:
   Exchange automagic has been fixed, dont disable theme support with
