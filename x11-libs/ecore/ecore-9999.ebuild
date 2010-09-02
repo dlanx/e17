@@ -8,7 +8,7 @@ inherit enlightenment
 
 DESCRIPTION="Enlightenment's core event abstraction layer and OS abstraction layer"
 
-IUSE="curl directfb +evas fbcon glib gnutls inotify opengl sdl ssl static-libs +threads tslib +X xcb xinerama xprint xscreensaver"
+IUSE="curl directfb +evas fbcon glib gnutls +inotify opengl sdl ssl static-libs +threads tslib +X xcb xinerama xprint xscreensaver"
 
 RDEPEND="
 	>=dev-libs/eina-9999
