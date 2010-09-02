@@ -12,19 +12,19 @@ DESCRIPTION="Enlightenment DR17 window manager"
 SLOT="0.17"
 
 # The @ is just an anchor to expand from
-__EVRY_MODS="@apps @calc @files @settings @windows"
+__EVRY_MODS="+@apps +@calc +@files +@settings +@windows"
 __CONF_MODS="
-	@applications +@borders @clientlist +@colors +@desk +@desklock +@desks
-	+@dialogs +@display +@dpms @edgebindings +@engine +@fonts @icon-theme
-	+@imc @interaction +@intl @keybindings +@menus +@mime +@mouse
-	@mousebindings @mouse-cursor +@paths @performance +@profiles +@scale
-	@screensaver +@shelves +@startup +@theme @transitions @wallpaper
-	@wallpaper2 @window-display @window-focus @window-manipulation
-	@window-remembers +@winlist"
+	+@applications +@borders +@clientlist +@colors +@desk +@desklock +@desks
+	+@dialogs +@display +@dpms +@edgebindings +@engine +@fonts +@icon-theme
+	+@imc +@interaction +@intl @keybindings +@menus +@mime +@mouse
+	+@mousebindings +@mouse-cursor +@paths +@performance +@profiles +@scale
+	+@screensaver +@shelves +@startup +@theme +@transitions +@wallpaper
+	+@wallpaper2 +@window-display +@window-focus +@window-manipulation
+	+@window-remembers +@winlist"
 __NORM_MODS="
-	+@battery +@clock +@comp @connman +@cpufreq +@dropshadow +@fileman
-	+@fileman_opinfo @gadman +@ibar +@ibox @illume +@illume2 +@mixer
-	@msgbus @ofono +@pager +@start +@syscon +@systray +@temperature
+	+@battery +@clock +@comp +@connman +@cpufreq +@dropshadow +@fileman
+	+@fileman_opinfo +@gadman +@ibar +@ibox @illume +@illume2 +@mixer
+	+@msgbus +@ofono +@pager +@start +@syscon +@systray +@temperature
 	+@winlist +@wizard"
 IUSE_E_MODULES="${__EVRY_MODS//@/e_modules_everything-}
 	${__CONF_MODS//@/e_modules_conf-}
@@ -39,7 +39,7 @@ RDEPEND="exchange? ( >=app-misc/exchange-9999 )
 	>=dev-libs/eina-9999
 	>=x11-libs/ecore-9999[X,evas,inotify]
 	>=media-libs/edje-9999
-	>=x11-libs/e_dbus-9999[hal]
+	>=x11-libs/e_dbus-9999[hal,libnotify]
 	e_modules_connman? ( >=x11-libs/e_dbus-9999[connman] )
 	e_modules_ofono? ( >=x11-libs/e_dbus-9999[ofono] )
 	>=x11-libs/evas-9999[X,jpeg,png]
@@ -48,6 +48,11 @@ RDEPEND="exchange? ( >=app-misc/exchange-9999 )
 	spell? ( app-text/aspell )
 	e_modules_everything-calc? ( sys-devel/bc )"
 DEPEND="${RDEPEND}"
+
+src_prepare() {
+	epatch "${FILESDIR}"/quickstart.diff
+	enlightenment_src_prepare
+}
 
 src_configure() {
 	export MY_ECONF="
