@@ -8,7 +8,7 @@ inherit enlightenment
 
 DESCRIPTION="Enlightenment's (Ecore) integration to DBus"
 
-IUSE="bluetooth connman hal libnotify ofono static-libs ukit"
+IUSE="bluetooth connman +hal libnotify ofono static-libs ukit"
 
 RDEPEND="
 	>=dev-libs/eina-9999
