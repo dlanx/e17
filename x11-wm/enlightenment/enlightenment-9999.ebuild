@@ -43,7 +43,7 @@ RDEPEND="exchange? ( >=app-misc/exchange-9999 )
 	e_modules_connman? ( >=x11-libs/e_dbus-9999[connman] )
 	e_modules_ofono? ( >=x11-libs/e_dbus-9999[ofono] )
 	>=x11-libs/evas-9999[X,jpeg,png]
-	bluetooth? ( net-wireless/ebluez )
+	bluetooth? ( net-wireless/bluez )
 	udev? ( dev-libs/eeze )
 	spell? ( app-text/aspell )
 	e_modules_everything-calc? ( sys-devel/bc )"
