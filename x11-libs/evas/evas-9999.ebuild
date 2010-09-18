@@ -20,7 +20,6 @@ RDEPEND="
 	png? ( media-libs/libpng )
 	bidi? ( >=dev-libs/fribidi-0.19.1 )
 	directfb? ( >=dev-libs/DirectFB-0.9.16 )
-	opengl? ( x11-libs/ecore[X,opengl] )
 	sdl? ( media-libs/libsdl )
 	tiff? ( media-libs/tiff )
 	xpm? ( x11-libs/libXpm )
