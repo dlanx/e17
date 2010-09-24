@@ -24,7 +24,7 @@ __CONF_MODS="
 __NORM_MODS="
 	+@battery +@clock +@comp +@connman +@cpufreq +@dropshadow +@fileman
 	+@fileman_opinfo +@gadman +@ibar +@ibox @illume +@illume2 +@mixer
-	+@msgbus +@ofono +@pager +@start +@syscon +@systray +@temperature
+	+@msgbus @ofono +@pager +@start +@syscon +@systray +@temperature
 	+@winlist +@wizard"
 IUSE_E_MODULES="${__EVRY_MODS//@/e_modules_everything-}
 	${__CONF_MODS//@/e_modules_conf-}
