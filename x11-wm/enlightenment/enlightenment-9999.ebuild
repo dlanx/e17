@@ -26,7 +26,7 @@ __NORM_MODS="
 	+@fileman_opinfo +@gadman +@ibar +@ibox @illume +@illume2 +@mixer
 	+@msgbus @ofono +@pager +@start +@syscon +@systray +@temperature
 	+@winlist +@wizard"
-IUSE_E_MODULES="${__EVRY_MODS//@/e_modules_everything-}
+IUSE_E_MODULES="+e_modules_everything ${__EVRY_MODS//@/e_modules_everything-}
 	${__CONF_MODS//@/e_modules_conf-}
 	${__NORM_MODS//@/e_modules_}"
 
