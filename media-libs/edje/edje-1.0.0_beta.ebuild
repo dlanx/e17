@@ -38,5 +38,6 @@ src_install() {
 		insinto /usr/share/vim/vimfiles/syntax/
 		doins data/edc.vim edc.vim
 	fi
+	dodoc utils/{gimp-edje-export.py,inkscape2edc} || die
 	enlightenment_src_install
 }
