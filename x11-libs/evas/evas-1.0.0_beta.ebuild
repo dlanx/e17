@@ -77,7 +77,9 @@ src_configure() {
 		MY_ECONF+=" $(use_enable cache word-cache)"
 	fi
 
-	MY_ECONF="
+	#async-render is considered experimental
+	#$(use_enable threads async-render)
+	MY_ECONF="--disable-async-render
 		$(use_enable altivec cpu-altivec)
 		$(use_enable bidi fribidi)
 		$(use_enable directfb)
@@ -96,10 +98,8 @@ src_configure() {
 		$(use_enable threads pthreads)
 		$(use_enable threads async-events)
 		$(use_enable threads async-preload)
-		$(use_enable threads async-render)
 		$(use_enable X software-xlib static)
 		$(use_enable X xrender-x11 static)
-		$(use_enable X software-16-x11 static)
 		$(use_enable xpm image-loader-xpm static)
 		--enable-evas-magic-debug \
 		--enable-static-software-generic \
