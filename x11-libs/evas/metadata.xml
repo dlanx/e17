@@ -7,6 +7,7 @@
 </maintainer>
 <use>
  <flag name='edb'>Support dev-db/edb</flag>
+ <flag name='eet'>Support dev-libs/eet</flag>
  <flag name='cache'>Enable experimental caching to speed up rendering</flag>
 </use>
 <longdescription>
