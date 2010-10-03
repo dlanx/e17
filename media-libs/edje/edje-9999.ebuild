@@ -7,7 +7,7 @@ inherit enlightenment
 DESCRIPTION="graphical layout and animation library"
 HOMEPAGE="http://www.enlightenment.org/pages/edje.html"
 
-IUSE="static-libs vim-syntax"
+IUSE="debug cache static-libs vim-syntax"
 
 DEPEND="dev-lang/lua
 	>=dev-libs/eet-9999
@@ -19,6 +19,9 @@ RDEPEND=${DEPEND}
 
 src_compile() {
 	export MY_ECONF="
+		$(use_enable cache edje-program-cache)
+		$(use_enable cache edje-calc-cache)
+		$(use_enable !debug amalgamation)
 		$(use_with vim-syntax vim /usr/share/vim)
 	"
 	enlightenment_src_compile
