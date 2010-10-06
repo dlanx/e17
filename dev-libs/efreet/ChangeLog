@@ -2,6 +2,10 @@
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  06 Oct 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  -efreet-0.5.0.49898.ebuild:
+  Drop old snapshot of efreet
+
 *efreet-1.0.0_beta (03 Oct 2010)
 
   03 Oct 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
