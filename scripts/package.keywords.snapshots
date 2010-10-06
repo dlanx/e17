@@ -16,6 +16,7 @@ app-misc/exchange ~*
 app-text/epdf ~*
 dev-db/edb ~*
 dev-libs/eet ~*
+dev-libs/eeze ~*
 dev-libs/efreet ~*
 dev-libs/eina ~*
 dev-libs/embryo ~*
