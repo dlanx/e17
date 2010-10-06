@@ -12,7 +12,7 @@ DESCRIPTION="Enlightenment's (Ecore) integration to DBus"
 SRC_URI="http://download.enlightenment.org/releases/${MY_P}.tar.bz2"
 
 KEYWORDS="~amd64 ~x86"
-IUSE="bluetooth connman +hal +libnotify ofono static-libs ukit"
+IUSE="bluetooth +connman +hal +libnotify ofono static-libs ukit"
 
 RDEPEND=">=dev-libs/eina-1.0.0_beta
 	>=x11-libs/ecore-1.0.0_beta
