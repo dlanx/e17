@@ -13,7 +13,7 @@ inherit enlightenment
 
 DESCRIPTION="Python bindings for E_DBUS library"
 LICENSE="LGPL-2.1"
-IUSE=""
+IUSE="static-libs"
 
 RDEPEND=">=x11-libs/e_dbus-9999
 	dev-python/dbus-python"
