@@ -1,24 +1,43 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-NEED_PYTHON="2.4"
+EAPI=2
+
+E_CYTHON=1
+SUPPORT_PYTHON_ABIS=1
+RESTRICT_PYTHON_ABIS="3.*"
+
 ESVN_SUB_PROJECT="BINDINGS/python"
 
-inherit enlightenment distutils
+inherit enlightenment
 
 DESCRIPTION="Python bindings for ecore"
 LICENSE="LGPL-2.1"
-IUSE=""
+IUSE="evas static-libs X"
 
-RDEPEND=">=dev-python/python-evas-9999
-	>=x11-libs/ecore-9999"
+RDEPEND=">=x11-libs/ecore-9999[evas?,X?]"
 DEPEND="${RDEPEND}
-	>=dev-python/cython-0.9.8
-	dev-python/pyrex
-	dev-util/pkgconfig
-	>=dev-python/setuptools-0.6_rc9"
+	evas? ( >=dev-python/python-evas-9999 )
+	dev-util/pkgconfig"
 
-src_unpack() {
-	enlightenment_src_unpack
+src_prepare() {
+	enlightenment_src_prepare
+	python_copy_sources
+}
+
+src_configure() {
+	MY_ECONF="$(use_enable evas ecore-evas)
+		$(use_enable X ecore-x)
+		--disable-ecore-imf
+		--disable-ecore-win32"
+	python_execute_function -s enlightenment_src_configure
+}
+
+src_compile() {
+	python_execute_function -s enlightenment_src_compile
+}
+
+src_install() {
+	python_execute_function -s enlightenment_src_install
 }
