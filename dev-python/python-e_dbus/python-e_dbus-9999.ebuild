@@ -1,21 +1,38 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-NEED_PYTHON="2.4"
+EAPI=2
+
+E_PYTHON=1
+SUPPORT_PYTHON_ABIS="1"
+RESTRIC_PYTHON_ABIS="3.*"
 ESVN_SUB_PROJECT="BINDINGS/python"
 
-inherit enlightenment distutils
+inherit enlightenment
 
 DESCRIPTION="Python bindings for E_DBUS library"
 LICENSE="LGPL-2.1"
 IUSE=""
 
-RDEPEND=">=x11-libs/e_dbus-9999"
+RDEPEND=">=x11-libs/e_dbus-9999
+	dev-python/dbus-python"
 DEPEND="${RDEPEND}
-	dev-util/pkgconfig
-	>=dev-python/setuptools-0.6_rc9"
+	dev-util/pkgconfig"
 
-src_unpack() {
-	enlightenment_src_unpack
+src_prepare() {
+	enlightenment_src_prepare
+	python_copy_sources
+}
+
+src_configure() {
+	python_execute_function -s enlightenment_src_configure
+}
+
+src_compile() {
+	python_execute_function -s enlightenment_src_compile
+}
+
+src_install() {
+	python_execute_function -s enlightenment_src_install
 }
