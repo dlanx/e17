@@ -1,0 +1,10 @@
+# ChangeLog for x11-plugins/e_modules-itask-ng
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*e_modules-itask-ng-9999 (23 Oct 2010)
+
+  23 Oct 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  +e_modules-itask-ng-9999.ebuild, +metadata.xml:
+  Initial commit of e_modules-itask-ng (previously was itask-ng)
+
