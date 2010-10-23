@@ -1,25 +1,41 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-NEED_PYTHON="2.4"
+EAPI=2
+
+E_CYTHON=1
+SUPPORT_PYTHON_ABIS=1
+RESTRICT_PYTHON_ABIS="3.*"
+
 ESVN_SUB_PROJECT="BINDINGS/python"
 
-inherit enlightenment distutils
+inherit enlightenment
 
 DESCRIPTION="Python bindings for elementary library"
 HOMEPAGE="http://www.enlightenment.org/"
 LICENSE="|| ( GPL-3 LGPL-3 )"
-IUSE=""
+IUSE="static-libs"
 
-RDEPEND=">=dev-libs/eina-9999
-	x11-libs/elementary"
+RDEPEND=">=x11-libs/elementary-9999"
 
 DEPEND="${RDEPEND}
-	>=dev-util/pkgconfig-0.9.0
-	dev-python/cython
-	dev-python/pyrex"
+	dev-util/pkgconfig
+	>=dev-python/python-evas-9999"
 
-src_unpack() {
-	enlightenment_src_unpack
+src_prepare() {
+	enlightenment_src_prepare
+	python_copy_sources
+}
+
+src_configure() {
+	python_execute_function -s enlightenment_src_configure
+}
+
+src_compile() {
+	python_execute_function -s enlightenment_src_compile
+}
+
+src_install() {
+	python_execute_function -s enlightenment_src_install
 }
