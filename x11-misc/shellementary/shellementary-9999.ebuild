@@ -1,29 +1,37 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-NEED_PYTHON="2.4"
+EAPI=2
+
+E_PYTHON=1
+SUPPORT_PYTHON_ABIS=1
+RESTRICT_PYTHON_ABIS="3.*"
+
 ESVN_SUB_PROJECT="PROTO"
-inherit enlightenment python distutils
+
+inherit enlightenment
 
 DESCRIPTION="Tool to display Elementary dialogs from the command line and shell scripts"
 
-RDEPEND=">=x11-libs/ecore-9999
-	>=dev-python/python-evas-9999
-	>=x11-libs/elementary-9999
-	>=media-libs/edje-9999"
+IUSE="static-libs"
 
-src_unpack() {
-	enlightenment_src_unpack
+RDEPEND=">=x11-libs/elementary-9999"
+DEPEND=${RDEPEND}
+
+src_prepare() {
+	enlightenment_src_prepare
+	python_copy_sources
+}
+
+src_configure() {
+	python_execute_function -s enlightenment_src_configure
 }
 
 src_compile() {
-	#distutils_src_compile
-	${python} setup.py build --prefix="${T}/usr"
-
+	python_execute_function -s enlightenment_src_compile
 }
 
 src_install() {
-	#distutils_src_install
-	${python} setup.py install --prefix="${D}/usr"
+	python_execute_function -s enlightenment_src_install
 }
