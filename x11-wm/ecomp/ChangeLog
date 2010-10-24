@@ -1,0 +1,10 @@
+# ChangeLog for x11-wm/ecomp
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*ecomp-9999 (24 Oct 2010)
+
+  24 Oct 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  +ecomp-9999.ebuild, +files/fix-eina-dependency.patch, +metadata.xml:
+  Initial addition of ecomp - a compiz for e17
+
