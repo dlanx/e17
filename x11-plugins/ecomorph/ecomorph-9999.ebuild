@@ -32,6 +32,6 @@ pkg_postinst() {
 	elog "if you want to start ecomp with the ecomorph module,"
 	elog "then you either need xterm installed or a symlink for"
 	elog "it in your path, since ecomorph uses the xterm command"
-	elog "to start ecomp. You can savely close the appearing window"
+	elog "to start ecomp. You can safely close the appearing window"
 	elog "after starting ecomp and it will run in the background"
 }
