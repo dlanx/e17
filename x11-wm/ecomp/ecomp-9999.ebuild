@@ -11,7 +11,7 @@ inherit autotools enlightenment flag-o-matic git
 DESCRIPTION="e17 window manager with compiz"
 
 SLOT="0"
-IUSE="inotify jpeg static-libs"
+IUSE="+inotify jpeg static-libs"
 
 DEPEND="x11-proto/xproto
 	sys-devel/libtool"
