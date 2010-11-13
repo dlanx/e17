@@ -18,7 +18,6 @@ DEPEND="x11-proto/xproto
 RDEPEND="!x11-wm/compiz"
 
 src_prepare() {
-	epatch "${FILESDIR}"/fix-eina-dependency.patch
 	append-ldflags $(no-as-needed)
 	eautoreconf
 }
