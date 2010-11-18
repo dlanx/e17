@@ -7,7 +7,7 @@ inherit enlightenment
 
 DESCRIPTION="An EFL Based Terminal"
 
-DEPEND="x11-libs/ecore
+DEPEND="dev-libs/ecore
 	dev-libs/evas
 	media-libs/imlib2
 	net-misc/curl"

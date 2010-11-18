@@ -12,7 +12,7 @@ IUSE="X fbcon opengl"
 
 RDEPEND=">=media-libs/edje-0.5.0.041
 	>=dev-libs/evas-0.9.9.041
-	>=x11-libs/ecore-0.9.9.041
+	>=dev-libs/ecore-0.9.9.041
 	>=media-libs/epsilon-0.3.0.011
 	>=media-libs/emotion-0.0.1.008
 	>=dev-libs/efreet-0.0.3.006"
@@ -28,7 +28,7 @@ pkg_setup() {
 	local flag
 	for flag in fbcon opengl X ; do
 		if use ${flag} ; then
-			if ! built_with_use x11-libs/ecore ${flag} ; then
+			if ! built_with_use dev-libs/ecore ${flag} ; then
 				eerror "Re-emerge ecore with USE=${flag}"
 				die "Re-emerge ecore with USE=${flag}"
 			fi

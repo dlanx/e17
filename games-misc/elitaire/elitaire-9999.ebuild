@@ -11,7 +11,7 @@ DEPEND="x11-libs/ewl
 	media-libs/edje
 	dev-libs/eet
 	dev-libs/evas
-	x11-libs/ecore
+	dev-libs/ecore
 	x11-libs/esmart"
 
 pkg_setup() {

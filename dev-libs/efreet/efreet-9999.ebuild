@@ -6,7 +6,7 @@ inherit enlightenment
 
 DESCRIPTION="library for handling of freedesktop.org specs (desktop/icon/theme/etc...)"
 RDEPEND="
-	>=x11-libs/ecore-9999
+	>=dev-libs/ecore-9999
 	>=dev-libs/eina-9999
 	x11-misc/xdg-utils"
 DEPEND="${RDEPEND}"

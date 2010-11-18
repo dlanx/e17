@@ -11,4 +11,4 @@ SRC_URI="ftp://code-monkey.de/pub/eosd/${P}.tar.gz"
 LICENSE="LGPL-2.1"
 
 DEPEND=">=media-libs/imlib2-1.2.0
-	>=x11-libs/ecore-0.9.9"
+	>=dev-libs/ecore-0.9.9"

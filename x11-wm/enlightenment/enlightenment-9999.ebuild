@@ -37,7 +37,7 @@ RDEPEND="exchange? ( >=app-misc/exchange-9999 )
 	pam? ( sys-libs/pam )
 	>=dev-libs/efreet-9999
 	>=dev-libs/eina-9999
-	>=x11-libs/ecore-9999[X,evas,inotify]
+	>=dev-libs/ecore-9999[X,evas,inotify]
 	>=media-libs/edje-9999
 	>=x11-libs/e_dbus-9999[hal,libnotify]
 	e_modules_connman? ( >=x11-libs/e_dbus-9999[connman] )

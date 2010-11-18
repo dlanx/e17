@@ -13,6 +13,6 @@ SRC_URI="http://download.enlightenment.org/releases/${MY_P}.tar.bz2"
 KEYWORDS="~amd64 ~x86"
 IUSE="static-libs"
 
-DEPEND=">=x11-libs/ecore-1.0.0_beta"
+DEPEND=">=dev-libs/ecore-1.0.0_beta"
 RDEPEND=${DEPEND}
 S=${WORKDIR}/${MY_P}

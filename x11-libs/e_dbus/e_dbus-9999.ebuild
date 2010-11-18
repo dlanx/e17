@@ -12,7 +12,7 @@ IUSE="bluetooth +connman +hal +libnotify ofono static-libs ukit"
 
 RDEPEND="
 	>=dev-libs/eina-9999
-	>=x11-libs/ecore-9999
+	>=dev-libs/ecore-9999
 	sys-apps/dbus
 	libnotify? ( >=dev-libs/evas-9999 )
 	hal? ( sys-apps/hal )

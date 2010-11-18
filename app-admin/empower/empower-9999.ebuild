@@ -9,7 +9,7 @@ DESCRIPTION="graphical sudo application"
 IUSE="nls"
 
 DEPEND="dev-libs/eet
-	x11-libs/ecore
+	dev-libs/ecore
 	dev-libs/evas
 	media-libs/edje
 	x11-libs/ewl"

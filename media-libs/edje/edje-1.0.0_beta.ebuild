@@ -18,7 +18,7 @@ DEPEND="dev-lang/lua
 	>=dev-libs/eina-1.0.0_beta
 	>=dev-libs/embryo-1.0.0_beta
 	>=dev-libs/evas-1.0.0_beta
-	>=x11-libs/ecore-1.0.0_beta"
+	>=dev-libs/ecore-1.0.0_beta"
 RDEPEND=${DEPEND}
 
 S=${WORKDIR}/${MY_P}

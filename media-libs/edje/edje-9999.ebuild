@@ -14,7 +14,7 @@ DEPEND="dev-lang/lua
 	>=dev-libs/eina-9999
 	>=dev-libs/embryo-9999
 	>=dev-libs/evas-9999
-	>=x11-libs/ecore-9999"
+	>=dev-libs/ecore-9999"
 RDEPEND=${DEPEND}
 
 src_compile() {

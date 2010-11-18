@@ -16,7 +16,7 @@ DESCRIPTION="Python bindings for ecore"
 LICENSE="LGPL-2.1"
 IUSE="evas static-libs X"
 
-RDEPEND=">=x11-libs/ecore-9999[evas?,X?]"
+RDEPEND=">=dev-libs/ecore-9999[evas?,X?]"
 DEPEND="${RDEPEND}
 	evas? ( >=dev-python/python-evas-9999 )
 	dev-util/pkgconfig"

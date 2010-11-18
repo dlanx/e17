@@ -12,7 +12,7 @@ DESCRIPTION="Enlightenment way to exchange contributed stuff"
 IUSE="etk ewl"
 
 DEPEND=">=dev-libs/eina-9999
-	>=x11-libs/ecore-9999[curl]
+	>=dev-libs/ecore-9999[curl]
 	>=media-libs/edje-9999
 	dev-libs/libxml2
 	ewl? ( >=x11-libs/ewl-9999 )
