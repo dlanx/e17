@@ -17,7 +17,7 @@ RDEPEND="
 	gnutls? ( net-libs/gnutls )
 	!gnutls? ( ssl? ( dev-libs/openssl ) )
 	evas? (
-		>=x11-libs/evas-9999[directfb?,fbcon?,opengl?,sdl?,X?,xcb?]
+		>=dev-libs/evas-9999[directfb?,fbcon?,opengl?,sdl?,X?,xcb?]
 		opengl? ( virtual/opengl )
 	)
 	directfb? ( >=dev-libs/DirectFB-0.9.16 )

@@ -10,6 +10,6 @@ IUSE="nls"
 
 DEPEND="dev-libs/eet
 	x11-libs/ecore
-	x11-libs/evas
+	dev-libs/evas
 	media-libs/edje
 	x11-libs/ewl"

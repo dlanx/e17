@@ -8,7 +8,7 @@ inherit enlightenment
 DESCRIPTION="PDF viewer with widgets for EWL and Evas"
 
 DEPEND=">=virtual/poppler-12
-	>=x11-libs/evas-9999
+	>=dev-libs/evas-9999
 	>=x11-libs/ecore-9999
 	>=x11-libs/ewl-9999
 	>=media-libs/imlib2-1.4

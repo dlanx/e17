@@ -14,7 +14,7 @@ RDEPEND="
 	>=dev-libs/eina-9999
 	>=x11-libs/ecore-9999
 	sys-apps/dbus
-	libnotify? ( >=x11-libs/evas-9999 )
+	libnotify? ( >=dev-libs/evas-9999 )
 	hal? ( sys-apps/hal )
 	ukit? ( sys-power/upower sys-fs/udisks )
 "

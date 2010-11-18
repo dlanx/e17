@@ -8,6 +8,6 @@ inherit enlightenment
 DESCRIPTION="Basic widget set, based on EFL for mobile touch-screen devices."
 
 DEPEND=">=x11-libs/ecore-9999
-	>=x11-libs/evas-9999
+	>=dev-libs/evas-9999
 	>=media-libs/edje-9999"
 RDEPEND=${DEPEND}

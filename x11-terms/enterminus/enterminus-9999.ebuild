@@ -8,6 +8,6 @@ inherit enlightenment
 DESCRIPTION="An EFL Based Terminal"
 
 DEPEND="x11-libs/ecore
-	x11-libs/evas
+	dev-libs/evas
 	media-libs/imlib2
 	net-misc/curl"

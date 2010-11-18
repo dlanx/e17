@@ -10,7 +10,7 @@ HOMEPAGE="http://www.mowem.de/elitaire"
 DEPEND="x11-libs/ewl
 	media-libs/edje
 	dev-libs/eet
-	x11-libs/evas
+	dev-libs/evas
 	x11-libs/ecore
 	x11-libs/esmart"
 

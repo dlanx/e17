@@ -20,7 +20,7 @@ RDEPEND=">=dev-libs/eina-1.0.0_beta
 	gnutls? ( net-libs/gnutls )
 	!gnutls? ( ssl? ( dev-libs/openssl ) )
 	evas? (
-		>=x11-libs/evas-1.0.0_beta[directfb?,fbcon?,opengl?,sdl?,X?,xcb?]
+		>=dev-libs/evas-1.0.0_beta[directfb?,fbcon?,opengl?,sdl?,X?,xcb?]
 		opengl? ( virtual/opengl )
 	)
 	directfb? ( >=dev-libs/DirectFB-0.9.16 )
