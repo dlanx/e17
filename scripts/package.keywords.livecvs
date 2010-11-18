@@ -35,10 +35,10 @@ media-video/rage * ~* **
 net-libs/libeweather * ~* **
 sci-calculators/equate * ~* **
 sys-libs/ememoa * ~* **
-x11-libs/ecore * ~* **
-x11-libs/e_dbus * ~* **
+dev-libs/ecore * ~* **
+dev-libs/e_dbus * ~* **
 x11-libs/elementary * ~* **
-x11-libs/evas * ~* **
+media-libs/evas * ~* **
 x11-libs/ewl * ~* **
 x11-misc/emprint * ~* **
 x11-misc/eosd * ~* **
