@@ -8,10 +8,11 @@ inherit enlightenment
 
 DESCRIPTION="Enlightenment's core event abstraction layer and OS abstraction layer"
 
-IUSE="curl directfb +evas fbcon glib gnutls +inotify opengl sdl ssl static-libs +threads tslib +X xcb xinerama xprint xscreensaver"
+IUSE="ares curl directfb +evas fbcon glib gnutls +inotify opengl sdl ssl static-libs +threads tslib +X xcb xinerama xprint xscreensaver"
 
 RDEPEND="
 	>=dev-libs/eina-9999
+	ares? ( net-dns/c-ares )
 	glib? ( dev-libs/glib )
 	curl? ( net-misc/curl )
 	gnutls? ( net-libs/gnutls )
@@ -168,6 +169,7 @@ src_configure() {
 	--disable-ecore-evas-opengl-glew
 	--disable-ecore-evas-software-16-ddraw
 	--disable-ecore-evas-software-16-wince
+	$(use_enable ares cares)
 	$(use_enable curl)
 	$(use_enable directfb ecore-directfb)
 	$(use_enable doc)
