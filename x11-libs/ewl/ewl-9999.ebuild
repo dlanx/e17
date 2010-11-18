@@ -9,7 +9,7 @@ DESCRIPTION="simple-to-use general purpose widget library"
 IUSE="X fbcon opengl"
 
 RDEPEND=">=media-libs/edje-9999
-	>=dev-libs/evas-9999
+	>=media-libs/evas-9999
 	>=dev-libs/ecore-9999
 	>=media-libs/emotion-9999
 	>=dev-libs/efreet-9999"
@@ -17,7 +17,7 @@ DEPEND="${RDEPEND}
 	doc? ( virtual/latex-base )"
 
 pkg_setup() {
-	if ! built_with_use dev-libs/evas png ; then
+	if ! built_with_use media-libs/evas png ; then
 		eerror "Re-emerge evas with USE=png"
 		die "Re-emerge evas with USE=png"
 	fi

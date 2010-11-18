@@ -17,7 +17,7 @@ DEPEND="dev-lang/lua
 	>=dev-libs/eet-1.0.0_beta
 	>=dev-libs/eina-1.0.0_beta
 	>=dev-libs/embryo-1.0.0_beta
-	>=dev-libs/evas-1.0.0_beta
+	>=media-libs/evas-1.0.0_beta
 	>=dev-libs/ecore-1.0.0_beta"
 RDEPEND=${DEPEND}
 

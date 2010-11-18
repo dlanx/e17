@@ -13,7 +13,7 @@ IUSE="dbus emotion epdf"
 DEPEND=">=dev-libs/eina-9999
 	>=media-libs/edje-9999
 	>=dev-libs/ecore-9999
-	>=dev-libs/evas-9999
+	>=media-libs/evas-9999
 
 	dbus? ( >=dev-libs/e_dbus-9999 )
 	emotion? ( >=media-libs/emotion-9999 )

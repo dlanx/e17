@@ -10,5 +10,5 @@ DESCRIPTION="Basic widget set, based on EFL for mobile touch-screen devices."
 KEYWORDS="~amd64 ~x86"
 DEPEND=">=media-libs/edje-1.0.0_beta
 	>=dev-libs/ecore-1.0.0_beta
-	>=dev-libs/evas-1.0.0_beta"
+	>=media-libs/evas-1.0.0_beta"
 RDEPEND=${DEPEND}

@@ -7,7 +7,7 @@ inherit enlightenment
 DESCRIPTION="edje viewer based on elementary"
 
 DEPEND="dev-libs/ecore
-	dev-libs/evas
+	media-libs/evas
 	media-libs/edje
 	x11-libs/elementary
 	dev-libs/eina

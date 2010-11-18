@@ -10,7 +10,7 @@ DESCRIPTION="video libraries for e17"
 
 IUSE="gstreamer xine"
 
-DEPEND=">=dev-libs/evas-0.9.9.041
+DEPEND=">=media-libs/evas-0.9.9.041
 	>=media-libs/edje-0.5.0.041
 	>=dev-libs/ecore-0.9.9.041
 	xine? ( >=media-libs/xine-lib-1.1.1 )

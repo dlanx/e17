@@ -6,7 +6,7 @@ inherit enlightenment
 
 DESCRIPTION="EFL-based slideshow creator"
 
-DEPEND="dev-libs/evas
+DEPEND="media-libs/evas
 	dev-libs/ecore
 	x11-libs/ewl
 	media-libs/edje

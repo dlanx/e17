@@ -9,7 +9,7 @@ inherit enlightenment
 DESCRIPTION="Moon Clock module for e17"
 
 DEPEND=">=dev-libs/eet-0.9.10
-	>=dev-libs/evas-0.9.9
+	>=media-libs/evas-0.9.9
 	>=dev-libs/ecore-0.9.9
 	>=dev-libs/embryo-0.5.0
 	>=media-libs/edje-0.5.0

@@ -13,7 +13,7 @@ DEPEND="dev-lang/lua
 	>=dev-libs/eet-9999
 	>=dev-libs/eina-9999
 	>=dev-libs/embryo-9999
-	>=dev-libs/evas-9999
+	>=media-libs/evas-9999
 	>=dev-libs/ecore-9999"
 RDEPEND=${DEPEND}
 

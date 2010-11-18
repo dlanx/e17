@@ -18,7 +18,7 @@ HOMEPAGE="http://www.enlightenment.org/"
 LICENSE="LGPL-2.1"
 IUSE="static-libs"
 
-RDEPEND=">=dev-libs/evas-9999"
+RDEPEND=">=media-libs/evas-9999"
 
 DEPEND="${RDEPEND}
 	>=dev-util/pkgconfig-0.9.0"

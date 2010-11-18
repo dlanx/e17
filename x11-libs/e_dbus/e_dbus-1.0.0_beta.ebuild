@@ -17,7 +17,7 @@ IUSE="bluetooth +connman +hal +libnotify ofono static-libs ukit"
 RDEPEND=">=dev-libs/eina-1.0.0_beta
 	>=dev-libs/ecore-1.0.0_beta
 	sys-apps/dbus
-	libnotify? ( >=dev-libs/evas-1.0.0_beta )
+	libnotify? ( >=media-libs/evas-1.0.0_beta )
 	hal? ( sys-apps/hal )
 	ukit? ( sys-power/upower sys-fs/udisks )
 "

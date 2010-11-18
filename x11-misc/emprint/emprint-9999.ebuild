@@ -8,7 +8,7 @@ DESCRIPTION="utility for taking screenshots of the entire screen"
 
 RDEPEND="x11-libs/libX11
 	>=dev-libs/ecore-9999
-	>=dev-libs/evas-9999
+	>=media-libs/evas-9999
 	>=dev-libs/eina-9999
 	>=media-libs/edje-9999
 	media-libs/imlib"
