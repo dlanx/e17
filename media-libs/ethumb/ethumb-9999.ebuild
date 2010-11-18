@@ -15,7 +15,7 @@ DEPEND=">=dev-libs/eina-9999
 	>=dev-libs/ecore-9999
 	>=dev-libs/evas-9999
 
-	dbus? ( >=x11-libs/e_dbus-9999 )
+	dbus? ( >=dev-libs/e_dbus-9999 )
 	emotion? ( >=media-libs/emotion-9999 )
 	epdf? ( >=app-text/epdf-9999 )"
 

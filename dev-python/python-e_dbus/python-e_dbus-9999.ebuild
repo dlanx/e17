@@ -15,7 +15,7 @@ DESCRIPTION="Python bindings for E_DBUS library"
 LICENSE="LGPL-2.1"
 IUSE="static-libs"
 
-RDEPEND=">=x11-libs/e_dbus-9999
+RDEPEND=">=dev-libs/e_dbus-9999
 	dev-python/dbus-python"
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig"

@@ -39,9 +39,9 @@ RDEPEND="exchange? ( >=app-misc/exchange-9999 )
 	>=dev-libs/eina-9999
 	>=dev-libs/ecore-9999[X,evas,inotify]
 	>=media-libs/edje-9999
-	>=x11-libs/e_dbus-9999[hal,libnotify]
-	e_modules_connman? ( >=x11-libs/e_dbus-9999[connman] )
-	e_modules_ofono? ( >=x11-libs/e_dbus-9999[ofono] )
+	>=dev-libs/e_dbus-9999[hal,libnotify]
+	e_modules_connman? ( >=dev-libs/e_dbus-9999[connman] )
+	e_modules_ofono? ( >=dev-libs/e_dbus-9999[ofono] )
 	>=dev-libs/evas-9999[eet,X,jpeg,png]
 	bluetooth? ( net-wireless/bluez )
 	udev? ( dev-libs/eeze )
