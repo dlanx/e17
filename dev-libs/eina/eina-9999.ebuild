@@ -46,6 +46,7 @@ src_configure() {
 	$(use_enable !debug amalgamation)
 	$(use_enable debug stringshare-usage)
 	$(use_enable debug assert)
+	$(use_enable debug valgrind)
 	$(use debug || echo " --with-internal-maximum-log-level=2")
 	$(use_enable default-mempool)
 	$(use_enable doc)
