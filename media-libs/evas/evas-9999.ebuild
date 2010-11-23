@@ -104,8 +104,6 @@ src_configure() {
 		--enable-evas-magic-debug \
 		--enable-static-software-generic \
 		--enable-buffer \
-		--enable-image-loader-eet \
-		--enable-font-loader-eet \
 		--enable-cpu-c \
 		--enable-scale-sample \
 		--enable-scale-smooth \
