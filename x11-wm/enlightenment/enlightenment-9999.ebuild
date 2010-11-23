@@ -73,6 +73,17 @@ src_configure() {
 		c=${u#e_modules_}
 		MY_ECONF+=" $(use_enable ${u} ${c})"
 	done
+	#enable e_modules_everything, if any of the everything modules is enabled
+	for u in ${__EVRY_MODS} ; do
+		u=${u#+}
+		c=${u//@/e_modules_everything-}
+		if use ${c} ; then
+			MY_ECONF+=" --enable-everything"
+			ewarn "You enabled everything modules without"
+			ewarn "enabling everything itself. Enabling everything"
+			continue
+		fi
+	done
 	if use e_modules_illume2 && use e_modules_illume ; then
 		ewarn "You enabled both illume2 and illume modules,"
 		ewarn "but only one of them can be active."
