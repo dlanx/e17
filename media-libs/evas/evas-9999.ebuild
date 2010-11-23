@@ -85,6 +85,7 @@ src_configure() {
 		$(use_enable gles gles-variety-sgx)
 		$(use_enable gif image-loader-gif)
 		$(use_enable jpeg image-loader-jpeg)
+		$(use_enable eet font-loader-eet)
 		$(use_enable eet image-loader-eet)
 		$(use_enable mmx cpu-mmx)
 		$(use_enable png image-loader-png)
