@@ -182,7 +182,7 @@ src_configure() {
 	$(use_enable inotify)
 	$(use_enable sdl ecore-sdl)
 	$(use_enable test tests)
-	$(use_enable threads pthread)
+	$(use_enable threads posix-threads)
 	$(use_enable tslib)
 	$(use_enable X xim)
 	${SSL_FLAGS}
