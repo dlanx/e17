@@ -1,16 +1,26 @@
 # Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-editors/enscribe/enscribe-9999.ebuild,v 1.1 2005/09/07 03:55:40 vapier Exp $
+# $Header: $
 
 ESVN_SUB_PROJECT="PROTO"
 inherit enlightenment
 
-DESCRIPTION="PDF viewer with widgets for EWL and Evas"
+DESCRIPTION="PDF viewer with widgets for Evas"
+IUSE="cjk poppler static-libs"
 
-DEPEND=">=virtual/poppler-12
+LICENSE="GPL-2 || ( LGPL-3 )"
+
+DEPEND="poppler? ( >=app-text/poppler-0.12 )
 	>=media-libs/evas-9999
-	>=dev-libs/ecore-9999
-	>=x11-libs/ewl-9999
-	>=media-libs/imlib2-1.4
-	>=media-libs/epsilon-0.3"
+	>=dev-libs/ecore-9999"
 RDEPEND="${DEPEND}"
+
+src_configure() {
+	MY_ECONF="
+		$(use_enable poppler)
+		$(use_enable !poppler mupdf)
+		"
+	use poppler || MY_ECONF+=" $(use_enable cjk mupdf-cjk)"
+
+	enlightenment_src_configure
+}
