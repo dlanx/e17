@@ -8,6 +8,8 @@ inherit enlightenment
 DESCRIPTION="Basic widget set, based on EFL for mobile touch-screen devices."
 
 KEYWORDS="~amd64 ~x86"
+IUSE=""
+
 DEPEND=">=media-libs/edje-1.0.0_beta
 	>=dev-libs/ecore-1.0.0_beta
 	>=media-libs/evas-1.0.0_beta"
