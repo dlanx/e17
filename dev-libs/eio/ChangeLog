@@ -1,0 +1,11 @@
+# ChangeLog for dev-libs/eio
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*eio-9999 (03 Dec 2010)
+*eio-0.1.0.54504 (03 Dec 2010)
+
+  03 Dec 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  +eio-0.1.0.54504.ebuild, +eio-9999.ebuild, +metadata.xml:
+  Initial addition of eio live ebuild and snapshot version
+
