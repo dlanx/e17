@@ -35,7 +35,7 @@ src_configure() {
 		MY_ECONF+="
 			 $(use_enable bluetooth edbus-bluez-test)
 			$(use_enable connman edbus-connman-test)
-			$(use_enable libnotify edbus-notification-deamon-test)
+			$(use_enable libnotify edbus-notification-daemon-test)
 			$(use_enable libnotify edbus-notify-test)
 			$(use_enable ofono edbus-ofono-test)
 			$(use_enable ukit edbus-ukit-test)"
@@ -43,7 +43,7 @@ src_configure() {
 		MY_ECONF+="
 			 --disable-edbus-bluez-test
 			--disable-edbus-connman-test
-			--disable-edbus-notification-deamon-test
+			--disable-edbus-notification-daemon-test
 			--disable-edbus-notify-test
 			--disable-edbus-ofono-test
 			--disable-edbus-ukit-test"
