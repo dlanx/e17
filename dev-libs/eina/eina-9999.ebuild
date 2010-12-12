@@ -17,7 +17,8 @@ IUSE="altivec debug default-mempool mempool-buddy +mempool-chained
 
 RDEPEND="
 	mempool-ememoa-fixed? ( sys-libs/ememoa )
-	mempool-ememoa-unknown? ( sys-libs/ememoa )"
+	mempool-ememoa-unknown? ( sys-libs/ememoa )
+	debug? ( dev-util/valgrind )"
 
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig
