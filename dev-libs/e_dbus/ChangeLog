@@ -1,6 +1,10 @@
-# ChangeLog for x11-libs/e_dbus
+# ChangeLog for dev-libs/e_dbus
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+  17 Dec 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  -e_dbus-1.0.0_beta.ebuild:
+  Drop old
 
   06 Oct 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
   e_dbus-1.0.0_beta.ebuild, e_dbus-9999.ebuild:
