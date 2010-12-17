@@ -13,7 +13,7 @@ LICENSE="LGPL-2.1"
 IUSE="altivec debug default-mempool mempool-buddy +mempool-chained
 	mempool-ememoa-fixed mempool-ememoa-unknown
 	mempool-fixed-bitmap +mempool-pass-through
-	mmx sse sse2 static-libs +threads"
+	mmx sse sse2 static-libs test +threads"
 
 RDEPEND="
 	mempool-ememoa-fixed? ( sys-libs/ememoa )
@@ -23,6 +23,7 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig
 	test? (
+		dev-libs/check
 		dev-libs/glib
 		dev-util/lcov
 	)"
