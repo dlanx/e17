@@ -9,6 +9,8 @@ inherit enlightenment
 DESCRIPTION="E file chunk reading/writing library"
 HOMEPAGE="http://trac.enlightenment.org/e/wiki/Eet"
 
+IUSE="debug examples gnutls ssl static-libs test +threads"
+
 RDEPEND=">=dev-libs/eina-9999
 	media-libs/jpeg
 	sys-libs/zlib
@@ -17,8 +19,6 @@ RDEPEND=">=dev-libs/eina-9999
 DEPEND="${RDEPEND}
 	test? ( dev-libs/check
 		dev-util/lcov )"
-
-IUSE="debug examples gnutls ssl static-libs +threads"
 
 src_configure() {
 	local SSL_FLAGS=""
