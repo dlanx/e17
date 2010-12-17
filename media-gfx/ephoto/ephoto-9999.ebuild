@@ -1,15 +1,24 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/ephoto/ephoto-9999.ebuild,v 1.1 2006/02/24 02:42:58 vapier Exp $
+# $Header: $
+
+EAPI="2"
 
 inherit enlightenment
 
-DESCRIPTION="EFL-based slideshow creator"
+DESCRIPTION="EFL-based photo app"
 
-DEPEND="media-libs/evas
-	dev-libs/ecore
-	x11-libs/ewl
-	media-libs/edje
-	media-libs/epsilon
-	media-libs/libexif
-	>=dev-db/sqlite-3"
+IUSE="static-libs"
+
+DEPEND="
+	 >=dev-libs/eet-9999
+	 >=dev-libs/efreet-9999
+	 >=dev-libs/eina-9999
+	 >=dev-libs/ecore-9999[evas,inotify]
+	 >=dev-libs/eio-9999
+	 >=media-libs/edje-9999
+	 >=media-libs/evas-9999[eet,jpeg,png]
+	 >=media-libs/elementary-9999[thumbnails,xdg]
+	 >=media-libs/ethumb-9999
+"
+RDEPEND="${DEPEND}"
