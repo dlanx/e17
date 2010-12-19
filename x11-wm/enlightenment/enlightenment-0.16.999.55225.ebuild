@@ -38,7 +38,7 @@ KEYWORDS="~amd64 ~x86"
 RDEPEND="
 	pam? ( sys-libs/pam )
 	>=dev-libs/efreet-1.0.0_beta
-	>=dev-libs/eina-1.0.0_beta
+	>=dev-libs/eina-1.0.0_beta[mempool-chained]
 	>=dev-libs/ecore-1.0.0_beta[X,evas,inotify]
 	>=media-libs/edje-1.0.0_beta
 	>=dev-libs/e_dbus-1.0.0_beta[hal,libnotify]
