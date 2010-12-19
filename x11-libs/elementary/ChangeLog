@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+*elementary-0.7.0.55225 (19 Dec 2010)
+
+  19 Dec 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  +elementary-0.7.0.55225.ebuild:
+  Add latest snapshot
+
 *elementary-0.7.0.52995 (06 Oct 2010)
 
   06 Oct 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
