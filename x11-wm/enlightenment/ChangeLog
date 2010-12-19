@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+*enlightenment-0.16.999.55225 (19 Dec 2010)
+
+  19 Dec 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  -enlightenment-0.16.999.52995.ebuild, +enlightenment-0.16.999.55225.ebuild:
+  Add latest snapshot, drop old one
+
 *enlightenment-0.16.999.52995 (06 Oct 2010)
 
   06 Oct 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>

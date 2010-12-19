@@ -4,7 +4,7 @@
 
 EAPI="2"
 
-E_SNAP_DATE="2010-10-03"
+E_SNAP_DATE="2010-12-03"
 
 inherit enlightenment
 
@@ -31,11 +31,11 @@ IUSE_E_MODULES="+e_modules_everything ${__EVRY_MODS//@/e_modules_everything-}
 	${__CONF_MODS//@/e_modules_conf-}
 	${__NORM_MODS//@/e_modules_}"
 
-IUSE="acpi bluetooth exchange hal pam spell static-libs +udev ${IUSE_E_MODULES}"
+IUSE="acpi bluetooth hal pam spell static-libs +udev ${IUSE_E_MODULES}"
 
 KEYWORDS="~amd64 ~x86"
 # XXX: missing USE=hal depend ?
-RDEPEND="exchange? ( >=app-misc/exchange-9999 )
+RDEPEND="
 	pam? ( sys-libs/pam )
 	>=dev-libs/efreet-1.0.0_beta
 	>=dev-libs/eina-1.0.0_beta
@@ -62,7 +62,7 @@ src_configure() {
 		$(use_enable acpi conf-acpibindings)
 		$(use_enable bluetooth bluez)
 		$(use_enable doc)
-		$(use_enable exchange)
+		--disable-exchange
 		$(use_enable hal device-hal)
 		$(use_enable nls)
 		$(use_enable pam)
@@ -74,6 +74,17 @@ src_configure() {
 		u=${u#+}
 		c=${u#e_modules_}
 		MY_ECONF+=" $(use_enable ${u} ${c})"
+	done
+	#enable e_modules_everything, if any of the everything modules is enabled
+	for u in ${__EVRY_MODS} ; do
+		u=${u#+}
+		c=${u//@/e_modules_everything-}
+		if use ${c} ; then
+			MY_ECONF+=" --enable-everything"
+			ewarn "You enabled everything modules without"
+			ewarn "enabling everything itself. Enabling everything"
+			continue
+		fi
 	done
 	if use e_modules_illume2 && use e_modules_illume ; then
 		ewarn "You enabled both illume2 and illume modules,"
