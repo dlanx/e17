@@ -12,6 +12,6 @@
  <flag name="libnotify">Enable interfacing with <pkg>x11-libs/libnotify</pkg> DBus API.</flag>
  <flag name="ofono">Enable interfacing with <pkg>net-misc/ofono</pkg> DBus API.</flag>
  <flag name="test-binaries">Enable building of test binaries for enabled features</flag>
- <flag name="ukit">Enable interfacing with <pkg>sys-power/upower</pkg> and <pkg>sys-fs/udisks</pkg> DBus API.</flag>
+ <flag name="udev">Enable interfacing with <pkg>sys-power/upower</pkg> and <pkg>sys-fs/udisks</pkg> DBus API.</flag>
 </use>
 </pkgmetadata>

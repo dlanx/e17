@@ -1,4 +1,4 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -8,7 +8,7 @@ inherit enlightenment
 
 DESCRIPTION="Enlightenment's (Ecore) integration to DBus"
 
-IUSE="bluetooth +connman +hal +libnotify ofono static-libs test-binaries ukit"
+IUSE="bluetooth +connman +hal +libnotify ofono static-libs test-binaries +udev"
 
 RDEPEND="
 	>=dev-libs/eina-9999
@@ -16,7 +16,7 @@ RDEPEND="
 	sys-apps/dbus
 	libnotify? ( >=media-libs/evas-9999 )
 	hal? ( sys-apps/hal )
-	ukit? ( sys-power/upower sys-fs/udisks )
+	udev? ( sys-power/upower sys-fs/udisks )
 "
 DEPEND="${RDEPEND}"
 
@@ -30,7 +30,7 @@ src_configure() {
 		$(use_enable ofono eofono)
 		$(use_enable test-binaries edbus-test)
 		$(use_enable test-binaries edbus-test-client)
-		$(use_enable ukit eukit)"
+		$(use_enable udev eukit)"
 	if use test-binaries ; then
 		MY_ECONF+="
 			 $(use_enable bluetooth edbus-bluez-test)
@@ -38,7 +38,7 @@ src_configure() {
 			$(use_enable libnotify edbus-notification-daemon-test)
 			$(use_enable libnotify edbus-notify-test)
 			$(use_enable ofono edbus-ofono-test)
-			$(use_enable ukit edbus-ukit-test)"
+			$(use_enable udev edbus-ukit-test)"
 	else
 		MY_ECONF+="
 			 --disable-edbus-bluez-test
