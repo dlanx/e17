@@ -1,6 +1,10 @@
 # ChangeLog for x11-wm/enlightenment
-# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+  05 Jan 2011; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  enlightenment-9999.ebuild:
+  Require udev USE flag for e_dbus
 
   19 Dec 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
   enlightenment-0.16.999.55225.ebuild, enlightenment-9999.ebuild:

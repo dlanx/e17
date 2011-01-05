@@ -1,4 +1,4 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -39,7 +39,7 @@ RDEPEND="exchange? ( >=app-misc/exchange-9999 )
 	>=dev-libs/eina-9999[mempool-chained]
 	>=dev-libs/ecore-9999[X,evas,inotify]
 	>=media-libs/edje-9999
-	>=dev-libs/e_dbus-9999[hal,libnotify]
+	>=dev-libs/e_dbus-9999[hal,libnotify,udev]
 	e_modules_connman? ( >=dev-libs/e_dbus-9999[connman] )
 	e_modules_ofono? ( >=dev-libs/e_dbus-9999[ofono] )
 	>=media-libs/evas-9999[eet,X,jpeg,png]
