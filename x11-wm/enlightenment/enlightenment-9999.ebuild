@@ -32,16 +32,17 @@ IUSE_E_MODULES="+e_modules_everything ${__EVRY_MODS//@/e_modules_everything-}
 
 IUSE="acpi bluetooth exchange hal pam spell static-libs +udev ${IUSE_E_MODULES}"
 
-# XXX: missing USE=hal depend ?
 RDEPEND="exchange? ( >=app-misc/exchange-9999 )
 	pam? ( sys-libs/pam )
 	>=dev-libs/efreet-9999
 	>=dev-libs/eina-9999[mempool-chained]
 	>=dev-libs/ecore-9999[X,evas,inotify]
 	>=media-libs/edje-9999
-	>=dev-libs/e_dbus-9999[hal,libnotify,udev]
+	>=dev-libs/e_dbus-9999[hal?,libnotify,udev?]
+	!hal? ( >=dev-libs/e_dbus-9999[udev] )
 	e_modules_connman? ( >=dev-libs/e_dbus-9999[connman] )
 	e_modules_ofono? ( >=dev-libs/e_dbus-9999[ofono] )
+	e_modules_illume? ( >=dev-libs/e_dbus-9999[hal] )
 	>=media-libs/evas-9999[eet,X,jpeg,png]
 	bluetooth? ( net-wireless/bluez )
 	udev? ( dev-libs/eeze )
@@ -62,11 +63,18 @@ src_configure() {
 		$(use_enable doc)
 		$(use_enable exchange)
 		$(use_enable hal device-hal)
+		$(use_enable hal mount-hal)
 		$(use_enable nls)
 		$(use_enable pam)
 		$(use_enable spell everything-aspell)
 		$(use_enable udev device-udev)
+		$(use_enable udev mount-udisks)
 	"
+	if ( !use hal && !use udev ); then
+		ECONF+=" --enable device.udev --enable-mount-udev"
+		einfo "Either hal or udev USE flag required"
+		einfo "enabling udev support by default"
+	fi
 	local u c
 	for u in ${IUSE_E_MODULES} ; do
 		u=${u#+}

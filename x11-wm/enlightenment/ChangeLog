@@ -2,6 +2,11 @@
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  10 Jan 2011; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  enlightenment-9999.ebuild:
+  Make hal and udev optional, but reqire one of them as the configure script
+  does
+
   05 Jan 2011; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
   enlightenment-9999.ebuild:
   Require udev USE flag for e_dbus
