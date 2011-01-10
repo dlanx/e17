@@ -2,6 +2,9 @@
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  10 Jan 2011; Thomas Sachau (Tommy[D]) <tommy@gentoo.org> e_dbus-9999.ebuild:
+  No need to default enable hal
+
   05 Jan 2011; Thomas Sachau (Tommy[D]) <tommy@gentoo.org> e_dbus-9999.ebuild,
   metadata.xml:
   Default enable udev USE flag, since it is now required by e17
