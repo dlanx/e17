@@ -4,7 +4,7 @@
 
 EAPI=2
 
-inherit enlightenment
+inherit virtualx enlightenment
 
 DESCRIPTION="Enlightenment's core event abstraction layer and OS abstraction layer"
 
@@ -190,4 +190,8 @@ src_configure() {
 	${X_FLAGS}
 	"
 	enlightenment_src_configure
+}
+
+src_test() {
+	Xemake check
 }
