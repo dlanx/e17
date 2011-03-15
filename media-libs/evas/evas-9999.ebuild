@@ -1,4 +1,4 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -17,7 +17,7 @@ RDEPEND="
 	fontconfig? ( media-libs/fontconfig )
 	gles? ( media-libs/mesa[gallium,gles] )
 	gif? ( media-libs/giflib )
-	jpeg? ( media-libs/jpeg )
+	jpeg? ( virtual/jpeg )
 	png? ( media-libs/libpng )
 	bidi? ( >=dev-libs/fribidi-0.19.1 )
 	directfb? ( >=dev-libs/DirectFB-0.9.16 )
