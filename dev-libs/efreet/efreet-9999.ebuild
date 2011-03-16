@@ -14,9 +14,4 @@ RDEPEND="
 	x11-misc/xdg-utils"
 DEPEND="${RDEPEND}"
 
-IUSE="cache static-libs"
-
-src_configure() {
-	local MY_ECONF="$(use_enable cache icon-cache)"
-	enlightenment_src_configure
-}
+IUSE="static-libs"
