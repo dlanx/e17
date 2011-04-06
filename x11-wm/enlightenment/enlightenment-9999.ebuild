@@ -14,11 +14,11 @@ SLOT="0.17"
 # The @ is just an anchor to expand from
 __EVRY_MODS="+@apps +@calc +@files +@settings +@windows"
 __CONF_MODS="
-	+@applications +@borders +@clientlist +@colors +@desk +@desklock +@desks
-	+@dialogs +@display +@dpms +@edgebindings +@engine +@fonts +@icon-theme
+	+@applications +@borders +@clientlist +@colors
+	+@dialogs +@display +@edgebindings +@engine +@fonts +@icon-theme
 	+@imc +@interaction +@intl +@keybindings +@menus +@mime +@mouse
 	+@mousebindings +@mouse-cursor +@paths +@performance +@profiles +@scale
-	+@screensaver +@shelves +@startup +@theme +@transitions +@wallpaper
+	+@shelves +@startup +@theme +@transitions +@wallpaper
 	+@wallpaper2 +@window-display +@window-focus +@window-manipulation
 	+@window-remembers +@winlist"
 __NORM_MODS="
@@ -30,7 +30,7 @@ IUSE_E_MODULES="+e_modules_everything ${__EVRY_MODS//@/e_modules_everything-}
 	${__CONF_MODS//@/e_modules_conf-}
 	${__NORM_MODS//@/e_modules_}"
 
-IUSE="acpi bluetooth exchange hal pam spell static-libs +udev ${IUSE_E_MODULES}"
+IUSE="acpi bluetooth exchange hal pam spell static-libs +udev ukit ${IUSE_E_MODULES}"
 
 RDEPEND="exchange? ( >=app-misc/exchange-9999 )
 	pam? ( sys-libs/pam )
@@ -39,13 +39,14 @@ RDEPEND="exchange? ( >=app-misc/exchange-9999 )
 	>=dev-libs/ecore-9999[X,evas,inotify]
 	>=media-libs/edje-9999
 	>=dev-libs/e_dbus-9999[hal?,libnotify,udev?]
-	!hal? ( >=dev-libs/e_dbus-9999[udev] )
+	ukit? ( >=dev-libs/e_dbus-9999[udev] )
 	e_modules_connman? ( >=dev-libs/e_dbus-9999[connman] )
 	e_modules_ofono? ( >=dev-libs/e_dbus-9999[ofono] )
 	e_modules_illume? ( >=dev-libs/e_dbus-9999[hal] )
 	>=media-libs/evas-9999[eet,X,jpeg,png]
 	bluetooth? ( net-wireless/bluez )
 	udev? ( dev-libs/eeze )
+	!udev? ( !hal? ( dev-libs/eeze ) )
 	spell? ( app-text/aspell )
 	e_modules_everything-calc? ( sys-devel/bc )"
 DEPEND="${RDEPEND}"
@@ -68,12 +69,12 @@ src_configure() {
 		$(use_enable pam)
 		$(use_enable spell everything-aspell)
 		$(use_enable udev device-udev)
-		$(use_enable udev mount-udisks)
+		$(use_enable ukit mount-udisks)
 	"
 	if ( !use hal && !use udev ); then
-		ECONF+=" --enable device.udev --enable-mount-udev"
-		einfo "Either hal or udev USE flag required"
-		einfo "enabling udev support by default"
+		MY_ECONF+=" --enable-device-udev"
+		ewarn "Either hal or udev USE flag required"
+		ewarn "enabling udev support by default"
 	fi
 	local u c
 	for u in ${IUSE_E_MODULES} ; do

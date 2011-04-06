@@ -13,5 +13,8 @@
 	<flag name='udev'>
 	  Use sys-fs/udev to determine available devices
 	</flag>
+	<flag name='ukit'>
+	  Use upower/udisks to automount devices
+	</flag>
     </use>
 </pkgmetadata>
