@@ -1,0 +1,10 @@
+# ChangeLog for x11-plugins/e_modules-engage
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*e_modules-engage-9999 (09 Apr 2011)
+
+  09 Apr 2011; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  +e_modules-engage-9999.ebuild, +metadata.xml:
+  Add e_modules-engage (moved from e_modules-itask-ng)
+
