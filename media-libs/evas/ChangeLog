@@ -1,10 +1,6 @@
 # ChangeLog for media-libs/evas
-# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
-
-  09 Jul 2011; Thomas Sachau (Tommy[D]) <tommy@gentoo.org> evas-9999.ebuild:
-  Remove the static part, avoids compile failure for ecore with
-  --enable-ecore-evas-software-x11, thanks to the_mgt for catching this issue
 
   17 Dec 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
   -evas-1.0.0_beta.ebuild:
