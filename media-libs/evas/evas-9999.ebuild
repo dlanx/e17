@@ -57,8 +57,8 @@ src_configure() {
 		use opengl && ewarn "opengl support is not implemented with xcb"
 		MY_ECONF="
 			--disable-gl-x11
-			--enable-software-xcb=static
-			--enable-xrender-xcb=static
+			--enable-software-xcb
+			--enable-xrender-xcb
 		"
 	else
 		MY_ECONF="
@@ -71,39 +71,39 @@ src_configure() {
 	MY_ECONF+="
 		$(use_enable altivec cpu-altivec)
 		$(use_enable bidi fribidi)
-		$(use_enable bmp image-loader-bmp static)
-		$(use_enable bmp image-loader-wbmp static)
+		$(use_enable bmp image-loader-bmp)
+		$(use_enable bmp image-loader-wbmp)
 		$(use_enable cache metric-cache)
 		$(use_enable cache word-cache)
-		$(use_enable directfb static)
+		$(use_enable directfb)
 		$(use_enable doc)
-		$(use_enable eet font-loader-eet static)
-		$(use_enable eet image-loader-eet static)
-		$(use_enable fbcon fb static)
+		$(use_enable eet font-loader-eet)
+		$(use_enable eet image-loader-eet)
+		$(use_enable fbcon fb)
 		$(use_enable fontconfig)
 		$(use_enable gles gl-flavor-gles)
 		$(use_enable gles gles-variety-sgx)
-		$(use_enable gif image-loader-gif static)
-		$(use_enable ico image-loader-ico static)
-		$(use_enable jpeg image-loader-jpeg static)
+		$(use_enable gif image-loader-gif)
+		$(use_enable ico image-loader-ico)
+		$(use_enable jpeg image-loader-jpeg)
 		$(use_enable mmx cpu-mmx)
-		$(use_enable png image-loader-png static)
-		$(use_enable ppm image-loader-pmaps static)
-		$(use_enable sdl software-sdl static)
+		$(use_enable png image-loader-png)
+		$(use_enable ppm image-loader-pmaps)
+		$(use_enable sdl software-sdl)
 		$(use_enable sse cpu-sse)
-		$(use_enable svg image-loader-svg static)
-		$(use_enable tga image-loader-tga static)
-		$(use_enable tiff image-loader-tiff static)
+		$(use_enable svg image-loader-svg)
+		$(use_enable tga image-loader-tga)
+		$(use_enable tiff image-loader-tiff)
 		$(use_enable threads pthreads)
 		$(use_enable threads async-events)
 		$(use_enable threads async-preload)
 		$(use_enable threads async-render)
-		$(use_enable X software-xlib static)
-		$(use_enable X xrender-x11 static)
-		$(use_enable xpm image-loader-xpm static)
+		$(use_enable X software-xlib)
+		$(use_enable X xrender-x11)
+		$(use_enable xpm image-loader-xpm)
 		--enable-evas-magic-debug \
 		--enable-static-software-generic \
-		--enable-buffer=static \
+		--enable-buffer \
 		--enable-cpu-c \
 		--enable-scale-sample \
 		--enable-scale-smooth \
