@@ -50,21 +50,18 @@ src_configure() {
 		fi
 		MY_ECONF="
 			--disable-software-xcb
-			--disable-xrender-xcb
-			$(use_enable opengl gl-x11 static)
+			$(use_enable opengl gl-xlib)
 		"
 	elif use xcb ; then
 		use opengl && ewarn "opengl support is not implemented with xcb"
 		MY_ECONF="
-			--disable-gl-x11
+			--disable-gl-xlib
 			--enable-software-xcb
-			--enable-xrender-xcb
 		"
 	else
 		MY_ECONF="
-			--disable-gl-x11
+			--disable-gl-xlib
 			--disable-software-xcb
-			--disable-xrender-xcb
 		"
 	fi
 
@@ -99,7 +96,6 @@ src_configure() {
 		$(use_enable threads async-preload)
 		$(use_enable threads async-render)
 		$(use_enable X software-xlib)
-		$(use_enable X xrender-x11)
 		$(use_enable xpm image-loader-xpm)
 		--enable-evas-magic-debug \
 		--enable-static-software-generic \
