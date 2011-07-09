@@ -1,4 +1,4 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -73,6 +73,21 @@ src_configure() {
 	fi
 
 	if use evas; then
+
+		if use opengl && [[ -z "$x_or_xcb" ]]; then
+			ewarn "Ecore/Evas usage of OpenGL requires X11."
+			ewarn "Compile dev-libs/ecore with USE=X or xcb."
+			ewarn "Compiling without opengl support."
+			EVAS_FLAGS+="
+				--disable-ecore-evas-software-x11
+				--disable-ecore-evas-software-16-x11
+			"
+		else
+			EVAS_FLAGS+="
+				--enable-ecore-evas-software-x11
+				--enable-ecore-evas-software-16-x11
+			"
+		fi
 		EVAS_FLAGS+="
 			$(use_enable directfb ecore-evas-directfb)
 			$(use_enable fbcon ecore-evas-fb)
@@ -84,6 +99,8 @@ src_configure() {
 			--disable-ecore-evas-directfb
 			--disable-ecore-evas-fb
 			--disable-ecore-evas-software-sdl
+			--disable-ecore-evas-software-x11
+			--disable-ecore-evas-software-16-x11
 			--disable-ecore-evas-opengl-x11
 		"
 		if use opengl; then
@@ -147,8 +164,6 @@ src_configure() {
 	--disable-ecore-evas-opengl-glew
 	--disable-ecore-evas-software-16-ddraw
 	--disable-ecore-evas-software-16-wince
-	--disable-ecore-evas-software-x11
-	--disable-ecore-evas-software-16-x11
 	$(use_enable ares cares)
 	$(use_enable curl)
 	$(use_enable directfb ecore-directfb)
