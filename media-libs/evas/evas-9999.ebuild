@@ -9,7 +9,7 @@ inherit enlightenment
 DESCRIPTION="hardware-accelerated retained canvas API"
 HOMEPAGE="http://trac.enlightenment.org/e/wiki/Evas"
 
-IUSE="altivec bidi +bmp +cache directfb +eet fbcon +fontconfig gles gif +ico +jpeg mmx opengl +png +ppm sdl sse svg static-libs +threads tiff X xcb xpm"
+IUSE="altivec bidi +bmp +cache directfb +eet fbcon +fontconfig gles gif +ico +jpeg mmx opengl +png +ppm sdl sse svg static-libs tga +threads tiff X xcb xpm"
 
 RDEPEND="
 	>=dev-libs/eina-9999
@@ -50,19 +50,19 @@ src_configure() {
 		fi
 		MY_ECONF="
 			--disable-software-xcb
-			$(use_enable opengl gl-xlib)
+			$(use_enable opengl gl-xlib static)
 		"
 	elif use xcb ; then
-		use opengl && ewarn "opengl support is not implemented with xcb"
 		MY_ECONF="
 			--disable-gl-xlib
 			--enable-software-xcb=static
-			--enable-xrender-xcb=static
+			$(use_enable opengl gl-xcb static)
 		"
 	else
 		MY_ECONF="
 			--disable-gl-xlib
 			--disable-software-xcb
+			--disable-gl-xcb
 		"
 	fi
 
