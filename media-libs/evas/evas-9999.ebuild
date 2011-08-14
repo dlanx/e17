@@ -9,7 +9,7 @@ inherit enlightenment
 DESCRIPTION="hardware-accelerated retained canvas API"
 HOMEPAGE="http://trac.enlightenment.org/e/wiki/Evas"
 
-IUSE="altivec bidi +bmp +cache directfb +eet fbcon +fontconfig gles gif +ico +jpeg mmx opengl +png +ppm sdl sse svg static-libs tga +threads tiff X xcb xpm"
+IUSE="altivec bidi +bmp +cache directfb +eet fbcon +fontconfig gles gif +ico +jpeg mmx opengl +png +ppm +psd sdl sse svg static-libs tga +threads tiff X xcb xpm"
 
 RDEPEND="
 	>=dev-libs/eina-9999
@@ -50,13 +50,13 @@ src_configure() {
 		fi
 		MY_ECONF="
 			--disable-software-xcb
-			$(use_enable opengl gl-xlib static)
+			$(use_enable opengl gl-xlib)
 		"
 	elif use xcb ; then
 		MY_ECONF="
 			--disable-gl-xlib
-			--enable-software-xcb=static
-			$(use_enable opengl gl-xcb static)
+			--enable-software-xcb
+			$(use_enable opengl gl-xcb)
 		"
 	else
 		MY_ECONF="
@@ -69,38 +69,39 @@ src_configure() {
 	MY_ECONF+="
 		$(use_enable altivec cpu-altivec)
 		$(use_enable bidi fribidi)
-		$(use_enable bmp image-loader-bmp static)
-		$(use_enable bmp image-loader-wbmp static)
+		$(use_enable bmp image-loader-bmp)
+		$(use_enable bmp image-loader-wbmp)
 		$(use_enable cache metric-cache)
 		$(use_enable cache word-cache)
-		$(use_enable directfb static)
+		$(use_enable directfb)
 		$(use_enable doc)
-		$(use_enable eet font-loader-eet static)
-		$(use_enable eet image-loader-eet static)
-		$(use_enable fbcon fb static)
+		$(use_enable eet font-loader-eet)
+		$(use_enable eet image-loader-eet)
+		$(use_enable fbcon fb)
 		$(use_enable fontconfig)
 		$(use_enable gles gl-flavor-gles)
 		$(use_enable gles gles-variety-sgx)
-		$(use_enable gif image-loader-gif static)
-		$(use_enable ico image-loader-ico static)
-		$(use_enable jpeg image-loader-jpeg static)
+		$(use_enable gif image-loader-gif)
+		$(use_enable ico image-loader-ico)
+		$(use_enable jpeg image-loader-jpeg)
 		$(use_enable mmx cpu-mmx)
-		$(use_enable png image-loader-png static)
-		$(use_enable ppm image-loader-pmaps static)
-		$(use_enable sdl software-sdl static)
+		$(use_enable png image-loader-png)
+		$(use_enable ppm image-loader-pmaps)
+		$(use_enable psd image-loader-psd)
+		$(use_enable sdl software-sdl)
 		$(use_enable sse cpu-sse)
-		$(use_enable svg image-loader-svg static)
-		$(use_enable tga image-loader-tga static)
-		$(use_enable tiff image-loader-tiff static)
+		$(use_enable svg image-loader-svg)
+		$(use_enable tga image-loader-tga)
+		$(use_enable tiff image-loader-tiff)
 		$(use_enable threads pthreads)
 		$(use_enable threads async-events)
 		$(use_enable threads async-preload)
 		$(use_enable threads async-render)
-		$(use_enable X software-xlib static)
-		$(use_enable xpm image-loader-xpm static)
+		$(use_enable X software-xlib)
+		$(use_enable xpm image-loader-xpm)
 		--enable-evas-magic-debug \
 		--enable-static-software-generic \
-		--enable-buffer=static \
+		--enable-buffer \
 		--enable-cpu-c \
 		--enable-scale-sample \
 		--enable-scale-smooth \
@@ -126,6 +127,7 @@ src_configure() {
 		--enable-convert-32-rgb-rot-0 \
 		--enable-convert-32-rgb-rot-270 \
 		--enable-convert-32-rgb-rot-90 \
+		--enable-image-loader-generic \
 		--disable-image-loader-edb
 		--disable-static-software-16
 		--disable-software-16-x11"
