@@ -2,6 +2,10 @@
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  27 Aug 2011; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  -enlightenment-0.16.999.54504.ebuild, -enlightenment-0.16.999.55225.ebuild:
+  Drop old versions, they required hal, which is no more in the main tree
+
   10 Jan 2011; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
   enlightenment-9999.ebuild:
   Make hal and udev optional, but reqire one of them as the configure script
