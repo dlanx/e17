@@ -2,6 +2,9 @@
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  02 Oct 2011; Thomas Sachau (Tommy[D]) <tommy@gentoo.org> e_dbus-9999.ebuild:
+  Drop hal USE flag
+
   10 Jan 2011; Thomas Sachau (Tommy[D]) <tommy@gentoo.org> e_dbus-9999.ebuild:
   No need to default enable hal
 
