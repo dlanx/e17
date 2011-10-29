@@ -23,7 +23,6 @@ DEPEND="x11-plugins/e_modules-alarm
 	x11-plugins/e_modules-mpdule
 	x11-plugins/e_modules-net
 	x11-plugins/e_modules-news
-	x11-plugins/e_modules-notification
 	x11-plugins/e_modules-penguins
 	x11-plugins/e_modules-photo
 	x11-plugins/e_modules-rain
