@@ -8,7 +8,7 @@ inherit virtualx enlightenment
 
 DESCRIPTION="Enlightenment's core event abstraction layer and OS abstraction layer"
 
-IUSE="ares curl directfb +evas fbcon glib gnutls +inotify opengl sdl ssl static-libs +threads tslib +X xcb xinerama xprint xscreensaver"
+IUSE="ares curl directfb +evas fbcon glib gnutls +inotify +ipv6 opengl sdl ssl static-libs +threads tslib +X xcb xinerama xprint xscreensaver"
 
 RDEPEND="
 	>=dev-libs/eina-9999
@@ -175,6 +175,7 @@ src_configure() {
 	$(use_enable fbcon ecore-fb)
 	$(use_enable glib)
 	$(use_enable inotify)
+	$(use_enable ipv6)
 	$(use_enable sdl ecore-sdl)
 	$(use_enable test tests)
 	$(use_enable threads posix-threads)
