@@ -10,7 +10,7 @@ DESCRIPTION="Basic widget set, based on EFL for mobile touch-screen devices."
 HOMEPAGE="http://trac.enlightenment.org/e/wiki/Elementary"
 LICENSE="LGPL-2.1"
 
-IUSE="dbus fbcon sdl thumbnails weather X xdg static-libs"
+IUSE="dbus fbcon quicklaunch sdl thumbnails weather X xdg static-libs"
 
 DEPEND="
 	>=dev-libs/ecore-9999[evas,fbcon?,sdl?,X?]
@@ -25,6 +25,7 @@ RDEPEND="${DEPEND}"
 src_configure() {
 	MY_ECONF="$(use_enable dbus edbus)
 		$(use_enable fbcon ecore-fb)
+		$(use_enable quicklaunch quick-launch)
 		$(use_enable sdl ecore-sdl)
 		$(use_enable thumbnails ethumb)
 		$(use_enable weather eweather)
