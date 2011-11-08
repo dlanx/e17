@@ -16,7 +16,7 @@ __EVRY_MODS=""
 __CONF_MODS="
 	+@applications +@dialogs +@display +@edgebindings
 	+@interaction +@intl +@keybindings +@menus
-	+@paths +@performance +@shelves +@theme
+	+@paths +@performance +@randr +@shelves +@theme
 	+@wallpaper2 +@window-manipulation +@window-remembers"
 __NORM_MODS="
 	+@backlight +@battery +@clock +@comp +@connman +@cpufreq +@dropshadow
