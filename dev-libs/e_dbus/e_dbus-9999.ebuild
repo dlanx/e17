@@ -14,6 +14,7 @@ RDEPEND="
 	>=dev-libs/eina-9999
 	>=dev-libs/ecore-9999
 	sys-apps/dbus
+	connman? ( >=net-misc/connman-0.75 )
 	libnotify? ( >=media-libs/evas-9999 )
 	udev? ( sys-power/upower sys-fs/udisks )
 "
@@ -22,7 +23,7 @@ DEPEND="${RDEPEND}"
 src_configure() {
 	MY_ECONF="
 		$(use_enable bluetooth ebluez)
-		$(use_enable connman econnman)
+		$(use_enable connman econnman0_7x)
 		$(use_enable doc)
 		--disable-ehal
 		$(use_enable libnotify enotify)
