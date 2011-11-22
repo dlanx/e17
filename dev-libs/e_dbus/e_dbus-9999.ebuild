@@ -34,7 +34,7 @@ src_configure() {
 	if use test-binaries ; then
 		MY_ECONF+="
 			 $(use_enable bluetooth edbus-bluez-test)
-			$(use_enable connman edbus-connman-test)
+			$(use_enable connman edbus-connman0_7x-test)
 			$(use_enable libnotify edbus-notification-daemon-test)
 			$(use_enable libnotify edbus-notify-test)
 			$(use_enable ofono edbus-ofono-test)
@@ -42,7 +42,7 @@ src_configure() {
 	else
 		MY_ECONF+="
 			 --disable-edbus-bluez-test
-			--disable-edbus-connman-test
+			--disable-edbus-connman0_7x-test
 			--disable-edbus-notification-daemon-test
 			--disable-edbus-notify-test
 			--disable-edbus-ofono-test
