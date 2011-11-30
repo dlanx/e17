@@ -3,11 +3,11 @@
 # $Header: /var/cvsroot/gentoo-x86/media-libs/edje/edje-9999.ebuild,v 1.6 2006/07/16 05:29:42 vapier Exp $
 
 inherit enlightenment
-
+EAPI="2"
 DESCRIPTION="graphical layout and animation library"
 HOMEPAGE="http://www.enlightenment.org/pages/edje.html"
 
-IUSE="debug cache static-libs vim-syntax"
+IUSE="debug +cache static-libs vim-syntax"
 
 DEPEND="dev-lang/lua
 	>=dev-libs/eet-9999
