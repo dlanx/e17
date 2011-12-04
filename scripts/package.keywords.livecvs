@@ -62,7 +62,6 @@ x11-plugins/e_modules-eweather * ~* **
 x11-plugins/e_modules-execwatch * ~* **
 x11-plugins/e_modules-flame * ~* **
 x11-plugins/e_modules-forecasts * ~* **
-x11-plugins/e_modules-itask-ng * ~* **
 x11-plugins/e_modules-language * ~* **
 x11-plugins/e_modules-mail * ~* **
 x11-plugins/e_modules-mem * ~* **
