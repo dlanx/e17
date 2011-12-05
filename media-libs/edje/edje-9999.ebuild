@@ -2,8 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-libs/edje/edje-9999.ebuild,v 1.6 2006/07/16 05:29:42 vapier Exp $
 
-inherit enlightenment
 EAPI="2"
+
+inherit enlightenment
+
 DESCRIPTION="graphical layout and animation library"
 HOMEPAGE="http://www.enlightenment.org/pages/edje.html"
 
@@ -17,14 +19,14 @@ DEPEND="dev-lang/lua
 	>=dev-libs/ecore-9999"
 RDEPEND=${DEPEND}
 
-src_compile() {
+src_configure() {
 	export MY_ECONF="
 		$(use_enable cache edje-program-cache)
 		$(use_enable cache edje-calc-cache)
 		$(use_enable !debug amalgamation)
 		$(use_with vim-syntax vim /usr/share/vim)
 	"
-	enlightenment_src_compile
+	enlightenment_src_configure
 }
 
 src_install() {
