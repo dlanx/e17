@@ -9,7 +9,7 @@ inherit enlightenment
 DESCRIPTION="hardware-accelerated retained canvas API"
 HOMEPAGE="http://trac.enlightenment.org/e/wiki/Evas"
 
-IUSE="altivec bidi +bmp directfb +eet fbcon +fontconfig gles gif +ico +jpeg mmx opengl +png +ppm +psd sdl sse svg static-libs tga +threads tiff X xcb xpm"
+IUSE="altivec bidi +bmp directfb +eet fbcon +fontconfig gles gif +ico +jpeg mmx opengl +png +ppm +psd sdl sse sse3 svg static-libs tga +threads tiff X xcb xpm"
 
 RDEPEND="
 	>=dev-libs/eina-9999
@@ -92,6 +92,7 @@ src_configure() {
 		$(use_enable psd image-loader-psd)
 		$(use_enable sdl software-sdl)
 		$(use_enable sse cpu-sse)
+		$(use_enable sse3 cpu-sse3)
 		$(use_enable svg image-loader-svg)
 		$(use_enable tga image-loader-tga)
 		$(use_enable tiff image-loader-tiff)

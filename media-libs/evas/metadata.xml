@@ -12,6 +12,7 @@
  <flag name='gles'>Enable gles flavor of gl instead of standard</flag>
  <flag name='ppm'>Support PPM image loader</flag>
  <flag name='psd'>Support PSD image loader</flag>
+ <flag name='sse3'>Faster floating point optimization for SSE3 capable chips</flag>
  <flag name='tga'>Support tga image loader</flag>
 </use>
 <longdescription>
