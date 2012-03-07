@@ -91,14 +91,12 @@ src_configure() {
 		EVAS_FLAGS+="
 			$(use_enable directfb ecore-evas-directfb)
 			$(use_enable fbcon ecore-evas-fb)
-			$(use_enable sdl ecore-evas-software-sdl)
 			$(use_enable opengl ecore-evas-opengl-x11)
 		"
 	else
 		EVAS_FLAGS+="
 			--disable-ecore-evas-directfb
 			--disable-ecore-evas-fb
-			--disable-ecore-evas-software-sdl
 			--disable-ecore-evas-software-x11
 			--disable-ecore-evas-software-16-x11
 			--disable-ecore-evas-opengl-x11
