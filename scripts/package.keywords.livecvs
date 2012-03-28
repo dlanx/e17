@@ -52,8 +52,7 @@ x11-plugins/e_modules-cpu * ~* **
 x11-plugins/e_modules-deskshow * ~* **
 x11-plugins/e_modules-diskio * ~* **
 x11-plugins/e_modules-drawer * ~* **
-x11-plugins/e_modules-efm_nav * ~* **
-x11-plugins/e_modules-efm_path * ~* **
+x11-plugins/e_modules-engage * ~* **
 x11-plugins/e_modules-everything-mpris * ~* **
 x11-plugins/e_modules-everything-pidgin * ~* **
 x11-plugins/e_modules-everything-wallpaper * ~* **
@@ -62,7 +61,6 @@ x11-plugins/e_modules-eweather * ~* **
 x11-plugins/e_modules-execwatch * ~* **
 x11-plugins/e_modules-flame * ~* **
 x11-plugins/e_modules-forecasts * ~* **
-x11-plugins/e_modules-language * ~* **
 x11-plugins/e_modules-mail * ~* **
 x11-plugins/e_modules-mem * ~* **
 x11-plugins/e_modules-moon * ~* **
@@ -71,7 +69,6 @@ x11-plugins/e_modules-net * ~* **
 x11-plugins/e_modules-news * ~* **
 x11-plugins/e_modules-penguins * ~* **
 x11-plugins/e_modules-photo * ~* **
-x11-plugins/e_modules-places * ~* **
 x11-plugins/e_modules-rain * ~* **
 x11-plugins/e_modules-screenshot * ~* **
 x11-plugins/e_modules-slideshow * ~* **
@@ -81,13 +78,13 @@ x11-plugins/e_modules-tclock * ~* **
 x11-plugins/e_modules-tiling * ~* **
 x11-plugins/e_modules-uptime * ~* **
 x11-plugins/e_modules-weather * ~* **
+x11-plugins/e_modules-winlist-ng * ~* **
 x11-plugins/e_modules-winselector * ~* **
 x11-plugins/e_modules-wlan * ~* **
 x11-plugins/ecomorph * ~* **
 x11-plugins/edgar * ~* **
 x11-plugins/extramenu * ~* **
 x11-plugins/trash * ~* **
-x11-plugins/winlist_ng * ~* **
 x11-terms/enterminus * ~* **
 x11-themes/gtk2-E17-bling * ~* **
 x11-wm/ecomp * ~* **
