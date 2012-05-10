@@ -30,7 +30,6 @@ DEPEND="x11-plugins/e_modules-alarm
 	x11-plugins/e_modules-snow
 	x11-plugins/e_modules-taskbar
 	x11-plugins/e_modules-tclock
-	x11-plugins/e_modules-tiling
 	x11-plugins/e_modules-uptime
 	x11-plugins/e_modules-weather
 	x11-plugins/e_modules-winselector
