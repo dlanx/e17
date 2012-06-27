@@ -35,6 +35,7 @@ media-libs/ethumb * ~* **
 media-libs/evas * ~* **
 media-libs/imlib2 * ~* **
 media-libs/imlib2_loaders * ~* **
+media-plugins/evas_generic_loaders * ~* **
 media-video/rage * ~* **
 net-libs/libeweather * ~* **
 sci-calculators/equate * ~* **
