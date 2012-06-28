@@ -19,7 +19,7 @@ __CONF_MODS="
 	+@paths +@performance +@randr +@shelves +@theme
 	+@wallpaper2 +@window-manipulation +@window-remembers"
 __NORM_MODS="
-	+@backlight +@battery +@clock +@comp +@connman +@cpufreq +@dropshadow
+	@access +@backlight +@battery +@clock +@comp +@connman +@cpufreq +@dropshadow
 	+@everything +@fileman +@fileman-opinfo +@gadman +@ibar +@ibox +@illume2
 	+@mixer	+@msgbus +@notification @ofono +@pager +@shot +@start +@syscon
 	+@systray +@tasks +@temperature +@tiling +@winlist +@wizard +@xkbswitch"
