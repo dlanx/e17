@@ -52,6 +52,7 @@ src_prepare() {
 src_configure() {
 	export MY_ECONF="
 		--disable-install-sysactions
+		--disable-elementary
 		$(use_enable bluetooth bluez)
 		$(use_enable doc)
 		$(use_enable exchange)
