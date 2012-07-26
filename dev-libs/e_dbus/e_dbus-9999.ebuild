@@ -46,7 +46,9 @@ src_configure() {
 			--disable-edbus-notification-daemon-test
 			--disable-edbus-notify-test
 			--disable-edbus-ofono-test
-			--disable-edbus-ukit-test"
+			--disable-edbus-ukit-test
+			--disable-edbus-async-test
+			--disable-edbus-performance-test"
 	fi
 	enlightenment_src_configure
 }
