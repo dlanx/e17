@@ -32,6 +32,7 @@ IUSE="bluetooth exchange pam spell static-libs +udev ukit ${IUSE_E_MODULES}"
 RDEPEND="exchange? ( >=app-misc/exchange-9999 )
 	pam? ( sys-libs/pam )
 	>=dev-libs/efreet-9999
+	>=dev-libs/eio-9999
 	>=dev-libs/eina-9999[mempool-chained]
 	|| ( >=dev-libs/ecore-9999[X,evas,inotify] >=dev-libs/ecore-9999[xcb,evas,inotify] )
 	>=media-libs/edje-9999
