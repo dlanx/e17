@@ -11,10 +11,11 @@ HOMEPAGE="http://www.enlightenment.org/"
 
 IUSE=""
 
-RDEPEND=">dev-libs/ecore-1.2
-	>dev-libs/eet-1.6
-	>dev-libs/eina-1.2
-	>x11-libs/elementary-1.0
-	>media-libs/evas-1.2
-	>media-libs/edje-1.2"
+RDEPEND=">=dev-libs/ecore-9999
+	>=dev-libs/eet-9999
+	>=dev-libs/eina-9999
+	>=x11-libs/elementary-9999
+	>=media-libs/evas-9999
+	>=media-libs/edje-9999
+	>=media-libs/emotion-9999"
 DEPEND="${RDEPEND}"
