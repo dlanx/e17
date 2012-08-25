@@ -21,7 +21,7 @@ __CONF_MODS="
 __NORM_MODS="
 	@access +@backlight +@battery +@clock +@comp +@connman +@cpufreq +@dropshadow
 	+@everything +@fileman +@fileman-opinfo +@gadman +@ibar +@ibox +@illume2
-	+@mixer	+@msgbus +@notification @ofono +@pager +@shot +@start +@syscon
+	+@mixer	+@msgbus +@notification @ofono +@pager +@quickaccess +@shot +@start +@syscon
 	+@systray +@tasks +@temperature +@tiling +@winlist +@wizard +@xkbswitch"
 IUSE_E_MODULES="
 	${__CONF_MODS//@/e_modules_conf-}
