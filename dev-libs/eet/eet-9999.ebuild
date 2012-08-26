@@ -48,11 +48,9 @@ src_configure() {
 	fi
 
 	export MY_ECONF="
-		$(use_enable !debug amalgamation)
 		$(use_enable debug assert)
 		$(use_enable doc)
 		$(use_enable test tests)
-		$(use_enable test coverage)
 		${SSL_FLAGS}
 		${MY_ECONF}"
 
