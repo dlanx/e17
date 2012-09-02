@@ -13,7 +13,7 @@ LICENSE="LGPL-2.1"
 IUSE="altivec debug default-mempool mempool-buddy +mempool-chained
 	mempool-ememoa-fixed mempool-ememoa-unknown
 	mempool-fixed-bitmap +mempool-pass-through
-	mmx sse sse2 static-libs test +threads"
+	mmx sse sse2 static-libs test"
 
 RDEPEND="
 	mempool-ememoa-fixed? ( sys-libs/ememoa )
@@ -21,7 +21,7 @@ RDEPEND="
 	debug? ( dev-util/valgrind )"
 
 DEPEND="${RDEPEND}
-	dev-util/pkgconfig
+	virtual/pkgconfig
 	test? (
 		dev-libs/check
 		dev-libs/glib
@@ -61,11 +61,9 @@ src_configure() {
 	$(use_enable mmx cpu-mmx)
 	$(use_enable sse cpu-sse)
 	$(use_enable sse2 cpu-sse2)
-	$(use_enable threads posix-threads)
 	$(use test && echo " --disable-amalgamation")
 	$(use_enable test e17)
 	$(use_enable test tests)
-	$(use_enable test coverage)
 	$(use_enable test benchmark)
 	${EMEMOA_FLAGS}
 	--enable-magic-debug
