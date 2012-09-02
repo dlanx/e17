@@ -66,11 +66,7 @@ src_configure() {
 		"
 	fi
 
-#		$(use_enable cache metric-cache)
-#		$(use_enable cache word-cache)
 	MY_ECONF+="
-		--disable-metric-cache
-		--disable-word-cache
 		$(use_enable altivec cpu-altivec)
 		$(use_enable bidi fribidi)
 		$(use_enable bmp image-loader-bmp)
@@ -99,7 +95,6 @@ src_configure() {
 		$(use_enable threads pthreads)
 		$(use_enable threads async-events)
 		$(use_enable threads async-preload)
-		$(use_enable threads async-render)
 		$(use_enable X software-xlib)
 		$(use_enable xpm image-loader-xpm)
 		--enable-evas-magic-debug \
