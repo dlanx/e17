@@ -86,6 +86,7 @@ x11-plugins/edgar * ~* **
 x11-plugins/extramenu * ~* **
 x11-plugins/trash * ~* **
 x11-terms/enterminus * ~* **
+x11-terms/terminology * ~* **
 x11-themes/gtk2-E17-bling * ~* **
 x11-wm/ecomp * ~* **
 x11-wm/enlightenment * ~* **
