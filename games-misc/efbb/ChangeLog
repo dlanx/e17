@@ -1,0 +1,10 @@
+# ChangeLog for games-misc/efbb
+# Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*efbb-9999 (14 Sep 2012)
+
+  14 Sep 2012; Thomas Sachau (Tommy[D]) <tommy@gentoo.org> +efbb-9999.ebuild,
+  +metadata.xml:
+  Initial commit, original ebuild from thomasg
+
