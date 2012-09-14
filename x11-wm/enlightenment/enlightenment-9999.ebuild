@@ -1,4 +1,4 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -21,8 +21,8 @@ __CONF_MODS="
 __NORM_MODS="
 	@access +@backlight +@battery +@clock +@comp +@connman +@cpufreq +@dropshadow
 	+@everything +@fileman +@fileman-opinfo +@gadman +@ibar +@ibox +@illume2
-	+@mixer	+@msgbus +@notification @ofono +@pager +@quickaccess +@shot +@start +@syscon
-	+@systray +@tasks +@temperature +@tiling +@winlist +@wizard +@xkbswitch"
+	+@mixer	+@msgbus +@notification @ofono +@pager @physics +@quickaccess +@shot +@start
+	+@syscon +@systray +@tasks +@temperature +@tiling +@winlist +@wizard +@xkbswitch"
 IUSE_E_MODULES="
 	${__CONF_MODS//@/e_modules_conf-}
 	${__NORM_MODS//@/e_modules_}"
@@ -40,6 +40,7 @@ RDEPEND="exchange? ( >=app-misc/exchange-9999 )
 	ukit? ( >=dev-libs/e_dbus-9999[udev] )
 	e_modules_connman? ( >=dev-libs/e_dbus-9999[connman] )
 	e_modules_ofono? ( >=dev-libs/e_dbus-9999[ofono] )
+	e_modules_physics? ( >=dev-libs/ephysics-9999 )
 	|| ( >=media-libs/evas-9999[eet,X,jpeg,png] >=media-libs/evas-9999[eet,xcb,jpeg,png] )
 	bluetooth? ( net-wireless/bluez )
 	>=dev-libs/eeze-9999"

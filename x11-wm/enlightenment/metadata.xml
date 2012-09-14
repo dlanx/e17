@@ -30,6 +30,7 @@
 	<flag name="e_modules_notification">notification-daemon alternative. Popup if an event occur</flag>
 	<flag name="e_modules_ofono">Control mobile modems</flag>
 	<flag name="e_modules_pager">Gadget to allow you to visualize your virtual desktops and the windows they contain</flag>
+	<flag name="e_modules_physics">Enlightenment Physics Professor</flag>
 	<flag name="e_modules_quickaccess">Enlightenment Quickaccess Launcher</flag>
 	<flag name="e_modules_shot">Simple screenshot+save/upload module</flag>
 	<flag name="e_modules_start">Enlightenment's "Start" button equivalent</flag>
