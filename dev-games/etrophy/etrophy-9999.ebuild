@@ -9,7 +9,7 @@ ESVN_SUB_PROJECT="PROTO"
 inherit enlightenment
 
 DESCRIPTION="Library for games to manage scores, trohpies and unlockables"
-IUSE=""
+IUSE="static-libs"
 
 RDEPEND=">=dev-libs/ecore-9999
 	>=dev-libs/eet-9999
