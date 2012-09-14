@@ -14,7 +14,7 @@ inherit enlightenment distutils
 DESCRIPTION="C boilerplate generator for EET datastructures"
 HOMEPAGE="http://git.profusion.mobi/~leandro/geneet.html"
 
-KEYWORDS="~amd64"
+KEYWORDS=""
 IUSE=""
 
 DEPEND="dev-python/pyparsing"
