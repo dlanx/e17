@@ -15,7 +15,7 @@ RDEPEND="
 	>=dev-libs/eina-9999
 	>=media-libs/freetype-2.3.9
 	fontconfig? ( media-libs/fontconfig )
-	gles? ( media-libs/mesa[gallium,gles] )
+	gles? ( media-libs/mesa[gallium,gles2] )
 	gif? ( media-libs/giflib )
 	jpeg? ( virtual/jpeg )
 	png? ( media-libs/libpng )
