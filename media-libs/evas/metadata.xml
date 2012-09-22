@@ -14,6 +14,7 @@
  <flag name='psd'>Support PSD image loader</flag>
  <flag name='sse3'>Faster floating point optimization for SSE3 capable chips</flag>
  <flag name='tga'>Support tga image loader</flag>
+ <flag name='wayland'>Enable support for <pkg>dev-libs/wayland</pkg></flag>
 </use>
 <longdescription>
 Evas is a hardware-accelerated canvas API for X-Windows that can draw 
