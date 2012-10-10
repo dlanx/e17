@@ -12,6 +12,7 @@
 app-admin/empower ~*
 app-misc/exchange ~*
 app-text/epdf ~*
+dev-games/etrophy ~*
 dev-libs/e_dbus ~*
 dev-libs/ecore ~*
 dev-libs/eet ~*
@@ -20,12 +21,16 @@ dev-libs/efreet ~*
 dev-libs/eina ~*
 dev-libs/eio ~*
 dev-libs/embryo ~*
+dev-libs/eobj ~*
+dev-libs/ephysics ~*
 dev-python/python-e_dbus ~*
 dev-python/python-ecore ~*
 dev-python/python-edje ~*
 dev-python/python-elementary ~*
 dev-python/python-evas ~*
 dev-util/edje_viewer ~*
+dev-util/geneet ~*
+games-misc/efbb ~*
 games-misc/elitaire ~*
 media-gfx/elicit ~*
 media-gfx/ephoto ~*
