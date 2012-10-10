@@ -13,6 +13,7 @@ IUSE="altivec bidi +bmp directfb +eet fbcon +fontconfig gles gif +ico +jpeg mmx 
 
 RDEPEND="
 	>=dev-libs/eina-9999
+	>=dev-libs/eobj-9999
 	>=media-libs/freetype-2.3.9
 	fontconfig? ( media-libs/fontconfig )
 	gles? ( media-libs/mesa[gallium,gles2] )
