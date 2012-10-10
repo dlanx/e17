@@ -1,0 +1,10 @@
+# ChangeLog for dev-libs/eobj
+# Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*eobj-9999 (10 Oct 2012)
+
+  10 Oct 2012; Thomas Sachau (Tommy[D]) <tommy@gentoo.org> +eobj-9999.ebuild,
+  +metadata.xml:
+  Initial commit
+
