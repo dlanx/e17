@@ -13,8 +13,11 @@ SRC_URI=""
 
 LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 IUSE="doc static-libs"
+
+DEPEND=">=dev-libs/eina-9999"
+RDEPEND="${DEPEND}"
 
 src_configure() {
 	MY_ECONF="$(use_enable doc)"
