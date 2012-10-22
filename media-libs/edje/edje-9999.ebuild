@@ -1,4 +1,4 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-libs/edje/edje-9999.ebuild,v 1.6 2006/07/16 05:29:42 vapier Exp $
 
@@ -15,6 +15,7 @@ DEPEND="dev-lang/lua
 	>=dev-libs/eet-9999
 	>=dev-libs/eina-9999
 	>=dev-libs/embryo-9999
+	>=dev-libs/eobj-9999
 	>=media-libs/evas-9999
 	>=dev-libs/ecore-9999"
 RDEPEND=${DEPEND}
