@@ -7,11 +7,9 @@ inherit enlightenment
 DESCRIPTION="e_modules meta package - merge this to pull in all e_modules"
 
 DEPEND="x11-plugins/e_modules-alarm
-	x11-plugins/e_modules-calendar
 	x11-plugins/e_modules-cpu
 	x11-plugins/e_modules-deskshow
 	x11-plugins/e_modules-diskio
-	x11-plugins/e_modules-drawer
 	x11-plugins/e_modules-eweather
 	x11-plugins/e_modules-execwatch
 	x11-plugins/e_modules-flame
