@@ -1,0 +1,10 @@
+# ChangeLog for dev-libs/edbus2
+# Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*edbus2-9999 (02 Nov 2012)
+
+  02 Nov 2012; Thomas Sachau (Tommy[D]) <tommy@gentoo.org> +edbus2-9999.ebuild,
+  +metadata.xml:
+  Initial live ebuild
+
