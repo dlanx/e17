@@ -15,6 +15,7 @@ app-text/epdf ~*
 dev-games/etrophy ~*
 dev-libs/e_dbus ~*
 dev-libs/ecore ~*
+dev-libs/edbus2 ~*
 dev-libs/eet ~*
 dev-libs/eeze ~*
 dev-libs/efreet ~*
