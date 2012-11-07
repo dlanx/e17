@@ -7,7 +7,6 @@
     </maintainer>
 
     <use>
-	<flag name='exchange'>Add support for <pkg>app-misc/exchange</pkg> - the enlightened way to exchange stuffs!</flag>
 	<flag name='udev'>Use sys-fs/udev to determine available devices</flag>
 	<flag name='ukit'>Use upower/udisks to automount devices</flag>
 	<flag name="e_modules_access">Accessibility module designed to improve ease of use for the vision impaired and the blind</flag>
@@ -28,7 +27,6 @@
 	<flag name="e_modules_mixer">A module to provide a mixer for changing volume</flag>
 	<flag name="e_modules_msgbus">DBus Extension</flag>
 	<flag name="e_modules_notification">notification-daemon alternative. Popup if an event occur</flag>
-	<flag name="e_modules_ofono">Control mobile modems</flag>
 	<flag name="e_modules_pager">Gadget to allow you to visualize your virtual desktops and the windows they contain</flag>
 	<flag name="e_modules_physics">Enlightenment Physics Professor</flag>
 	<flag name="e_modules_quickaccess">Enlightenment Quickaccess Launcher</flag>

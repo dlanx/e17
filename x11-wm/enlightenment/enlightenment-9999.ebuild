@@ -21,15 +21,15 @@ __CONF_MODS="
 __NORM_MODS="
 	@access +@backlight +@battery +@clock +@comp +@connman +@cpufreq +@dropshadow
 	+@everything +@fileman +@fileman-opinfo +@gadman +@ibar +@ibox +@illume2
-	+@mixer	+@msgbus +@notification @ofono +@pager @physics +@quickaccess +@shot +@start
+	+@mixer	+@msgbus +@notification +@pager @physics +@quickaccess +@shot +@start
 	+@syscon +@systray +@tasks +@temperature +@tiling +@winlist +@wizard +@xkbswitch"
 IUSE_E_MODULES="
 	${__CONF_MODS//@/e_modules_conf-}
 	${__NORM_MODS//@/e_modules_}"
 
-IUSE="bluetooth exchange pam spell static-libs +udev ukit ${IUSE_E_MODULES}"
+IUSE="pam spell static-libs +udev ukit ${IUSE_E_MODULES}"
 
-RDEPEND="exchange? ( >=app-misc/exchange-9999 )
+RDEPEND="
 	pam? ( sys-libs/pam )
 	>=dev-libs/efreet-9999
 	>=dev-libs/eio-9999
@@ -39,10 +39,8 @@ RDEPEND="exchange? ( >=app-misc/exchange-9999 )
 	>=dev-libs/e_dbus-9999[libnotify,udev?]
 	ukit? ( >=dev-libs/e_dbus-9999[udev] )
 	e_modules_connman? ( >=dev-libs/e_dbus-9999[connman] )
-	e_modules_ofono? ( >=dev-libs/e_dbus-9999[ofono] )
 	e_modules_physics? ( >=dev-libs/ephysics-9999 )
 	|| ( >=media-libs/evas-9999[eet,X,jpeg,png] >=media-libs/evas-9999[eet,xcb,jpeg,png] )
-	bluetooth? ( net-wireless/bluez )
 	>=dev-libs/eeze-9999"
 DEPEND="${RDEPEND}"
 
@@ -55,9 +53,7 @@ src_configure() {
 	export MY_ECONF="
 		--disable-install-sysactions
 		--disable-elementary
-		$(use_enable bluetooth bluez)
 		$(use_enable doc)
-		$(use_enable exchange)
 		--disable-device-hal
 		--disable-mount-hal
 		$(use_enable nls)
