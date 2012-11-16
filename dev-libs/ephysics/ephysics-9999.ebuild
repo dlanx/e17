@@ -14,7 +14,7 @@ RDEPEND="
 	>=dev-libs/eina-9999
 	>=media-libs/evas-9999
 	>=sci-physics/bullet-2.80
-	test-gui? ( >=x11-libs/elementary-9999 )
+	test-gui? ( >=media-libs/elementary-9999 )
 "
 DEPEND="${RDEPEND}"
 
