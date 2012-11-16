@@ -1,4 +1,4 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -17,10 +17,10 @@ HOMEPAGE="http://www.enlightenment.org/"
 LICENSE="|| ( GPL-3 LGPL-3 )"
 IUSE="static-libs"
 
-RDEPEND=">=x11-libs/elementary-9999"
+RDEPEND=">=media-libs/elementary-9999"
 
 DEPEND="${RDEPEND}
-	dev-util/pkgconfig
+	virtual/pkgconfig
 	>=dev-python/python-evas-9999"
 
 src_prepare() {
