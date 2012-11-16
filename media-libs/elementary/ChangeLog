@@ -1,0 +1,26 @@
+# ChangeLog for x11-libs/elementary
+# Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  16 Nov 2012; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  -elementary-0.7.0.52995.ebuild, -elementary-0.7.0.55225.ebuild:
+  Drop old snapshot ebuilds
+
+*elementary-0.7.0.55225 (19 Dec 2010)
+
+  19 Dec 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  +elementary-0.7.0.55225.ebuild:
+  Add latest snapshot
+
+*elementary-0.7.0.52995 (06 Oct 2010)
+
+  06 Oct 2010; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  -elementary-0.7.0.49898.ebuild, +elementary-0.7.0.52995.ebuild:
+  Bump elementary to latest snapshot
+
+*elementary-0.6.0.063 (20 Dec 2009)
+
+  20 Dec 2009; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  +elementary-0.6.0.063.ebuild:
+  Add snapshot for elementary
+
