@@ -8,5 +8,5 @@ inherit enlightenment
 
 DESCRIPTION="Module that display fancy penguins on your desktop"
 
-DEPEND=">=x11-wm/enlightenment-9999
+DEPEND=">=x11-wm/enlightenment-0.17.0_alpha
 	>=media-libs/edje-0.5.0"
