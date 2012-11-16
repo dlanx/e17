@@ -12,7 +12,7 @@ DESCRIPTION="Different window list for e17"
 
 IUSE="static-libs"
 
-DEPEND=">=x11-wm/enlightenment-9999
+DEPEND=">=x11-wm/enlightenment-0.17.0_alpha:0.17
 	media-libs/edje
 	dev-libs/efreet"
 RDEPEND=${DEPEND}

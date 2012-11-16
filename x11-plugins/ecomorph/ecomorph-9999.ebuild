@@ -21,7 +21,7 @@ CDEPEND=">=media-libs/edje-0.5.0
 	sys-apps/dbus"
 DEPEND="${CDEPEND}
 	dev-util/intltool
-	dev-util/pkgconfig
+	virtual/pkgconfig
 	sys-devel/libtool"
 RDEPEND="${CDEPEND}
 	x11-apps/mesa-progs

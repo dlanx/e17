@@ -13,5 +13,5 @@ DESCRIPTION="evry-mpris plugin is a frontend for mediaplayers that support mpris
 
 IUSE="static-libs"
 
-RDEPEND=">=x11-wm/enlightenment-9999[e_modules_everything]"
+RDEPEND=">=x11-wm/enlightenment-0.17.0_alpha:0.17[enlightenment_modules_everything]"
 DEPEND="${RDEPEND}"

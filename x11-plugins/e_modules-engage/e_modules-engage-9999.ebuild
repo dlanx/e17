@@ -12,5 +12,5 @@ DESCRIPTION="Engage Module for E17"
 
 IUSE="static-libs"
 
-RDEPEND=">=x11-wm/enlightenment-9999"
+RDEPEND=">=x11-wm/enlightenment-0.17.0_alpha:0.17"
 DEPEND="${RDEPEND}"
