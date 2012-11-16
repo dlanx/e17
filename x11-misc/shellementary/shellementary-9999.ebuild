@@ -16,7 +16,7 @@ DESCRIPTION="Tool to display Elementary dialogs from the command line and shell 
 
 IUSE="static-libs"
 
-RDEPEND=">=x11-libs/elementary-9999"
+RDEPEND=">=media-libs/elementary-9999"
 DEPEND=${RDEPEND}
 
 src_prepare() {
