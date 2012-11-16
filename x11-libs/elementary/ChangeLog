@@ -1,6 +1,10 @@
 # ChangeLog for x11-libs/elementary
-# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+  16 Nov 2012; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  -elementary-0.7.0.52995.ebuild, -elementary-0.7.0.55225.ebuild:
+  Drop old snapshot ebuilds
 
 *elementary-0.7.0.55225 (19 Dec 2010)
 
