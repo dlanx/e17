@@ -18,7 +18,7 @@ RDEPEND=">=dev-libs/ecore-9999
 	>=dev-libs/eio-9999
 	>=dev-libs/embryo-9999
 	>=dev-libs/eobj-9999
-	>=x11-libs/elementary-9999
+	>=media-libs/elementary-9999
 	>=media-libs/evas-9999
 	>=media-libs/edje-9999
 	>=media-libs/emotion-9999
