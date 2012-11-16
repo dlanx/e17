@@ -27,8 +27,8 @@ __NORM_MODS="
 	+@mixer	+@msgbus +@notification +@pager +@quickaccess +@shot +@start
 	+@syscon +@systray +@tasks +@temperature +@tiling +@winlist +@wizard +@xkbswitch"
 IUSE_E_MODULES="
-	${__CONF_MODS//@/e_modules_conf-}
-	${__NORM_MODS//@/e_modules_}"
+	${__CONF_MODS//@/enlightenment_modules_conf-}
+	${__NORM_MODS//@/enlightenment_modules_}"
 
 IUSE="pam spell static-libs +udev ukit ${IUSE_E_MODULES}"
 
@@ -41,7 +41,7 @@ RDEPEND="
 	>=media-libs/edje-1.7.1
 	>=dev-libs/e_dbus-1.7.1[libnotify,udev?]
 	ukit? ( >=dev-libs/e_dbus-1.7.1[udev] )
-	e_modules_connman? ( >=dev-libs/e_dbus-1.7.1[connman] )
+	enlightenment_modules_connman? ( >=dev-libs/e_dbus-1.7.1[connman] )
 	|| ( >=media-libs/evas-1.7.1[eet,X,jpeg,png] >=media-libs/evas-1.7.1[eet,xcb,jpeg,png] )
 	>=dev-libs/eeze-1.7.1"
 DEPEND="${RDEPEND}"
@@ -70,7 +70,7 @@ src_configure() {
 	local u c
 	for u in ${IUSE_E_MODULES} ; do
 		u=${u#+}
-		c=${u#e_modules_}
+		c=${u#enlightenment_modules_}
 		MY_ECONF+=" $(use_enable ${u} ${c})"
 	done
 	enlightenment_src_configure

@@ -24,8 +24,8 @@ __NORM_MODS="
 	+@mixer	+@msgbus +@notification +@pager @physics +@quickaccess +@shot +@start
 	+@syscon +@systray +@tasks +@temperature +@tiling +@winlist +@wizard +@xkbswitch"
 IUSE_E_MODULES="
-	${__CONF_MODS//@/e_modules_conf-}
-	${__NORM_MODS//@/e_modules_}"
+	${__CONF_MODS//@/enlightenment_modules_conf-}
+	${__NORM_MODS//@/enlightenment_modules_}"
 
 IUSE="pam spell static-libs +udev ukit ${IUSE_E_MODULES}"
 
@@ -38,8 +38,8 @@ RDEPEND="
 	>=media-libs/edje-9999
 	>=dev-libs/e_dbus-9999[libnotify,udev?]
 	ukit? ( >=dev-libs/e_dbus-9999[udev] )
-	e_modules_connman? ( >=dev-libs/e_dbus-9999[connman] )
-	e_modules_physics? ( >=dev-libs/ephysics-9999 )
+	enlightenment_modules_connman? ( >=dev-libs/e_dbus-9999[connman] )
+	enlightenment_modules_physics? ( >=dev-libs/ephysics-9999 )
 	|| ( >=media-libs/evas-9999[eet,X,jpeg,png] >=media-libs/evas-9999[eet,xcb,jpeg,png] )
 	>=dev-libs/eeze-9999"
 DEPEND="${RDEPEND}"
@@ -65,7 +65,7 @@ src_configure() {
 	local u c
 	for u in ${IUSE_E_MODULES} ; do
 		u=${u#+}
-		c=${u#e_modules_}
+		c=${u#enlightenment_modules_}
 		MY_ECONF+=" $(use_enable ${u} ${c})"
 	done
 	enlightenment_src_configure
