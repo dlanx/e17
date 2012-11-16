@@ -15,5 +15,5 @@ RDEPEND=">=dev-libs/ecore-9999
 	>=dev-libs/eet-9999
 	>=dev-libs/eina-9999
 	>=media-libs/evas-9999
-	>=x11-libs/elementary-9999"
+	>=media-libs/elementary-9999"
 DEPEND="${RDEPEND}"
