@@ -18,7 +18,7 @@ IUSE="static-libs"
 RDEPEND=">=dev-libs/e_dbus-9999
 	dev-python/dbus-python"
 DEPEND="${RDEPEND}
-	dev-util/pkgconfig"
+	virtual/pkgconfig"
 
 src_prepare() {
 	enlightenment_src_prepare
