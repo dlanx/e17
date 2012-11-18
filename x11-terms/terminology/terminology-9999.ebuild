@@ -11,16 +11,15 @@ HOMEPAGE="http://www.enlightenment.org/"
 
 IUSE=""
 
-RDEPEND=">=dev-libs/ecore-9999
-	>=dev-libs/eet-9999
-	>=dev-libs/efreet-9999
-	>=dev-libs/eina-9999
-	>=dev-libs/eio-9999
-	>=dev-libs/embryo-9999
-	>=dev-libs/eobj-9999
-	>=media-libs/elementary-9999
-	>=media-libs/evas-9999
-	>=media-libs/edje-9999
-	>=media-libs/emotion-9999
+RDEPEND=">=dev-libs/ecore-1.7.0[evas]
+	>=dev-libs/eet-1.7.0
+	>=dev-libs/efreet-1.7.0
+	>=dev-libs/eina-1.7.0
+	>=dev-libs/eio-1.7.0
+	>=dev-libs/embryo-1.7.0
+	>=media-libs/elementary-1.7.0
+	>=media-libs/evas-1.7.0
+	>=media-libs/edje-1.7.0
+	>=media-libs/emotion-1.7.0
 	media-libs/freetype:2"
 DEPEND="${RDEPEND}"
