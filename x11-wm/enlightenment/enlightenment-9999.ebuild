@@ -31,17 +31,17 @@ IUSE="pam spell static-libs +udev ukit ${IUSE_E_MODULES}"
 
 RDEPEND="
 	pam? ( sys-libs/pam )
-	>=dev-libs/efreet-9999
-	>=dev-libs/eio-9999
-	>=dev-libs/eina-9999[mempool-chained]
-	|| ( >=dev-libs/ecore-9999[X,evas,inotify] >=dev-libs/ecore-9999[xcb,evas,inotify] )
-	>=media-libs/edje-9999
-	>=dev-libs/e_dbus-9999[libnotify,udev?]
-	ukit? ( >=dev-libs/e_dbus-9999[udev] )
-	enlightenment_modules_connman? ( >=dev-libs/e_dbus-9999[connman] )
+	>=dev-libs/efreet-1.7
+	>=dev-libs/eio-1.7
+	>=dev-libs/eina-1.7[mempool-chained]
+	|| ( >=dev-libs/ecore-1.7[X,evas,inotify] >=dev-libs/ecore-1.7[xcb,evas,inotify] )
+	>=media-libs/edje-1.7
+	>=dev-libs/e_dbus-1.7[libnotify,udev?]
+	ukit? ( >=dev-libs/e_dbus-1.7[udev] )
+	enlightenment_modules_connman? ( >=dev-libs/e_dbus-1.7[connman] )
 	enlightenment_modules_physics? ( >=dev-libs/ephysics-9999 )
-	|| ( >=media-libs/evas-9999[eet,X,jpeg,png] >=media-libs/evas-9999[eet,xcb,jpeg,png] )
-	>=dev-libs/eeze-9999"
+	|| ( >=media-libs/evas-1.7[eet,X,jpeg,png] >=media-libs/evas-1.7[eet,xcb,jpeg,png] )
+	>=dev-libs/eeze-1.7"
 DEPEND="${RDEPEND}"
 
 src_prepare() {
