@@ -1,4 +1,15 @@
-# evadim <evadim@evadim.ru> (16 May 2009)
-# Masked due to merge into main x11-wm/enlightenment tree.
-# Just remove it now - it will be availible after x11-wm enlightenment remerge.
-x11-plugins/e_modules-systray
+# Thomas Sachau <tommy@gentoo.org> (02 Dec 2012)
+# Masking live ebuilds, which are broken by upstream
+# moves/changes or have broken dependencies
+# use the released versions instead
+~dev-libs/eina-9999
+~dev-libs/eet-9999
+~dev-libs/embryo-9999
+~media-libs/evas-9999
+~dev-libs/ecore-9999
+~media-libs/edje-9999
+~dev-libs/e_dbus-9999
+~dev-libs/eio-9999
+~dev-libs/eeze-9999
+~dev-libs/efreet-9999
+~x11-wm/enlightenment-9999
