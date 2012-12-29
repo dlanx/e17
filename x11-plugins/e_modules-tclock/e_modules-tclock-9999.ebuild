@@ -12,5 +12,6 @@ inherit enlightenment
 DESCRIPTION="Simple TEXT Clock module for e17"
 
 DEPEND=">=x11-wm/enlightenment-0.17.0_alpha:0.17=
+	dev-libs/eet
 	>=media-libs/edje-0.5.0"
 RDEPEND=${DEPEND}
