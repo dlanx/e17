@@ -12,5 +12,6 @@ inherit enlightenment
 DESCRIPTION="Module that display fancy penguins on your desktop"
 
 DEPEND=">=x11-wm/enlightenment-0.17.0_alpha:0.17=
+	dev-libs/eet
 	>=media-libs/edje-0.5.0"
 RDEPEND=${DEPEND}
