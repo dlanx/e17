@@ -46,6 +46,7 @@ DEPEND="${RDEPEND}"
 
 src_prepare() {
 	epatch "${FILESDIR}"/quickstart.diff
+	epatch_user
 	enlightenment_src_prepare
 }
 
