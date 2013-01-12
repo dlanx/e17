@@ -14,12 +14,12 @@ SLOT="0.17"
 # The @ is just an anchor to expand from
 __EVRY_MODS=""
 __CONF_MODS="
-	+@applications +@dialogs +@display +@edgebindings
+	+@applications +@comp +@dialogs +@display +@edgebindings
 	+@interaction +@intl +@keybindings +@menus
 	+@paths +@performance +@randr +@shelves +@theme
 	+@wallpaper2 +@window-manipulation +@window-remembers"
 __NORM_MODS="
-	@access +@backlight +@battery +@clock +@comp +@connman +@cpufreq +@dropshadow
+	@access +@backlight +@battery +@clock +@connman +@cpufreq +@dropshadow
 	+@everything +@fileman +@fileman-opinfo +@gadman +@ibar +@ibox +@illume2
 	+@mixer	+@msgbus +@notification +@pager @physics +@quickaccess +@shot +@start
 	+@syscon +@systray +@tasks +@temperature +@tiling +@winlist +@wizard +@xkbswitch"
