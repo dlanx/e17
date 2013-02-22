@@ -17,7 +17,7 @@ HOMEPAGE="http://git.profusion.mobi/~leandro/geneet.html"
 KEYWORDS=""
 IUSE=""
 
-DEPEND="dev-python/pyparsing"
+DEPEND="virtual/pyparsing"
 RDEPEND="${DEPEND}"
 
 src_configure() {
