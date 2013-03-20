@@ -57,6 +57,7 @@ IUSE_ENLIGHTENMENT_MODULES="
 	+conf-comp
 	+conf-dialogs
 	+conf-display
+	+conf-bindings
 	+conf-interaction
 	+conf-intl
 	+conf-menus
