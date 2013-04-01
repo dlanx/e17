@@ -252,10 +252,12 @@ efl_src_configure() {
 		has nls ${IUSE} && MY_ECONF+=" $(use_enable nls)"
 		has doc ${IUSE} && MY_ECONF+=" $(use_enable doc)"
 
-		if has static-libs ${IUSE}; then
-			MY_ECONF+=" $(use_enable static-libs static)"
-		else
-			MY_ECONF+=" --disable-static"
+		if grep -q "enable-static" ${ECONF_SOURCE:-.}/configure; then
+			if has static-libs ${IUSE}; then
+				MY_ECONF+=" $(use_enable static-libs static)"
+			else
+				MY_ECONF+=" --disable-static"
+			fi
 		fi
 
 		econf ${MY_ECONF} || efl_die "configure failed"
