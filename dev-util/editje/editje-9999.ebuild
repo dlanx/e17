@@ -5,7 +5,6 @@
 EAPI="2"
 
 E_NO_VISIBILITY="1"
-E_PKG_IUSE="static-libs"
 
 inherit efl
 
