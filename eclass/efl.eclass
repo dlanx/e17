@@ -292,7 +292,7 @@ efl_src_install() {
 		[[ -f ${doc} ]] && dodoc ${doc}
 	done
 
-	if has examples ${IUSE} && use examples; then
+	if has examples ${IUSE} && use examples && [[ -d examples ]]; then
 		insinto /usr/share/doc/${PF}
 		doins -r examples
 	fi
