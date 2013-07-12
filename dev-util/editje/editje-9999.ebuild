@@ -13,11 +13,7 @@ HOMEPAGE="http://trac.enlightenment.org/e/wiki/Editje"
 LICENSE="GPL-3"
 IUSE=""
 
-RDEPEND="
-	>=dev-python/python-evas-9999
-	>=dev-python/python-ecore-9999
-	>=dev-python/python-edje-9999
-	>=dev-python/python-elementary-9999"
+RDEPEND=">=dev-python/python-efl-9999"
 
 DEPEND=">=dev-libs/efl-9999"
 

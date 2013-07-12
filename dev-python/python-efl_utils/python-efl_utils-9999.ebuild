@@ -20,9 +20,7 @@ KEYWORDS=""
 
 IUSE=""
 
-RDEPEND="
-	>=dev-python/python-evas-9999
-	>=dev-python/python-ecore-9999"
+RDEPEND=">=dev-python/python-efl-9999"
 
 src_configure()
 {
