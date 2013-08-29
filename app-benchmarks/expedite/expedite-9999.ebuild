@@ -11,7 +11,7 @@ inherit efl
 
 DESCRIPTION="Comprehensive test and benchmark suite for Evas"
 
-IUSE="directfb fbcon opengl sdl X xcb"
+IUSE="directfb fbcon opengl sdl X xcb wayland"
 
 RDEPEND="
 	>=dev-libs/efl-9999[fbcon?,opengl?,sdl?,X?,xcb?]
@@ -48,8 +48,6 @@ pkg_pretend() {
 
 #TODO:
 #  --enable-opengl-sdl     enable OpenGL SDL engine
-#  --enable-wayland-egl    enable Wayland EGL engine
-#  --enable-wayland-shm    enable Wayland SHM engine
 
 src_configure() {
 	export MY_ECONF="
@@ -64,10 +62,11 @@ src_configure() {
 	  $(use_enable directfb)
 	  $(use_enable fbcon fb)
 	  $(use_enable opengl opengl-x11)
-	  $(use_enable sdl software-sdl)
 	  $(use_enable X software-x11)
 	  $(use_enable X xrender-x11)
 	  $(use_enable xcb xrender-xcb)
+	  $(use_enable wayland wayland-egl)
+	  $(use_enable wayland wayland-shm)
 	"
 	efl_src_configure
 }
