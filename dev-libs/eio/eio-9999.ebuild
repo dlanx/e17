@@ -4,6 +4,10 @@
 
 EAPI=2
 
+EGIT_SUB_PROJECT="legacy"
+EGIT_URI_APPEND=${PN}
+EGIT_BRANCH=${PN}-1.7
+
 inherit enlightenment
 
 DESCRIPTION="Enlightenment's integration to IO"
