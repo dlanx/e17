@@ -5,7 +5,7 @@
 EAPI=5
 
 EGIT_SUB_PROJECT="enlightenment/modules"
-ESVN_URI_APPEND="${PN#e_modules-}"
+EGIT_URI_APPEND="${PN#e_modules-}"
 inherit enlightenment
 
 DESCRIPTION="CPU monitor module for e17"
