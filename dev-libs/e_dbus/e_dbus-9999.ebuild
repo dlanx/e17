@@ -4,6 +4,9 @@
 
 EAPI="2"
 
+EGIT_SUB_PROJECT="legacy"
+EGIT_URI_APPEND=${PN}
+
 inherit enlightenment
 
 DESCRIPTION="Enlightenment's (Ecore) integration to DBus"
