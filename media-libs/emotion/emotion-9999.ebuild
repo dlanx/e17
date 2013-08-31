@@ -2,6 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-libs/emotion/emotion-9999.ebuild,v 1.6 2006/02/14 00:32:25 vapier Exp $
 
+EGIT_SUB_PROJECT="legacy"
+EGIT_URI_APPEND=${PN}
+EGIT_BRANCH=${PN}-1.7
+
 inherit enlightenment
 
 DESCRIPTION="video libraries for e17"
