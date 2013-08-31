@@ -4,6 +4,10 @@
 
 EAPI=2
 
+EGIT_SUB_PROJECT="core"
+EGIT_URI_APPEND=${PN}
+EGIT_BRANCH=${PN}-1.7
+
 inherit enlightenment
 
 DESCRIPTION="Basic widget set, based on EFL for mobile touch-screen devices."
