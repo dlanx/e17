@@ -4,7 +4,7 @@
 
 EAPI=5
 
-ESVN_SUB_PROJECT="E-MODULES-EXTRA"
+EGIT_SUB_PROJECT="enlightenment/modules"
 ESVN_URI_APPEND="${PN#e_modules-}"
 inherit enlightenment
 
