@@ -4,6 +4,10 @@
 
 EAPI=2
 
+EGIT_SUB_PROJECT="legacy"
+EGIT_URI_APPEND=${PN}
+EGIT_BRANCH=${PN}-1.7
+
 inherit virtualx enlightenment
 
 DESCRIPTION="Enlightenment's core event abstraction layer and OS abstraction layer"
