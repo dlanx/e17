@@ -4,8 +4,8 @@
 
 EAPI=5
 
-ESVN_SUB_PROJECT="E-MODULES-EXTRA"
-ESVN_URI_APPEND="${PN#e_modules-}"
+EGIT_SUB_PROJECT="enlightenment/modules"
+EGIT_URI_APPEND="${PN#e_modules-}"
 inherit enlightenment
 
 DESCRIPTION="modules visualizes disk activity, green = read, red = write"
