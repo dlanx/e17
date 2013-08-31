@@ -2,6 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/media-libs/imlib2/imlib2-9999.ebuild,v 1.16 2006/11/06 15:11:36 vapier Exp $
 
+EGIT_SUB_PROJECT="legacy"
+EGIT_URI_APPEND=${PN}
+
 inherit enlightenment toolchain-funcs
 
 MY_P=${P/_/-}
