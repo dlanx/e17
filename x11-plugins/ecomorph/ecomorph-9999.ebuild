@@ -7,7 +7,7 @@ EAPI=2
 EGIT_REPO_URI="git://github.com/jeffdameth/ecomorph.git"
 EGIT_BOOTSTRAP="enlightenment_src_prepare"
 
-inherit enlightenment git
+inherit enlightenment git-2
 
 DESCRIPTION="Ecomorph is a compositing manager for e17"
 
