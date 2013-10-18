@@ -18,7 +18,7 @@ IUSE="dbus fbcon quicklaunch sdl thumbnails weather X xdg static-libs"
 
 DEPEND="
 	>=dev-libs/ecore-9999[evas,fbcon?,sdl?,X?]
-	>=media-libs/evas-9999[fbcon?,sdl?,X?]
+	>=media-libs/evas-9999[fbcon?,X?]
 	>=media-libs/edje-9999
 	dbus? ( >=dev-libs/e_dbus-9999 )
 	xdg? ( >=dev-libs/efreet-9999 )
