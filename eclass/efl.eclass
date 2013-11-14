@@ -52,6 +52,11 @@ IUSE="${E_PKG_IUSE}"
 # Default svn repository to use.
 E_LIVE_SERVER_DEFAULT_SVN="http://svn.enlightenment.org/svn/e/trunk"
 
+# @ECLASS-VARIABLE: E_RELEASE_SERVER_DEFAULT
+# @DESCRIPTION:
+# Default release server url to use.
+E_RELEASE_SERVER_DEFAULT="http://download.enlightenment.org/releases"
+
 # @ECLASS-VARIABLE: E_EXTERNAL
 # @DESCRIPTION:
 # If defined, efl.eclass will not automatically inherit subversion and do any
@@ -126,6 +131,15 @@ if [[ ${PV/9999} != ${PV} ]] ; then
 			inherit git-2
 		fi
 	fi
+else
+	E_RELEASE_SERVER="${E_RELEASE_SERVER:-${E_RELEASE_SERVER_DEFAULT}}"
+	EREL_PV_DEFAULT="${PV/_/-}"
+	EREL_PV="${EREL_PV:-${EREL_PV_DEFAULT}}"
+	EREL_P="${PN}-${EREL_PV}"
+	EREL_REPO_URI="${E_RELEASE_SERVER}/${EREL_P}.tar.bz2"
+	SRC_URI="${SRC_URI:-${EREL_REPO_URI}}"
+
+	S="${WORKDIR}/${EREL_P}"
 fi
 
 if [[ -n "${E_PYTHON}" ]]; then
